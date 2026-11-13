@@ -1,0 +1,10 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "jukebox_song.zam.undertale_spear_of_justice"
+  },
+  "length_in_seconds": 115.0,
+  "sound_event": {
+    "sound_id": "zam:undertale.spear_of_justice"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "zam:item/pickaxe_cosmetic_pattern"
+  }
+}

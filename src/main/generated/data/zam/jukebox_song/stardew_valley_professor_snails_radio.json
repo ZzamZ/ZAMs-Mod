@@ -1,0 +1,10 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "jukebox_song.zam.stardew_valley_professor_snails_radio"
+  },
+  "length_in_seconds": 89.0,
+  "sound_event": {
+    "sound_id": "zam:stardew_valley.professor_snails_radio"
+  }
+}

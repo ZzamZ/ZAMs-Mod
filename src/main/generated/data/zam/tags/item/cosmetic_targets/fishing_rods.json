@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "#minecraft:enchantable/fishing",
+      "required": false
+    }
+  ]
+}

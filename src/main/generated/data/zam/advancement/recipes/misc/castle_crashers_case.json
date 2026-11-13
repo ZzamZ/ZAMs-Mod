@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_record_for_castle_crashers_case": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#zam:castle_crashers_music_discs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "zam:castle_crashers_case"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_record_for_castle_crashers_case"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "zam:castle_crashers_case"
+    ]
+  }
+}

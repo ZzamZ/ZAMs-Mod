@@ -1,0 +1,10 @@
+{
+  "comparator_output": 6,
+  "description": {
+    "translate": "jukebox_song.zam.spongebob_christmas"
+  },
+  "length_in_seconds": 116.0,
+  "sound_event": {
+    "sound_id": "zam:spongebob.christmas"
+  }
+}

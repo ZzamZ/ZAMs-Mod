@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": "#zam:spongebob_music_discs"
+  },
+  "pattern": [
+    "SS ",
+    "SS "
+  ],
+  "result": {
+    "id": "zam:spongebob_case"
+  }
+}

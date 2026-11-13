@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": "#zam:undertale_music_discs"
+  },
+  "pattern": [
+    "SS ",
+    "SS "
+  ],
+  "result": {
+    "id": "zam:undertale_case"
+  }
+}

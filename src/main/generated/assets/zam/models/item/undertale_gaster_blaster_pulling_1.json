@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "zam:item/undertale_gaster_blaster_pulling_1"
+  }
+}

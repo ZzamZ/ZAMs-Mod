@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_record_for_spongebob_case": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#zam:spongebob_music_discs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipes": "zam:spongebob_case"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_record_for_spongebob_case"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "zam:spongebob_case"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:husbandry/tame_an_animal",
+  "display": {
+    "icon": {
+      "id": "minecraft:golden_carrot"
+    },
+    "title": {
+      "text": "Home is Where the Honey is!"
+    },
+    "description": {
+      "text": "A best friend to many that will forever be remembered"
+    }
+  },
+  "criteria": {
+    "tamed_honey": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:components": {
+              "minecraft:wolf/variant": "zam:honey"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    ["tamed_honey"]
+  ]
+}

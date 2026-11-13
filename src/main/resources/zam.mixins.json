@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "package": "net.ron.zam.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "BowSoundMixin",
+    "DoubleCatchFishingHookMixin",
+    "FishingHookSoundMixin",
+    "FishingRodSoundMixin",
+    "ItemCosmeticMixin",
+    "ItemStackCosmeticMixin",
+    "JukeboxBlockEntityMixin",
+    "JukeboxBlockMixin",
+    "LivingEntityMixin",
+    "MaceAttackSoundMixin",
+    "MaceSoundMixin",
+    "ParrotMixin",
+    "ReelingFishingHookMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "BundleMouseActionsMixin"
+  ]
+}

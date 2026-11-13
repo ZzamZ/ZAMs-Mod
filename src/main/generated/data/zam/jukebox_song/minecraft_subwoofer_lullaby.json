@@ -1,0 +1,10 @@
+{
+  "comparator_output": 5,
+  "description": {
+    "translate": "jukebox_song.zam.minecraft_subwoofer_lullaby"
+  },
+  "length_in_seconds": 209.0,
+  "sound_event": {
+    "sound_id": "zam:minecraft.subwoofer_lullaby"
+  }
+}

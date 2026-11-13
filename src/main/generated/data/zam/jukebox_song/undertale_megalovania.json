@@ -1,0 +1,10 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "jukebox_song.zam.undertale_megalovania"
+  },
+  "length_in_seconds": 156.0,
+  "sound_event": {
+    "sound_id": "zam:undertale.megalovania"
+  }
+}

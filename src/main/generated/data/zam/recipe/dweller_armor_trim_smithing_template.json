@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": "minecraft:diamond",
+    "S": "minecraft:stone",
+    "d": "zam:dweller_armor_trim_smithing_template"
+  },
+  "pattern": [
+    "DdD",
+    "DSD",
+    "DDD"
+  ],
+  "result": {
+    "count": 2,
+    "id": "zam:dweller_armor_trim_smithing_template"
+  }
+}

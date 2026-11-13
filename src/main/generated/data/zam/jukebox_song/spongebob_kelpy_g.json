@@ -1,0 +1,10 @@
+{
+  "comparator_output": 6,
+  "description": {
+    "translate": "jukebox_song.zam.spongebob_kelpy_g"
+  },
+  "length_in_seconds": 61.0,
+  "sound_event": {
+    "sound_id": "zam:spongebob.kelpy_g"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": "#zam:stardew_valley_music_discs"
+  },
+  "pattern": [
+    "SS ",
+    "SS "
+  ],
+  "result": {
+    "id": "zam:stardew_valley_case"
+  }
+}

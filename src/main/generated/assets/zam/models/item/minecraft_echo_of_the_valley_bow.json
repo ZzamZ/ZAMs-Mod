@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "zam:item/minecraft_echo_of_the_valley_bow"
+  }
+}

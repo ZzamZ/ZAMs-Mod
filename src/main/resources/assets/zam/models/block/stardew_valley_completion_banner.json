@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "zam:block/stardew_valley_completion_banner"
+  }
+}

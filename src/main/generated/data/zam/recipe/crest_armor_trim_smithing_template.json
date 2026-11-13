@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "C": "zam:crest_armor_trim_smithing_template",
+    "D": "minecraft:diamond",
+    "P": "zam:sea_jelly"
+  },
+  "pattern": [
+    "DCD",
+    "DPD",
+    "DDD"
+  ],
+  "result": {
+    "count": 2,
+    "id": "zam:crest_armor_trim_smithing_template"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "S": "#zam:castle_crashers_music_discs"
+  },
+  "pattern": [
+    "SS ",
+    "SS "
+  ],
+  "result": {
+    "id": "zam:castle_crashers_case"
+  }
+}

@@ -1,0 +1,20 @@
+// 26.3	-999999999-01-01T00:00:00	ZAM's Mod/Tags for minecraft:item
+e8be6b032c26a432171f0250e90425c29f2a38a2 data/c/tags/item/music_discs.json
+b3d5f1fdda2990fc1331aceae3c07f3ab4717c85 data/zam/tags/item/castle_crashers_music_discs.json
+58b92ae412db10a7041d5ae649a445f3ac2e4a13 data/zam/tags/item/cosmetic_targets/axes.json
+887fdebc154dc473f30383f6a66228745a507976 data/zam/tags/item/cosmetic_targets/bows.json
+01bcaaa5b95245888b8a1bdd2a8383bde936a7bf data/zam/tags/item/cosmetic_targets/cases.json
+769334b91e66d16b7304eb7d07b8758c522b718e data/zam/tags/item/cosmetic_targets/fishing_rods.json
+a542a591b5ed107d71c5ab6457e889a5f998b7e2 data/zam/tags/item/cosmetic_targets/helmets.json
+a4294e62419ff1e6f90ca898fd168917dbe83685 data/zam/tags/item/cosmetic_targets/hoes.json
+993ba0735d434376c35a4cd3bbd3574777965ea3 data/zam/tags/item/cosmetic_targets/knives.json
+64f97cd2956bf84cf64c9c4f1a893b2dbe8fc89b data/zam/tags/item/cosmetic_targets/maces.json
+b1b1de5dd36c189a00225507c31c1520042f57db data/zam/tags/item/cosmetic_targets/pickaxes.json
+8fb2c86ef1e8e3e5c111578b51da91908ea5deb9 data/zam/tags/item/cosmetic_targets/shears.json
+8e6e02d593b90dce4dedd17705020360332ed150 data/zam/tags/item/cosmetic_targets/shovels.json
+8422eea73ef988a7a0b419bbb4a044c9e9b0942b data/zam/tags/item/cosmetic_targets/spears.json
+0920b44962def81502667a666d3ded82d176c3fe data/zam/tags/item/cosmetic_targets/swords.json
+aaf65bebc62af5954df6777fc11d36abae1dfdb0 data/zam/tags/item/minecraft_music_discs.json
+7bcca37a0eb3387b255a134fe63ab1c63f000c5e data/zam/tags/item/spongebob_music_discs.json
+88679d07e926e6e0c9cd54cd3ad9d388460f4097 data/zam/tags/item/stardew_valley_music_discs.json
+cf032d0dadf3cbc53443b87c26b3c591016589a8 data/zam/tags/item/undertale_music_discs.json

@@ -1,0 +1,21 @@
+{
+  "assets": {
+    "angry": "zam:entity/wolf/wolf_honey_angry",
+    "tame": "zam:entity/wolf/wolf_honey_tame",
+    "wild": "zam:entity/wolf/wolf_honey"
+  },
+  "baby_assets": {
+    "angry": "zam:entity/wolf/wolf_shaya_angry_baby",
+    "tame": "zam:entity/wolf/wolf_shaya_tame_baby",
+    "wild": "zam:entity/wolf/wolf_shaya_baby"
+  },
+  "spawn_conditions": [
+    {
+      "condition": {
+        "type": "minecraft:biome",
+        "biomes": "minecraft:dappled_forest"
+      },
+      "priority": 1
+    }
+  ]
+}
