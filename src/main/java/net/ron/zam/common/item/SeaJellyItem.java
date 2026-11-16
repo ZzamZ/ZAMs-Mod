@@ -20,7 +20,7 @@ import net.minecraft.world.level.gameevent.GameEvent;
 
 import java.util.Optional;
 
-public class SeaJellyItem extends Item {
+public class SeaJellyItem extends AirTimeIncreasingItem {
 
     public SeaJellyItem(Properties properties) {
         super(properties);

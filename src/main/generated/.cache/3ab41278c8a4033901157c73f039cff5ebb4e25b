@@ -1,4 +1,6 @@
 // 26.3	-999999999-01-01T00:00:00	ZAM's Mod/Model Definitions
+2a01fd8f2c53e80e4809894118c472aa046e11fb assets/zam/blockstates/mariners_fortune.json
+7650d19e87d02db49c321145a4b8438bc6833c6a assets/zam/blockstates/sea_jelly_block.json
 197f857114401b2dfde4520092e15c2b6693d7dc assets/zam/items/axe_cosmetic_pattern.json
 1ad70ffabfb77e1b17071d6d6e5b822b01cb034d assets/zam/items/bow_cosmetic_pattern.json
 b917e4b18234714e6066a07da3a4025f86932313 assets/zam/items/case_key.json
@@ -35,6 +37,7 @@ b9360c77f1c906754ff7538d713b57729a000248 assets/zam/items/helmet_cosmetic_patter
 801207bf23bd3341bd215922c85a5499856f4fda assets/zam/items/hoe_cosmetic_pattern.json
 c400006e603d10e34eaa00f7019be449b33b7548 assets/zam/items/knife_cosmetic_pattern.json
 4233e04e2f26b957571a78f38c50cef3e54a283e assets/zam/items/mace_cosmetic_pattern.json
+ffe0aa5085f3aa2350a042119c1ba2aeea3b4198 assets/zam/items/mariners_fortune.json
 6b7b99868f74c15561471e449a3a39daedca8e25 assets/zam/items/minecraft_anchor_mace.json
 f69f99e1a1fecff7ecc202f9cc686c3a232f0396 assets/zam/items/minecraft_aria_math.json
 b1b34f409a919e1bc0a8ed1c5a9bd5801d6815a6 assets/zam/items/minecraft_case.json
@@ -52,6 +55,7 @@ b1896b6135fa04d7a81ac2f203287157d40d1d63 assets/zam/items/minecraft_echo_of_the_
 9f3a4a4aee90088ea1fcb71cd542ee84eaadf414 assets/zam/items/pickaxe_cosmetic_pattern.json
 6f928611176acb9fee71dfef317cc6486c70618c assets/zam/items/red_icon.json
 5d5855d96479fef7211d8b8df495ee3089eeca37 assets/zam/items/sea_jelly.json
+b38c7d4cd3ec12d56f582f76f061115b3e34c4a0 assets/zam/items/sea_jelly_block.json
 588f4b05e7632c2e9ceb7b123dcfd99476013292 assets/zam/items/shears_cosmetic_pattern.json
 cc73ab7796dd53b9df4b115b49cffb5a9837deef assets/zam/items/shovel_cosmetic_pattern.json
 617fd74a6fe5cb960d860547c955d8283475b76a assets/zam/items/spear_cosmetic_pattern.json
@@ -143,6 +147,8 @@ b15f484f054aabae551077cebb313947b3ce95e8 assets/zam/items/undertale_snowy.json
 93b3149597bf5642553c8d661030e6ac03bf1333 assets/zam/items/undertale_spider_dance.json
 a1edd378328f5bcb61c7cb3a588f78f732b1d29a assets/zam/items/undertale_undertale.json
 a15871d71b1a364635d613f2b153256f6b9eec79 assets/zam/items/undertale_undynes_spear.json
+e2de9602d0ed1854fcc3a58541037e6accc3db14 assets/zam/models/block/mariners_fortune.json
+67d9fa9b88cfdfdfac5ff53063c0f4ef6bed0e81 assets/zam/models/block/sea_jelly_block.json
 16000fa39cca6aa742fae7eb4fff31fbd6e7033b assets/zam/models/item/axe_cosmetic_pattern.json
 70ceb2d5d6126a4df8e54e4dfbfa1c83b696cb55 assets/zam/models/item/bow_cosmetic_pattern.json
 8246f474af91c2b6834a7924b503e6f7b27dfaae assets/zam/models/item/case_key.json
@@ -179,6 +185,7 @@ c06238ff5942dad1c9e8d73ce614ff4f85b96bdf assets/zam/models/item/hells_retriever_
 565342fc97017e1c55836f07f8e0c7685dfc628f assets/zam/models/item/hoe_cosmetic_pattern.json
 bec67244e4b8fbd38354d877843ad02fc72b32e8 assets/zam/models/item/knife_cosmetic_pattern.json
 f6b4de88c15a7fbea9ad6a84f0d279c83d67fcf2 assets/zam/models/item/mace_cosmetic_pattern.json
+686f36a368c6af5f3f41d74f23b032ad18fe3aa7 assets/zam/models/item/mariners_fortune.json
 edcc0deea566fa3a5d1fcaa2f5bff923c241f4f4 assets/zam/models/item/minecraft_anchor_mace.json
 87b838ec68daceedb3457f58a2b1b890bb91df9e assets/zam/models/item/minecraft_aria_math.json
 2bbdcbcff809b26155d2c7eb91f23b701764d9c3 assets/zam/models/item/minecraft_case.json

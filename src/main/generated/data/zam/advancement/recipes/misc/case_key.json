@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "#zam:cosmetic_targets/cases"
+            "items": "#zam:cases"
           }
         ]
       },

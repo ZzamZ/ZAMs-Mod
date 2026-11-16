@@ -30,10 +30,33 @@ public class ZAMBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ZAMBlocks.WARPED_RECORD_RACK.properties().blockIdOrThrow())
                 .add(ZAMBlocks.POPLAR_RECORD_RACK.properties().blockIdOrThrow())
 
+                .add(ZAMBlocks.FAIRY_LANTERNS.white().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.lightGray().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.gray().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.black().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.brown().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.red().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.orange().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.yellow().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.lime().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.green().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.cyan().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.lightBlue().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.blue().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.purple().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.magenta().properties().blockIdOrThrow())
+                .add(ZAMBlocks.FAIRY_LANTERNS.pink().properties().blockIdOrThrow())
+
                 .add(ZAMBlocks.CASTLE_CRASHERS_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.MINECRAFT_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.SPONGEBOB_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.STARDEW_VALLEY_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.UNDERTALE_COMPLETION_BANNER.properties().blockIdOrThrow());
+
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ZAMBlocks.MARINERS_FORTUNE.properties().blockIdOrThrow());
+
+        tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(ZAMBlocks.SEA_JELLY_BLOCK.properties().blockIdOrThrow());
     }
 }

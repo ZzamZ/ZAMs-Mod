@@ -1,9 +1,9 @@
 // 26.3	-999999999-01-01T00:00:00	ZAM's Mod/Tags for minecraft:item
 e8be6b032c26a432171f0250e90425c29f2a38a2 data/c/tags/item/music_discs.json
+01bcaaa5b95245888b8a1bdd2a8383bde936a7bf data/zam/tags/item/cases.json
 b3d5f1fdda2990fc1331aceae3c07f3ab4717c85 data/zam/tags/item/castle_crashers_music_discs.json
 58b92ae412db10a7041d5ae649a445f3ac2e4a13 data/zam/tags/item/cosmetic_targets/axes.json
 887fdebc154dc473f30383f6a66228745a507976 data/zam/tags/item/cosmetic_targets/bows.json
-01bcaaa5b95245888b8a1bdd2a8383bde936a7bf data/zam/tags/item/cosmetic_targets/cases.json
 769334b91e66d16b7304eb7d07b8758c522b718e data/zam/tags/item/cosmetic_targets/fishing_rods.json
 a542a591b5ed107d71c5ab6457e889a5f998b7e2 data/zam/tags/item/cosmetic_targets/helmets.json
 a4294e62419ff1e6f90ca898fd168917dbe83685 data/zam/tags/item/cosmetic_targets/hoes.json

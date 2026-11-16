@@ -5,10 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.ron.zam.datagen.*;
-import net.ron.zam.registry.ZAMEnchantments;
-import net.ron.zam.registry.ZAMJukeboxSongs;
-import net.ron.zam.registry.ZAMTrimPatterns;
-import net.ron.zam.registry.ZAMWolfVariants;
+import net.ron.zam.registry.*;
 
 public class ZAMModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -21,6 +18,7 @@ public class ZAMModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ZAMRecipeProvider::new);
 		pack.addProvider(ZAMItemTagProvider::new);
 		pack.addProvider(ZAMBlockTagProvider::new);
+		pack.addProvider(ZAMVillagerTradeTagsProvider::new);
 	}
 
 	@Override
@@ -29,5 +27,6 @@ public class ZAMModDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.add(Registries.JUKEBOX_SONG, ZAMJukeboxSongs::bootstrap);
 		registryBuilder.add(Registries.TRIM_PATTERN, ZAMTrimPatterns::bootstrap);
 		registryBuilder.add(Registries.WOLF_VARIANT, ZAMWolfVariants::bootstrap);
+		registryBuilder.add(Registries.VILLAGER_TRADE, ZAMVillagerTrades::bootstrap);
 	}
 }

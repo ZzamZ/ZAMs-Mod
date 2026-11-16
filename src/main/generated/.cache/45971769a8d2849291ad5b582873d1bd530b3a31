@@ -1,2 +1,4 @@
 // 26.3	-999999999-01-01T00:00:00	ZAM's Mod/Tags for minecraft:block
-12af33a9d21575f55f3a54eb00167e4cc87df7d4 data/minecraft/tags/block/mineable/axe.json
+742c0a80c95a6a7336e711c3228f2daf9ebfbe6c data/minecraft/tags/block/mineable/axe.json
+aef20a2830056675e77af914540cd8dcca1b1fb9 data/minecraft/tags/block/mineable/hoe.json
+89a268219feeb114ef23edd2363884981c4d86b2 data/minecraft/tags/block/mineable/pickaxe.json

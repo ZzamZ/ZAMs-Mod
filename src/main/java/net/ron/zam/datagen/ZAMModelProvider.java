@@ -5,6 +5,9 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.client.data.models.model.TexturedModel;
+import net.ron.zam.ZAMMod;
+import net.ron.zam.registry.ZAMBlocks;
 import net.ron.zam.registry.ZAMCosmetics;
 import net.ron.zam.registry.ZAMItems;
 
@@ -15,7 +18,8 @@ public class ZAMModelProvider  extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
-
+        blockModelGenerators.createTrivialCube(ZAMBlocks.SEA_JELLY_BLOCK);
+        blockModelGenerators.createChest(ZAMBlocks.MARINERS_FORTUNE, ZAMBlocks.MARINERS_FORTUNE, ZAMMod.id("mariners_fortune"), false);
     }
 
     @Override

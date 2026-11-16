@@ -1,19 +1,22 @@
 package net.ron.zam;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientLifecycleEvents;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.ClientTooltipComponentCallback;
 import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.model.object.boat.BoatModel;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.minecraft.client.renderer.entity.BoatRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.item.ItemStack;
 import net.ron.zam.common.client.ZAMModelLayers;
 import net.ron.zam.common.client.model.CompletionBannerModel;
 import net.ron.zam.common.client.renderer.CompletionBannerRenderer;
+import net.ron.zam.common.client.renderer.MarinersFortuneChestRenderer;
 import net.ron.zam.common.client.renderer.RecordRackBlockEntityRenderer;
 import net.ron.zam.common.gui.cases.CaseMenu;
 import net.ron.zam.common.gui.cases.CaseScreen;
@@ -31,9 +34,12 @@ public class ZAMModClient implements ClientModInitializer {
     public void onInitializeClient() {
         MenuScreens.register(ZAMMenuTypes.CASE, CaseScreen::new);
         MenuScreens.register(ZAMMenuTypes.RECORD_RACK, RecordRackScreen::new);
-        ModelLayerRegistry.registerModelLayer(ZAMModelLayers.COMPLETION_BANNER, CompletionBannerModel::createBodyLayer);
+
         BlockEntityRenderers.register(ZAMBlockEntities.COMPLETION_BANNER, CompletionBannerRenderer::new);
         BlockEntityRenderers.register(ZAMBlockEntities.RECORD_RACK, RecordRackBlockEntityRenderer::new);
+        BlockEntityRenderers.register(ZAMBlockEntities.MARINERS_FORTUNE_CHEST, MarinersFortuneChestRenderer::new);
+
+        ModelLayerRegistry.registerModelLayer(ZAMModelLayers.COMPLETION_BANNER, CompletionBannerModel::createBodyLayer);
 
         ClientTooltipComponentCallback.EVENT.register(data -> {
             if (data instanceof CosmeticPatternTooltip pattern) {

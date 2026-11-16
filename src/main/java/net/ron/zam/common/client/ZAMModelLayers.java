@@ -1,6 +1,7 @@
 package net.ron.zam.common.client;
 
 import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.resources.Identifier;
 import net.ron.zam.ZAMMod;
 
 public class ZAMModelLayers {

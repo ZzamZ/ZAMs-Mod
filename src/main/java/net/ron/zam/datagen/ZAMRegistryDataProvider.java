@@ -18,6 +18,7 @@ public class ZAMRegistryDataProvider extends FabricDynamicRegistryProvider {
         entries.addAll(provider.lookupOrThrow(Registries.JUKEBOX_SONG));
         entries.addAll(provider.lookupOrThrow(Registries.TRIM_PATTERN));
         entries.addAll(provider.lookupOrThrow(Registries.WOLF_VARIANT));
+        entries.addAll(provider.lookupOrThrow(Registries.VILLAGER_TRADE));
     }
 
     @Override

@@ -13,7 +13,6 @@ public class ZAMSounds {
     public static final SoundEvent CASE_REWARD_EPIC = registerSoundEvent("case.case_reward_epic");
     public static final SoundEvent CASE_REWARD_LEGENDARY = registerSoundEvent("case.case_reward_legendary");
 
-    //Minecraft
     public static final SoundEvent MUSIC_DISC_DOG = registerSoundEvent("music_disc_dog");
 
     //Castle Crashers

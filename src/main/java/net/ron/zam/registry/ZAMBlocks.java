@@ -5,16 +5,21 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ColorCollection;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.ron.zam.ZAMMod;
+import net.ron.zam.common.block.FairyLanternBlock;
+import net.ron.zam.common.block.SeaJellyBlock;
 import net.ron.zam.common.block.banner.CompletionBannerBlock;
+import net.ron.zam.common.block.fortune.MarinersFortuneChestBlock;
 import net.ron.zam.common.block.record_rack.RecordRackBlock;
 import net.ron.zam.common.item.CompletionBannerItem;
 
@@ -32,6 +37,9 @@ public final class ZAMBlocks {
     public static final CompletionBannerBlock STARDEW_VALLEY_COMPLETION_BANNER = completionBanner("stardew_valley_completion_banner", "Stardew Valley");
     public static final CompletionBannerBlock UNDERTALE_COMPLETION_BANNER = completionBanner("undertale_completion_banner", "Undertale");
 
+    public static final Block SEA_JELLY_BLOCK = registerBlock("sea_jelly_block", properties -> new SeaJellyBlock(properties.mapColor(MapColor.COLOR_LIGHT_BLUE).strength(0.3F).lightLevel(state -> 15).sound(SoundType.FROGLIGHT)));
+    public static final Block MARINERS_FORTUNE = registerBlock("mariners_fortune", properties -> new MarinersFortuneChestBlock(() -> ZAMBlockEntities.MARINERS_FORTUNE_CHEST, properties.mapColor(MapColor.METAL).strength(3.0F, 6.0F).sound(SoundType.METAL)), (block, properties) -> new BlockItem(block, properties.rarity(Rarity.RARE)));
+
     public static final Block OAK_RECORD_RACK = recordRack("oak_record_rack", Blocks.OAK_FENCE, SoundType.WOOD);
     public static final Block SPRUCE_RECORD_RACK = recordRack("spruce_record_rack", Blocks.SPRUCE_FENCE, SoundType.WOOD);
     public static final Block BIRCH_RECORD_RACK = recordRack("birch_record_rack", Blocks.BIRCH_FENCE, SoundType.WOOD);
@@ -46,32 +54,27 @@ public final class ZAMBlocks {
     public static final Block PALE_OAK_RECORD_RACK = recordRack("pale_oak_record_rack", Blocks.PALE_OAK_FENCE, SoundType.WOOD);
     public static final Block POPLAR_RECORD_RACK = recordRack("poplar_record_rack", Blocks.POPLAR_FENCE, SoundType.WOOD);
 
+    public static final ColorCollection<FairyLanternBlock> FAIRY_LANTERNS = ColorCollection.VALUES.map(color -> fairyLantern(color.getSerializedName() + "_fairy_lantern", color == DyeColor.WHITE ? MapColor.TERRACOTTA_BROWN : color.getMapColor()));
+
     public static List<CompletionBannerBlock> completionBanners() {
         return List.copyOf(COMPLETION_BANNERS);
     }
 
     private static CompletionBannerBlock completionBanner(String name, String collection) {
-        CompletionBannerBlock banner = registerBlock(name, properties -> new CompletionBannerBlock(properties.mapColor(MapColor.WOOL)
-                        .strength(1.0F).sound(SoundType.WOOD).noOcclusion().pushReaction(PushReaction.POPPED)),
+        CompletionBannerBlock banner = registerBlock(name, properties -> new CompletionBannerBlock(properties.mapColor(MapColor.WOOL).strength(1.0F).sound(SoundType.WOOD).noOcclusion().pushReaction(PushReaction.POPPED)),
                 (block, properties) -> new CompletionBannerItem(block, collection, properties.rarity(Rarity.EPIC)));
-
         COMPLETION_BANNERS.add(banner);
         return banner;
     }
 
-    private static Block recordRack(String name, Block lootTableSource, SoundType sound) {
-        return registerBlock(name, properties -> new RecordRackBlock(
-                properties.overrideLootTable(lootTableSource.getLootTable()).strength(1.0F).sound(sound)));
+    private static RecordRackBlock recordRack(String name, Block lootTableSource, SoundType sound) {
+        return registerBlock(name, properties -> new RecordRackBlock(properties.overrideLootTable(lootTableSource.getLootTable())
+                .strength(1.0F).sound(sound)));
     }
 
-    private static <T extends Block> T registerBlock(String name, Function<BlockBehaviour.Properties, T> factory) {
-        return registerBlock(name, factory, BlockItem::new);
-    }
-
-
-    private static <T extends Block> T registerBlock(String name, Function<BlockBehaviour.Properties, T> factory, BiFunction<T, Item.Properties, BlockItem> itemFactory) {T block = registerBlockWithoutBlockItem(name, factory);
-        ZAMItems.registerItem(name, properties -> itemFactory.apply(block, properties.useBlockDescriptionPrefix()));
-        return block;
+    private static FairyLanternBlock fairyLantern(String name, MapColor color) {
+        return registerBlock(name, properties -> new FairyLanternBlock(properties.mapColor(color).strength(2.0F, 3.0F)
+                .sound(ZAMSoundTypes.FAIRY_LANTERN).lightLevel(state -> 15)));
     }
 
     private static <T extends Block> T registerBlockWithoutBlockItem(String name, Function<BlockBehaviour.Properties, T> factory) {
@@ -79,6 +82,20 @@ public final class ZAMBlocks {
         var key = ResourceKey.create(Registries.BLOCK, id);
         return Registry.register(BuiltInRegistries.BLOCK, id,
                 factory.apply(BlockBehaviour.Properties.of().setId(key)));
+    }
+
+    private static <T extends Block> T registerBlock(String name, Function<BlockBehaviour.Properties, T> factory) {
+        return registerBlock(name, factory, BlockItem::new);
+    }
+
+    private static <T extends Block> T registerBlock(String name, Function<BlockBehaviour.Properties, T> factory, BiFunction<T, Item.Properties, BlockItem> itemFactory) {
+        T block = registerBlockWithoutBlockItem(name, factory);
+        registerBlockItem(name, block, itemFactory);
+        return block;
+    }
+
+    private static <T extends Block> void registerBlockItem(String name, T block, BiFunction<T, Item.Properties, BlockItem> itemFactory) {
+        ZAMItems.registerItem(name, properties -> itemFactory.apply(block, properties.useBlockDescriptionPrefix()));
     }
 
     public static void registerBlocks() {

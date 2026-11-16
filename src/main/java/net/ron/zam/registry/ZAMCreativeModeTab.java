@@ -1,6 +1,7 @@
 package net.ron.zam.registry;
 
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.minecraft.references.BlockIds;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -55,6 +56,8 @@ public final class ZAMCreativeModeTab {
                     ZAMBlocks.CRIMSON_RECORD_RACK,
                     ZAMBlocks.WARPED_RECORD_RACK);
 
+            output.insertAfter(Items.COPPER_CHEST.waxed().oxidized(), ZAMBlocks.MARINERS_FORTUNE);
+
             var banners = ZAMBlocks.completionBanners();
             if (banners.isEmpty()) return;
 
@@ -68,9 +71,32 @@ public final class ZAMCreativeModeTab {
             }
         });
 
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COLORED_BLOCKS).register(output -> {
+            output.insertAfter(Blocks.DYED_CANDLE.pink(),
+                    ZAMBlocks.FAIRY_LANTERNS.white(),
+                    ZAMBlocks.FAIRY_LANTERNS.lightGray(),
+                    ZAMBlocks.FAIRY_LANTERNS.gray(),
+                    ZAMBlocks.FAIRY_LANTERNS.black(),
+                    ZAMBlocks.FAIRY_LANTERNS.brown(),
+                    ZAMBlocks.FAIRY_LANTERNS.red(),
+                    ZAMBlocks.FAIRY_LANTERNS.orange(),
+                    ZAMBlocks.FAIRY_LANTERNS.yellow(),
+                    ZAMBlocks.FAIRY_LANTERNS.lime(),
+                    ZAMBlocks.FAIRY_LANTERNS.green(),
+                    ZAMBlocks.FAIRY_LANTERNS.cyan(),
+                    ZAMBlocks.FAIRY_LANTERNS.lightBlue(),
+                    ZAMBlocks.FAIRY_LANTERNS.blue(),
+                    ZAMBlocks.FAIRY_LANTERNS.purple(),
+                    ZAMBlocks.FAIRY_LANTERNS.magenta(),
+                    ZAMBlocks.FAIRY_LANTERNS.pink());
+        });
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.REDSTONE_BLOCKS).register(output -> {
             output.insertAfter(Blocks.JUKEBOX, ZAMBlocks.OAK_RECORD_RACK);
+        });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
+            output.insertAfter(Blocks.DEAD_HORN_CORAL_FAN, ZAMBlocks.SEA_JELLY_BLOCK);
         });
 
         ZAMMod.LOGGER.info("Registering Creative Mode Items for {}", ZAMMod.MOD_ID);
