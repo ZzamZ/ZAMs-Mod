@@ -14,7 +14,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class FairyLanternBlock extends LanternBlock {
 
     private static final VoxelShape STANDING_SHAPE =
-            Block.box(5.0, 0.0, 5.0, 11.0, 9.0, 11.0);
+            Block.box(5.0, 0.0, 5.0, 11.0, 8.0, 11.0);
 
     private static final VoxelShape HANGING_SHAPE =
             Block.box(5.0, 2.0, 5.0, 11.0, 10.0, 11.0);

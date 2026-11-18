@@ -19,6 +19,7 @@ public class ZAMModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ZAMItemTagProvider::new);
 		pack.addProvider(ZAMBlockTagProvider::new);
 		pack.addProvider(ZAMVillagerTradeTagsProvider::new);
+		pack.addProvider(ZAMLootTableProvider::new);
 	}
 
 	@Override

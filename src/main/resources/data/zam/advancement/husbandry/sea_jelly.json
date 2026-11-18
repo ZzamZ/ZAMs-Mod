@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "display": {
+    "icon": {
+      "id": "zam:sea_jelly"
+    },
+    "title": {
+      "translate": "advancements.zam.husbandry.sea_jelly.title"
+    },
+    "description": {
+      "translate": "advancements.zam.husbandry.sea_jelly.description"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "sea_jelly": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "#minecraft:copper"
+                }
+              }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "zam:sea_jelly"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

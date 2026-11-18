@@ -1,0 +1,41 @@
+{
+  "parent": "zam:husbandry/sea_jelly",
+  "display": {
+    "icon": {
+      "id": "zam:sea_jelly_block"
+    },
+    "title": {
+      "translate": "advancements.zam.husbandry.sea_jelly_block.title"
+    },
+    "description": {
+      "translate": "advancements.zam.husbandry.sea_jelly_block.description"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "sea_jelly_block": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "type": "minecraft:all_of",
+          "terms": [
+            {
+              "type": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "zam:sea_jelly_block"
+                }
+              }
+            },
+            {
+              "type": "minecraft:match_tool",
+              "predicate": {
+                "items": "minecraft:shears"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "id": "zam:minecraft_case"
+    },
+    "title": {
+      "translate": "advancements.zam.adventure.hobby.title"
+    },
+    "description": {
+      "translate": "advancements.zam.adventure.hobby.description"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "hobby": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#zam:cases"
+          }
+        ]
+      }
+    }
+  }
+}

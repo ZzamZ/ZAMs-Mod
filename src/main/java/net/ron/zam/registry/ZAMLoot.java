@@ -10,13 +10,15 @@ import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.TagEntry;
+import net.minecraft.world.level.storage.loot.functions.SetContainerLootTable;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.ron.zam.ZAMMod;
 
 import java.util.Set;
 
 public final class ZAMLoot {
-    public static final ResourceKey<LootTable> TREASURE_POUCH = ResourceKey.create(Registries.LOOT_TABLE, ZAMMod.id("gameplay/fishing/treasure_pouch"));
+    public static final ResourceKey<LootTable> MARINERS_FORTUNE = ResourceKey.create(Registries.LOOT_TABLE, ZAMMod.id("gameplay/fishing/mariners_fortune"));
+
     private static final ResourceKey<LootTable> IGLOO_CHEST = vanillaTable("chests/igloo_chest");
     private static final ResourceKey<LootTable> SPAWNER = vanillaTable("blocks/spawner");
     private static final ResourceKey<LootTable> TRIAL_CHAMBER_POTS = vanillaTable("pots/trial_chambers/corridor");
@@ -71,7 +73,14 @@ public final class ZAMLoot {
             }
 
             if (BuiltInLootTables.FISHING_TREASURE.equals(key)) {
-                table.modifyPools(pool -> pool.add(LootItem.lootTableItem(ZAMItems.TREASURE_POUCH)));
+                var marinersFortuneTable = registries
+                        .lookupOrThrow(Registries.LOOT_TABLE)
+                        .getOrThrow(MARINERS_FORTUNE);
+
+                table.modifyPools(pool -> pool.add(
+                        LootItem.lootTableItem(ZAMBlocks.MARINERS_FORTUNE)
+                                .apply(SetContainerLootTable.withLootTable(marinersFortuneTable))
+                ));
             }
 
             if (TRIAL_CHAMBER_POTS.equals(key)) {

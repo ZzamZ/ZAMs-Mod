@@ -20,7 +20,6 @@ public final class ZAMCaseRewards {
     public static final Identifier UNDERTALE_CASE = ZAMMod.id("undertale_case");
 
     public static void registerCaseRewards() {
-
         CaseRewards.registerDeferred(CASTLE_CRASHERS_CASE, () -> List.of(
                         new RarityItem(new ItemStack(ZAMItems.CASTLE_CRASHERS_FOUR_BRAVE_CHAMPS), Rarity.COMMON),
                         new RarityItem(new ItemStack(ZAMItems.CASTLE_CRASHERS_BARRACKS_SONG), Rarity.COMMON),

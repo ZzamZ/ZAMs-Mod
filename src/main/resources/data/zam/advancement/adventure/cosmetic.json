@@ -1,0 +1,34 @@
+{
+  "parent": "zam:adventure/addiction",
+  "display": {
+    "icon": {
+      "id": "zam:sword_cosmetic_pattern"
+    },
+    "title": {
+      "translate": "advancements.zam.adventure.cosmetic.title"
+    },
+    "description": {
+      "translate": "advancements.zam.adventure.cosmetic.description"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "get_red_pattern": {
+      "trigger": "zam:case",
+      "conditions": {
+        "rarity": "epic"
+      }
+    },
+    "cosmetic": {
+      "trigger": "zam:case",
+      "conditions": {
+        "rarity": "legendary"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_red_pattern", "cosmetic"
+    ]
+  ]
+}

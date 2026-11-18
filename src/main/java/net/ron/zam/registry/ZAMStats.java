@@ -10,8 +10,6 @@ import net.ron.zam.ZAMMod;
 public final class ZAMStats {
     public static final Identifier CASES_OPENED = ZAMMod.id("cases_opened");
 
-    private ZAMStats() {}
-
     public static void registerStats() {
         Registry.register(BuiltInRegistries.CUSTOM_STAT, CASES_OPENED, CASES_OPENED);
         Stats.CUSTOM.get(CASES_OPENED, StatFormatter.DEFAULT);

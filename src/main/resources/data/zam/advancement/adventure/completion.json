@@ -1,0 +1,23 @@
+{
+  "parent": "zam:adventure/cosmetic",
+  "display": {
+    "icon": {
+      "id": "zam:minecraft_completion_banner"
+    },
+    "title": {
+      "translate": "advancements.zam.adventure.completion.title"
+    },
+    "description": {
+      "translate": "advancements.zam.adventure.completion.description"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "completion": {
+      "trigger": "zam:case",
+      "conditions": {
+        "completed": true
+      }
+    }
+  }
+}

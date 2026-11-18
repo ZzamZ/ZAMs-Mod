@@ -1,8 +1,8 @@
 {
-  "parent": "minecraft:husbandry/tame_an_animal",
+  "parent": "minecraft:husbandry/whole_pack",
   "display": {
     "icon": {
-      "id": "minecraft:golden_carrot"
+      "id": "minecraft:honey_bottle"
     },
     "title": {
       "text": "Home is Where the Honey is!"

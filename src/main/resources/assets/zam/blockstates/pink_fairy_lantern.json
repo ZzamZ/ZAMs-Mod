@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "zam:block/pink_fairy_lantern"
+    },
+    "hanging=true": {
+      "model": "zam:block/pink_fairy_hanging_lantern"
+    }
+  }
+}

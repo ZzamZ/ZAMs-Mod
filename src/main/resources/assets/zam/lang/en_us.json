@@ -386,5 +386,20 @@
   "tooltip.zam.cosmetic.target.spear": "Spear",
   "tooltip.zam.cosmetic.target.fishing_rod": "Fishing Rod",
   "tooltip.zam.cosmetic.target.shears": "Shears",
-  "tooltip.zam.cosmetic.target.knife": "Knife"
+  "tooltip.zam.cosmetic.target.knife": "Knife",
+
+  "advancements.zam.adventure.hobby.title": "Don't Worry, It's Just a Hobby",
+  "advancements.zam.adventure.hobby.description": "Acquire your first case and open it with a case key",
+  "advancements.zam.adventure.addiction.title": "Just One More... I'm Due...",
+  "advancements.zam.adventure.addiction.description": "Acquire your first item from a case. Surely this won't be the start of something...",
+  "advancements.zam.adventure.cosmetic.title": "Cosmetic Jackpot",
+  "advancements.zam.adventure.cosmetic.description": "Acquire your first cosmetic pattern. Click it on the corresponding equipment for a fresh look",
+  "advancements.zam.adventure.completion.title": "The Ultimate Gambler",
+  "advancements.zam.adventure.completion.description": "Complete a case and enjoy your reward!",
+  "advancements.zam.husbandry.sea_jelly.title": "A Splash of Color",
+  "advancements.zam.husbandry.sea_jelly.description": "Apply Sea Jelly to a Copper block to Oxidize it",
+  "advancements.zam.husbandry.sea_jelly_block.title": "Absorbent and Yellow and Porous is He",
+  "advancements.zam.husbandry.sea_jelly_block.description": "Acquire a Sponge from shearing a Sea Jelly block ",
+  "advancements.zam.husbandry.tame_honey.title": "Home is Where the Honey is!",
+  "advancements.zam.husbandry.tame_honey.description": "A best friend to many that will forever be remembered"
 }

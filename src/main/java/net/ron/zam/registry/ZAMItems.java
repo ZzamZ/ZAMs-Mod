@@ -34,7 +34,6 @@ public class ZAMItems {
     public static final Item FROSTY_ARMOR_TRIM_SMITHING_TEMPLATE = registerItem("frosty_armor_trim_smithing_template", properties -> SmithingTemplateItem.createArmorTrimTemplate(properties.rarity(Rarity.UNCOMMON)));
 
     public static final Item SEA_JELLY = registerItem("sea_jelly", properties -> new SeaJellyItem(properties.food(new FoodProperties.Builder().nutrition(1).saturationModifier(0.1F).alwaysEdible().build())));
-    public static final Item TREASURE_POUCH = registerItem("treasure_pouch", s -> new LootBoxItem(ZAMLoot.TREASURE_POUCH, s.rarity(Rarity.UNCOMMON)));
 
     public static final Item SWORD_COSMETIC_PATTERN = registerItem("sword_cosmetic_pattern", properties -> new CosmeticPatternItem(CosmeticTarget.SWORD, properties.rarity(Rarity.RARE)));
     public static final Item PICKAXE_COSMETIC_PATTERN = registerItem("pickaxe_cosmetic_pattern", properties -> new CosmeticPatternItem(CosmeticTarget.PICKAXE, properties.rarity(Rarity.RARE)));

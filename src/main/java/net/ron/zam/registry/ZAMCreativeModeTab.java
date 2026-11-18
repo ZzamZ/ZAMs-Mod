@@ -12,7 +12,6 @@ import net.ron.zam.ZAMMod;
 import net.ron.zam.util.cosmetic.CosmeticPatterns;
 
 public final class ZAMCreativeModeTab {
-    private ZAMCreativeModeTab() {}
 
     public static void registerCreativeModeTab() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(output -> {

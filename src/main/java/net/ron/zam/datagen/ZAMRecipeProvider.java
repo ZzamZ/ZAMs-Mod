@@ -7,14 +7,17 @@ import net.minecraft.advancements.Advancement;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
+import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.SmithingTrimRecipeBuilder;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.ron.zam.ZAMMod;
 import net.ron.zam.registry.ZAMBlocks;
@@ -34,6 +37,7 @@ public class ZAMRecipeProvider extends FabricRecipeProvider {
         return new RecipeProvider(recipes, recipeOutput) {
             @Override
             public void buildRecipes() {
+                fairyLanternRecipes(output);
 
                 trimSmithing(ZAMItems.CREST_ARMOR_TRIM_SMITHING_TEMPLATE, ZAMTrimPatterns.CREST, ResourceKey.create(Registries.RECIPE, ZAMMod.id("crest_smithing_trim")));
                 trimSmithing(ZAMItems.DWELLER_ARMOR_TRIM_SMITHING_TEMPLATE, ZAMTrimPatterns.DWELLER, ResourceKey.create(Registries.RECIPE, ZAMMod.id("dweller_smithing_trim")));
@@ -223,6 +227,52 @@ public class ZAMRecipeProvider extends FabricRecipeProvider {
                         .pattern("SS ")
                         .define('S', ZAMTags.UNDERTALE_MUSIC_DISCS)
                         .unlockedBy("has_record_for_undertale_case", has(ZAMTags.UNDERTALE_MUSIC_DISCS)).save(output);
+
+                shaped(RecipeCategory.BUILDING_BLOCKS, ZAMBlocks.SEA_JELLY_BLOCK)
+                        .pattern("JJJ")
+                        .pattern("JJJ")
+                        .pattern("JJJ")
+                        .define('J', ZAMItems.SEA_JELLY)
+                        .unlockedBy("has_sea_jelly", has(ZAMItems.SEA_JELLY))
+                        .save(output);
+
+                shapeless(RecipeCategory.FOOD, ZAMItems.SEA_JELLY, 9)
+                        .requires(ZAMBlocks.SEA_JELLY_BLOCK)
+                        .unlockedBy("has_sea_jelly_block", has(ZAMBlocks.SEA_JELLY_BLOCK))
+                        .save(output);
+            }
+
+            private void fairyLanternRecipes(RecipeOutput output) {
+                fairyLanternRecipe(output, Items.DYE.black(), ZAMBlocks.FAIRY_LANTERNS.black());
+                fairyLanternRecipe(output, Items.DYE.blue(), ZAMBlocks.FAIRY_LANTERNS.blue());
+                fairyLanternRecipe(output, Items.DYE.brown(), ZAMBlocks.FAIRY_LANTERNS.brown());
+                fairyLanternRecipe(output, Items.DYE.cyan(), ZAMBlocks.FAIRY_LANTERNS.cyan());
+                fairyLanternRecipe(output, Items.DYE.gray(), ZAMBlocks.FAIRY_LANTERNS.gray());
+                fairyLanternRecipe(output, Items.DYE.green(), ZAMBlocks.FAIRY_LANTERNS.green());
+                fairyLanternRecipe(output, Items.DYE.lightBlue(), ZAMBlocks.FAIRY_LANTERNS.lightBlue());
+                fairyLanternRecipe(output, Items.DYE.lightGray(), ZAMBlocks.FAIRY_LANTERNS.lightGray());
+                fairyLanternRecipe(output, Items.DYE.lime(), ZAMBlocks.FAIRY_LANTERNS.lime());
+                fairyLanternRecipe(output, Items.DYE.magenta(), ZAMBlocks.FAIRY_LANTERNS.magenta());
+                fairyLanternRecipe(output, Items.DYE.orange(), ZAMBlocks.FAIRY_LANTERNS.orange());
+                fairyLanternRecipe(output, Items.DYE.pink(), ZAMBlocks.FAIRY_LANTERNS.pink());
+                fairyLanternRecipe(output, Items.DYE.purple(), ZAMBlocks.FAIRY_LANTERNS.purple());
+                fairyLanternRecipe(output, Items.DYE.red(), ZAMBlocks.FAIRY_LANTERNS.red());
+                fairyLanternRecipe(output, Items.DYE.white(), ZAMBlocks.FAIRY_LANTERNS.white());
+                fairyLanternRecipe(output, Items.DYE.yellow(), ZAMBlocks.FAIRY_LANTERNS.yellow());
+            }
+
+            private void fairyLanternRecipe(RecipeOutput output, ItemLike dye, ItemLike lantern) {
+                shaped(RecipeCategory.DECORATIONS, lantern, 4)
+                        .group("zam:fairy_lantern")
+                        .pattern("LGL")
+                        .pattern("LDL")
+                        .pattern("LRL")
+                        .define('L', Items.LEAF_LITTER)
+                        .define('G', Items.GLOW_BERRIES)
+                        .define('D', dye)
+                        .define('R', Ingredient.of(Items.RESIN_CLUMP, Items.HONEYCOMB))
+                        .unlockedBy("has_leaf_litter_for_fairy_lantern", has(Items.LEAF_LITTER))
+                        .save(output);
             }
         };
     }
