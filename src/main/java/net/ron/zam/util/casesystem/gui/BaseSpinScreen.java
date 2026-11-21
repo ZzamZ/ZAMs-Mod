@@ -248,7 +248,7 @@ public class BaseSpinScreen extends Screen {
         int screenHeight = this.height;
 
         int x = (screenWidth - 176) / 2;
-        int y = (screenHeight - 70) / 2;
+        int y = (screenHeight - 78) / 2;
 
         gui.text(this.font, this.caseTitle, (screenWidth - this.font.width(this.caseTitle)) / 2,
                 y + 6, 0xFF404040, false);
@@ -280,9 +280,9 @@ public class BaseSpinScreen extends Screen {
         this.extractTransparentBackground(gui);
 
         int x = (this.width - 176) / 2;
-        int y = (this.height - 70) / 2;
+        int y = (this.height - 78) / 2;
 
-        gui.blit(RenderPipelines.GUI_TEXTURED, texture, x, y, 0, 0, 176, 70, 256, 256);
+        gui.blit(RenderPipelines.GUI_TEXTURED, texture, x, y, 0, 0, 176, 78, 256, 256);
     }
 
     @Override

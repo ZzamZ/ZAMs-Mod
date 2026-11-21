@@ -28,6 +28,12 @@ public enum CosmeticTarget {
         return this;
     }
 
+    public Optional<CosmeticTarget> resolveAvailable() {
+        if (this == KNIFE && !FabricLoader.getInstance().isModLoaded("farmersdelight"))
+            return Optional.empty();
+        return Optional.of(this);
+    }
+
     public TagKey<Item> tag() {
         return tag;
     }

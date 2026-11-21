@@ -3,6 +3,7 @@ package net.ron.zam.common.item;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -19,10 +20,11 @@ import net.ron.zam.ZAMMod;
 import net.ron.zam.common.component.AppliedCosmeticComponent;
 import net.ron.zam.common.component.CosmeticPatternComponent;
 import net.ron.zam.registry.ZAMComponents;
-import net.ron.zam.util.tooltip.CosmeticPatternTooltip;
 import net.ron.zam.util.cosmetic.CosmeticPreview;
 import net.ron.zam.util.cosmetic.CosmeticTarget;
+import net.ron.zam.util.tooltip.CosmeticPatternTooltip;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
 
@@ -70,12 +72,17 @@ public class CosmeticPatternItem extends Item {
             return false;
 
         CosmeticPatternComponent definition = pattern.get(ZAMComponents.COSMETIC_PATTERN);
-        CosmeticTarget effectiveTarget = definition == null ? target.resolve(fallbackTarget) : definition.effectiveTarget();
+        List<CosmeticTarget> targets = definition == null ? List.of(target.resolve(fallbackTarget)) : definition.targets();
         Identifier effectiveModel = definition == null ? appliedModel : definition.model();
         int effectiveColor = definition == null ? tooltipColor : definition.tooltipColor();
 
         ItemStack tool = slot.getItem();
-        if (effectiveModel == null || tool.isEmpty() || !tool.is(effectiveTarget.tag()) || tool.has(ZAMComponents.APPLIED_COSMETIC))
+        if (effectiveModel == null || tool.isEmpty() || tool.has(ZAMComponents.APPLIED_COSMETIC))
+            return false;
+
+        CosmeticTarget matchedTarget = targets.stream().filter(candidate -> tool.is(candidate.tag()))
+                .findFirst().orElse(null);
+        if (matchedTarget == null)
             return false;
 
         Identifier skinId = definition == null ? this.builtInRegistryHolder().key().identifier() : definition.skinId();
@@ -83,8 +90,7 @@ public class CosmeticPatternItem extends Item {
         if (originalModel == null)
             return false;
         tool.set(ZAMComponents.APPLIED_COSMETIC, new AppliedCosmeticComponent(skinId, originalModel,
-                Optional.ofNullable(tool.get(DataComponents.EQUIPPABLE)), effectiveColor,
-                Optional.ofNullable(definition)));
+                Optional.ofNullable(tool.get(DataComponents.EQUIPPABLE)), effectiveColor, Optional.ofNullable(definition)));
         tool.set(DataComponents.ITEM_MODEL, effectiveModel);
         Equippable equippable = appliedEquippable;
         if (definition != null) {
@@ -93,15 +99,13 @@ public class CosmeticPatternItem extends Item {
                 equippable = skin.appliedEquippable;
             }
         }
-        if (definition != null && effectiveTarget == CosmeticTarget.HELMET) {
+        if (definition != null && matchedTarget == CosmeticTarget.HELMET) {
             if (definition.equipSound().isPresent()) {
-                Equippable.Builder builder =
-                        Equippable.builder(EquipmentSlot.HEAD).setSwappable(true).setDamageOnHurt(false);
+                Equippable.Builder builder = Equippable.builder(EquipmentSlot.HEAD).setSwappable(true).setDamageOnHurt(false);
                 definition.equipSound().flatMap(BuiltInRegistries.SOUND_EVENT::get).ifPresent(builder::setEquipSound);
                 equippable = builder.build();
             } else if (equippable == null) {
-                equippable =
-                        Equippable.builder(EquipmentSlot.HEAD).setSwappable(true).setDamageOnHurt(false).setEquipSound(
+                equippable = Equippable.builder(EquipmentSlot.HEAD).setSwappable(true).setDamageOnHurt(false).setEquipSound(
                                 SoundEvents.ARMOR_EQUIP_GENERIC).build();
             }
         }
@@ -128,9 +132,10 @@ public class CosmeticPatternItem extends Item {
     public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay display, Consumer<Component> consumer, TooltipFlag flag) {
         super.appendHoverText(stack, context, display, consumer, flag);
         CosmeticPatternComponent definition = stack.get(ZAMComponents.COSMETIC_PATTERN);
-        CosmeticTarget effectiveTarget = definition == null ? target.resolve(fallbackTarget) : definition.effectiveTarget();
         if (definition != null)
             return;
+
+        CosmeticTarget effectiveTarget = target.resolve(fallbackTarget);
         consumer.accept(Component.translatable("tooltip.zam.cosmetic.applies_to").withColor(0xAAAAAA));
         consumer.accept(Component.translatable(effectiveTarget.nameTranslationKey()).withColor(0x0000AA));
         if (collection != null && !collection.isBlank()) {
@@ -143,12 +148,25 @@ public class CosmeticPatternItem extends Item {
     public Optional<TooltipComponent> getTooltipImage(ItemStack stack) {
         CosmeticPatternComponent definition = stack.get(ZAMComponents.COSMETIC_PATTERN);
         if (definition == null)
-
             return Optional.empty();
 
         String displayName = definition.patternName();
         ItemStack preview = CosmeticPreview.displayStack(stack);
-        return Optional.of(new CosmeticPatternTooltip(preview, Component.translatable(definition.effectiveTarget().nameTranslationKey()),
-                        definition.collection(), displayName, definition.tooltipColor()));
+        return Optional.of(new CosmeticPatternTooltip(preview, targetNames(definition),
+                definition.collection(), displayName, definition.tooltipColor()));
+    }
+
+    private static Component targetNames(CosmeticPatternComponent definition) {
+        MutableComponent names = Component.empty();
+        boolean first = true;
+
+        for (CosmeticTarget target : definition.targets()) {
+            if (!first)
+                names.append(", ");
+            names.append(Component.translatable(target.nameTranslationKey()));
+            first = false;
+        }
+
+        return names;
     }
 }

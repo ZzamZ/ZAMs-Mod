@@ -32,6 +32,7 @@ public final class ZAMBlocks {
     private static final List<CompletionBannerBlock> COMPLETION_BANNERS = new ArrayList<>();
 
     public static final CompletionBannerBlock CASTLE_CRASHERS_COMPLETION_BANNER = completionBanner("castle_crashers_completion_banner", "Castle Crashers");
+    public static final CompletionBannerBlock COD_ZOMBIES_COMPLETION_BANNER = completionBanner("cod_zombies_completion_banner", "Call of Duty Zombies");
     public static final CompletionBannerBlock MINECRAFT_COMPLETION_BANNER = completionBanner("minecraft_completion_banner", "Minecraft");
     public static final CompletionBannerBlock SPONGEBOB_COMPLETION_BANNER = completionBanner("spongebob_completion_banner", "SpongeBob SquarePants");
     public static final CompletionBannerBlock STARDEW_VALLEY_COMPLETION_BANNER = completionBanner("stardew_valley_completion_banner", "Stardew Valley");

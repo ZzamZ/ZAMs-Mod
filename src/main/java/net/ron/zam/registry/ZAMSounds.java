@@ -43,6 +43,45 @@ public class ZAMSounds {
     public static final SoundEvent PURPLE_KNIGHT_EQUIP = registerSoundEvent("castle_crashers.purple_knight_equip");
     public static final SoundEvent CASTLE_CRASHERS_COSMETIC_EQUIP = registerSoundEvent("castle_crashers.cosmetic_equip");
 
+    //Call of Duty Zombies
+    public static final SoundEvent COD_ZOMBIES_JUGGERNOG = registerSoundEvent("cod_zombies.juggernog");
+    public static final SoundEvent COD_ZOMBIES_SPEED_COLA = registerSoundEvent("cod_zombies.speed_cola");
+    public static final SoundEvent COD_ZOMBIES_DOUBLE_TAP = registerSoundEvent("cod_zombies.double_tap");
+    public static final SoundEvent COD_ZOMBIES_QUICK_REVIVE = registerSoundEvent("cod_zombies.quick_revive");
+    public static final SoundEvent COD_ZOMBIES_PHD = registerSoundEvent("cod_zombies.phd");
+    public static final SoundEvent COD_ZOMBIES_STAMINUP = registerSoundEvent("cod_zombies.staminup");
+    public static final SoundEvent COD_ZOMBIES_DEADSHOT = registerSoundEvent("cod_zombies.deadshot");
+    public static final SoundEvent COD_ZOMBIES_MULE_KICK = registerSoundEvent("cod_zombies.mule_kick");
+    public static final SoundEvent COD_ZOMBIES_TOMBSTONE = registerSoundEvent("cod_zombies.tombstone");
+    public static final SoundEvent COD_ZOMBIES_WHOS_WHO = registerSoundEvent("cod_zombies.whos_who");
+    public static final SoundEvent COD_ZOMBIES_VULTURE_AID = registerSoundEvent("cod_zombies.vulture_aid");
+    public static final SoundEvent COD_ZOMBIES_WIDOWS_WINE = registerSoundEvent("cod_zombies.widows_wine");
+    public static final SoundEvent COD_ZOMBIES_ELEMENTAL_POP = registerSoundEvent("cod_zombies.elemental_pop");
+    public static final SoundEvent COD_ZOMBIES_DEATH_PERCEPTION = registerSoundEvent("cod_zombies.death_perception");
+    public static final SoundEvent COD_ZOMBIES_MELEE_MACCHIATO = registerSoundEvent("cod_zombies.melee_macchiato");
+    public static final SoundEvent COD_ZOMBIES_WISP_TEA = registerSoundEvent("cod_zombies.wisp_tea");
+    public static final SoundEvent COD_ZOMBIES_SOE_JUGGERNOG = registerSoundEvent("cod_zombies.soe_juggernog");
+    public static final SoundEvent COD_ZOMBIES_SOE_SPEED_COLA = registerSoundEvent("cod_zombies.soe_speed_cola");
+    public static final SoundEvent COD_ZOMBIES_SOE_DOUBLE_TAP = registerSoundEvent("cod_zombies.soe_double_tap");
+    public static final SoundEvent COD_ZOMBIES_SOE_QUICK_REVIVE = registerSoundEvent("cod_zombies.soe_quick_revive");
+    public static final SoundEvent COD_ZOMBIES_SOE_MULE_KICK = registerSoundEvent("cod_zombies.soe_mule_kick");
+    public static final SoundEvent COD_ZOMBIES_PACK_A_PUNCH = registerSoundEvent("cod_zombies.pack_a_punch");
+    public static final SoundEvent COD_ZOMBIES_FIRE_SALE = registerSoundEvent("cod_zombies.fire_sale");
+    public static final SoundEvent COD_ZOMBIES_DAMNED = registerSoundEvent("cod_zombies.damned");
+    public static final SoundEvent COD_ZOMBIES_WHERE_ARE_WE_GOING = registerSoundEvent("cod_zombies.where_are_we_going");
+    public static final SoundEvent COD_ZOMBIES_SNAKESKIN_BOOTS = registerSoundEvent("cod_zombies.snakeskin_boots");
+    public static final SoundEvent COD_ZOMBIES_115 = registerSoundEvent("cod_zombies.115");
+    public static final SoundEvent COD_ZOMBIES_SHEPHERD_OF_FIRE = registerSoundEvent("cod_zombies.shepherd_of_fire");
+    public static final SoundEvent COD_ZOMBIES_HELLS_RETRIEVER_COSMETIC_EQUIP = registerSoundEvent("cod_zombies.hells_retriever_cosmetic_equip");
+    public static final SoundEvent COD_ZOMBIES_ICE_STAFF_COSMETIC_EQUIP = registerSoundEvent("cod_zombies.ice_staff_cosmetic_equip");
+    public static final SoundEvent COD_ZOMBIES_WOLF_BOW_COSMETIC_EQUIP = registerSoundEvent("cod_zombies.wolf_bow_cosmetic_equip");
+    public static final SoundEvent COD_ZOMBIES_WOLF_BOW_SHOOT = registerSoundEvent("cod_zombies.wolf_bow_shoot");
+    public static final SoundEvent COD_ZOMBIES_APOTHICAN_SWORD_COSMETIC_EQUIP = registerSoundEvent("cod_zombies.apothican_sword_cosmetic_equip");
+    public static final SoundEvent COD_ZOMBIES_GOLDEN_SPORK_COSMETIC_EQUIP = registerSoundEvent("cod_zombies.golden_spork_cosmetic_equip");
+    public static final SoundEvent COD_ZOMBIES_MARGWA_EQUIP = registerSoundEvent("cod_zombies.margwa_equip");
+    public static final SoundEvent COD_ZOMBIES_APOTHICAN_EQUIP = registerSoundEvent("cod_zombies.apothican_equip");
+    public static final SoundEvent COD_ZOMBIES_SKULL_EQUIP = registerSoundEvent("cod_zombies.skull_equip");
+    public static final SoundEvent COD_ZOMBIES_COSMETIC_EQUIP = registerSoundEvent("cod_zombies.cosmetic_equip");
 
     //Minecraft
     public static final SoundEvent MINECRAFT_SUBWOOFER_LULLABY = registerSoundEvent("minecraft.subwoofer_lullaby");
@@ -146,8 +185,6 @@ public class ZAMSounds {
     public static final SoundEvent UNDERTALE_EQUIP = registerSoundEvent("undertale.equip");
     public static final SoundEvent UNDERTALE_COSMETIC_EQUIP = registerSoundEvent("undertale.cosmetic_equip");
     public static final SoundEvent UNDERTALE_BOW_SHOOT = registerSoundEvent("undertale.bow_shoot");
-
-    public static final SoundEvent HELLS_RETRIEVER_COSMETIC_EQUIP = registerSoundEvent("hells_retriever_cosmetic_equip");
 
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = ZAMMod.id(name);

@@ -24,6 +24,7 @@ public class ZAMTags {
 
     public static final TagKey<Item> CASES = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "cases"));
     public static final TagKey<Item> CASTLE_CRASHERS_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "castle_crashers_music_discs"));
+    public static final TagKey<Item> COD_ZOMBIES_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "cod_zombies_music_discs"));
     public static final TagKey<Item> MINECRAFT_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "minecraft_music_discs"));
     public static final TagKey<Item> SPONGEBOB_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "spongebob_music_discs"));
     public static final TagKey<Item> STARDEW_VALLEY_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "stardew_valley_music_discs"));

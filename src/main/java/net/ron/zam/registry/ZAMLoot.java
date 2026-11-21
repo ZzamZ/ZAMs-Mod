@@ -93,11 +93,11 @@ public final class ZAMLoot {
         var cases = registries.lookupOrThrow(Registries.ITEM).getOrThrow(ZAMTags.CASES);
 
         table.withPool(LootPool.lootPool()
-                .when(LootItemRandomChanceCondition.randomChance(0.34F))
+                .when(LootItemRandomChanceCondition.randomChance(0.60F))
                 .add(TagEntry.expandTag(cases)));
 
         table.withPool(LootPool.lootPool()
-                .when(LootItemRandomChanceCondition.randomChance(0.20F))
+                .when(LootItemRandomChanceCondition.randomChance(0.25F))
                 .add(LootItem.lootTableItem(ZAMItems.CASE_KEY)));
     }
 

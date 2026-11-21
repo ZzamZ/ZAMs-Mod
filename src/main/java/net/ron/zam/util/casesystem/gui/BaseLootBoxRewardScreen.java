@@ -72,7 +72,7 @@ public class BaseLootBoxRewardScreen extends Screen {
         int screenWidth = this.width;
         int screenHeight = this.height;
         int x = (screenWidth - 176) / 2;
-        int y = (screenHeight - 70) / 2;
+        int y = (screenHeight - 78) / 2;
         int buttonX = x + 38;
         int buttonY = y + 46;
 
@@ -95,7 +95,7 @@ public class BaseLootBoxRewardScreen extends Screen {
         int x = (this.width - 176) / 2;
         int y = (this.height - 70) / 2;
 
-        gg.blit(RenderPipelines.GUI_TEXTURED, texture, x, y, 0, 0, 176, 70, 256, 256);
+        gg.blit(RenderPipelines.GUI_TEXTURED, texture, x, y, 0, 0, 176, 78, 256, 256);
     }
 
     @Override
@@ -105,7 +105,7 @@ public class BaseLootBoxRewardScreen extends Screen {
         int screenWidth = this.width;
         int screenHeight = this.height;
         int x = (screenWidth - 176) / 2;
-        int y = (screenHeight - 70) / 2;
+        int y = (screenHeight - 78) / 2;
 
         TextUtils.drawCenteredVerticallyWrappedString(gg, this.font, this.title.getString(), this.width / 2, y + 14,
                 170, titleColor);

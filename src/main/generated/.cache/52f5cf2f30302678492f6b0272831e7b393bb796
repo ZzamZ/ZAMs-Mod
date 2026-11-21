@@ -23,6 +23,7 @@ fd21468687cdabb667f664570c443a562c93487b data/zam/advancement/recipes/misc/birch
 e7101ecaa8856e1932317e5bf88c2a2ebbec0db2 data/zam/advancement/recipes/misc/case_key.json
 0925d5f1cbea5e5f9d5e34d253db9b7363eb299d data/zam/advancement/recipes/misc/castle_crashers_case.json
 dbc9dbfd53dec5f626cd9d072525d4cd2f6c483c data/zam/advancement/recipes/misc/cherry_record_rack.json
+2cd54cf09fdc3d97e9b41865683398f85df3b972 data/zam/advancement/recipes/misc/cod_zombies_case.json
 01cf5fe14f4b6f7c8af003d8d8921184064cb2e3 data/zam/advancement/recipes/misc/crest_armor_trim_smithing_template.json
 704dffd30e941d7b6f1aa573a9d9fd8674f08c5d data/zam/advancement/recipes/misc/crest_smithing_trim.json
 bd0dfb6cc145777199582bb864ea688c4d5bfadf data/zam/advancement/recipes/misc/crimson_record_rack.json
@@ -53,6 +54,7 @@ c3c2ff38d76b1535f1524ece1ae2dd91b06956a2 data/zam/recipe/brown_fairy_lantern.jso
 42f753f628c278dc2d38c24c83be4b5885cbef7a data/zam/recipe/case_key.json
 135ee82272430555b85f1b44e632b48f34c66d99 data/zam/recipe/castle_crashers_case.json
 c008d054ad1a0d98a5494dce185f1c3a6da35800 data/zam/recipe/cherry_record_rack.json
+611b0f1aff1dd8e60c431169fca5b3a6cf4594c9 data/zam/recipe/cod_zombies_case.json
 498afb39c71acfb1f8acffa1d29103ad07179d18 data/zam/recipe/crest_armor_trim_smithing_template.json
 cbaed5dfc77f8b1908459458a39eb4d17270509c data/zam/recipe/crest_smithing_trim.json
 75fa3630d8a0508b5f5a8d777c6cf540f00ff4b2 data/zam/recipe/crimson_record_rack.json

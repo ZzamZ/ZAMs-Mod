@@ -9,6 +9,7 @@ import net.ron.zam.util.cosmetic.CosmeticPatterns;
 import net.ron.zam.util.cosmetic.CosmeticSounds;
 import net.ron.zam.util.cosmetic.CosmeticTarget;
 
+import java.util.List;
 import java.util.Optional;
 
 public final class ZAMCosmetics {
@@ -21,11 +22,18 @@ public final class ZAMCosmetics {
     public static final Item CASTLE_CRASHERS_BLUE_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_blue_knight_helmet", Item::new);
     public static final Item CASTLE_CRASHERS_PURPLE_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_purple_knight_helmet", Item::new);
 
-    public static final Item HELLS_RETRIEVER = ZAMItems.registerItem("hells_retriever_axe", Item::new);
+    public static final Item COD_ZOMBIES_HELLS_RETRIEVER = ZAMItems.registerItem("cod_zombies_hells_retriever", Item::new);
+    public static final Item COD_ZOMBIES_ICE_STAFF = ZAMItems.registerItem("cod_zombies_ice_staff", Item::new);
+    public static final Item COD_ZOMBIES_WOLF_BOW = ZAMItems.registerItem("cod_zombies_wolf_bow", Item::new);
+    public static final Item COD_ZOMBIES_APOTHICAN_SWORD = ZAMItems.registerItem("cod_zombies_apothican_sword", Item::new);
+    public static final Item COD_ZOMBIES_GOLDEN_SPORK = ZAMItems.registerItem("cod_zombies_golden_spork", Item::new);
+    public static final Item COD_ZOMBIES_MARGWA_MASK = ZAMItems.registerItem("cod_zombies_margwa_mask", Item::new);
+    public static final Item COD_ZOMBIES_APOTHICAN_MASK = ZAMItems.registerItem("cod_zombies_apothican_mask", Item::new);
+    public static final Item COD_ZOMBIES_FLAMING_SKULL = ZAMItems.registerItem("cod_zombies_flaming_skull", Item::new);
 
-    public static final Item MINECRAFT_PIRATE_CUTLASS_SWORD = ZAMItems.registerItem("minecraft_pirate_cutlass_sword", Item::new);
-    public static final Item MINECRAFT_ECHO_OF_THE_VALLEY_BOW = ZAMItems.registerItem("minecraft_echo_of_the_valley_bow", Item::new);
-    public static final Item MINECRAFT_ANCHOR_MACE = ZAMItems.registerItem("minecraft_anchor_mace", Item::new);
+    public static final Item MINECRAFT_PIRATE_CUTLASS = ZAMItems.registerItem("minecraft_pirate_cutlass", Item::new);
+    public static final Item MINECRAFT_ECHO_OF_THE_VALLEY = ZAMItems.registerItem("minecraft_echo_of_the_valley", Item::new);
+    public static final Item MINECRAFT_ANCHOR = ZAMItems.registerItem("minecraft_anchor", Item::new);
     public static final Item MINECRAFT_BEE_HELMET = ZAMItems.registerItem("minecraft_bee_helmet", Item::new);
     public static final Item MINECRAFT_WOLF_HELMET = ZAMItems.registerItem("minecraft_wolf_helmet", Item::new);
 
@@ -57,13 +65,20 @@ public final class ZAMCosmetics {
         register(CASTLE_CRASHERS_BLUE_KNIGHT_HELMET, "Blue Knight Helmet", "Castle Crashers", CosmeticTarget.HELMET, 0x5555FF, CosmeticSounds.apply(ZAMSounds.CASTLE_CRASHERS_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.BLUE_KNIGHT_EQUIP.location()));
         register(CASTLE_CRASHERS_PURPLE_KNIGHT_HELMET, "Purple Knight Helmet", "Castle Crashers", CosmeticTarget.HELMET, 0xAA00AA, CosmeticSounds.apply(ZAMSounds.CASTLE_CRASHERS_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.PURPLE_KNIGHT_EQUIP.location()));
 
-        register(MINECRAFT_PIRATE_CUTLASS_SWORD, "Pirate Cutlass", "Minecraft", CosmeticTarget.SWORD, 0xA3BEC9, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_GENERIC.value().location()));
-        register(MINECRAFT_ANCHOR_MACE, "Anchor", "Minecraft", CosmeticTarget.MACE, 0x647D87, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_GENERIC.value().location()));
-        register(MINECRAFT_ECHO_OF_THE_VALLEY_BOW, "Echo of the Valley", "Minecraft", CosmeticTarget.BOW, 0x5E8746, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_GENERIC.value().location()));
+        register(COD_ZOMBIES_HELLS_RETRIEVER, "Hell's Retriever", "Call of Duty Zombies", CosmeticTarget.AXE, 0x8A0303, CosmeticSounds.apply(ZAMSounds.COD_ZOMBIES_HELLS_RETRIEVER_COSMETIC_EQUIP.location()));
+        register(COD_ZOMBIES_ICE_STAFF, "Ull’s Arrow", "Call of Duty Zombies", CosmeticTarget.SPEAR, 0xB8F3FF, CosmeticSounds.apply(ZAMSounds.COD_ZOMBIES_ICE_STAFF_COSMETIC_EQUIP.location()));
+        register(COD_ZOMBIES_WOLF_BOW, "Kreeholo lu Kreemasaleet", "Call of Duty Zombies", CosmeticTarget.BOW, 0x9BE8FF, CosmeticSounds.bow(ZAMSounds.COD_ZOMBIES_WOLF_BOW_COSMETIC_EQUIP.location(), ZAMSounds.COD_ZOMBIES_WOLF_BOW_SHOOT.location()));
+        register(COD_ZOMBIES_APOTHICAN_SWORD, "Maroth Zorguamat", "Call of Duty Zombies", CosmeticTarget.SWORD, 0x8A0303, CosmeticSounds.apply(ZAMSounds.COD_ZOMBIES_APOTHICAN_SWORD_COSMETIC_EQUIP.location()));
+        register(COD_ZOMBIES_GOLDEN_SPORK, "Golden Spork Knife", "Call of Duty Zombies", CosmeticTarget.KNIFE, CosmeticTarget.SHOVEL, 0xD4AF37, CosmeticSounds.apply(ZAMSounds.COD_ZOMBIES_GOLDEN_SPORK_COSMETIC_EQUIP.location()));
+        register(COD_ZOMBIES_MARGWA_MASK, "Margwa Mask", "Call of Duty Zombies", CosmeticTarget.HELMET, 0x526B38, CosmeticSounds.apply(ZAMSounds.COD_ZOMBIES_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.COD_ZOMBIES_MARGWA_EQUIP.location()));
+        register(COD_ZOMBIES_APOTHICAN_MASK, "Apothican Mask", "Call of Duty Zombies", CosmeticTarget.HELMET, 0x38264A, CosmeticSounds.apply(ZAMSounds.COD_ZOMBIES_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.COD_ZOMBIES_APOTHICAN_EQUIP.location()));
+        register(COD_ZOMBIES_FLAMING_SKULL, "Epic Flaming Skull", "Call of Duty Zombies", CosmeticTarget.HELMET, 0xFF3B0A, CosmeticSounds.apply(ZAMSounds.COD_ZOMBIES_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.COD_ZOMBIES_SKULL_EQUIP.location()));
+
+        register(MINECRAFT_PIRATE_CUTLASS, "Pirate Cutlass", "Minecraft", CosmeticTarget.SWORD, 0xA3BEC9, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_GENERIC.value().location()));
+        register(MINECRAFT_ANCHOR, "Anchor", "Minecraft", CosmeticTarget.MACE, 0x647D87, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_GENERIC.value().location()));
+        register(MINECRAFT_ECHO_OF_THE_VALLEY, "Echo of the Valley", "Minecraft", CosmeticTarget.BOW, 0x5E8746, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_GENERIC.value().location()));
         register(MINECRAFT_BEE_HELMET, "Bee Helmet", "Minecraft", CosmeticTarget.HELMET, 0xF2C94C, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_GENERIC.value().location()).withEquip(ZAMSounds.MINECRAFT_BEE_EQUIP.location()));
         register(MINECRAFT_WOLF_HELMET, "Wolf Helmet", "Minecraft", CosmeticTarget.HELMET, 0xB8B8B8, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_GENERIC.value().location()).withEquip(ZAMSounds.MINECRAFT_WOLF_EQUIP.location()));
-
-        register(HELLS_RETRIEVER, "Hell's Retriever", "Call of Duty Zombies", CosmeticTarget.AXE, 0x8A0303, CosmeticSounds.apply(ZAMSounds.HELLS_RETRIEVER_COSMETIC_EQUIP.location()));
 
         register(SPONGEBOB_GOLDEN_SPATULA, "Golden Spatula", "SpongeBob SquarePants", CosmeticTarget.SHOVEL, 0xFFD700, CosmeticSounds.apply(ZAMSounds.SPONGEBOB_COSMETIC_EQUIP.location()));
         register(SPONGEBOB_JELLYFISHING_NET, "Jellyfishing Net", "SpongeBob SquarePants", CosmeticTarget.SHOVEL, 0x9B6A3C, CosmeticSounds.apply(ZAMSounds.SPONGEBOB_COSMETIC_EQUIP.location()));
@@ -85,13 +100,19 @@ public final class ZAMCosmetics {
     }
 
     private static void register(Item cosmetic, String name, String collection, CosmeticTarget target, int color, CosmeticSounds sounds) {
-        register(cosmetic, name, collection, target, null, color, sounds);
+        register(cosmetic, name, collection, new CosmeticTarget[]{target}, color, sounds);
     }
 
-    private static void register(Item cosmetic, String name, String collection, CosmeticTarget target, CosmeticTarget fallback, int color, CosmeticSounds sounds) {
+    private static void register(Item cosmetic, String name, String collection, CosmeticTarget target, CosmeticTarget secondTarget, int color, CosmeticSounds sounds) {
+        register(cosmetic, name, collection, new CosmeticTarget[]{target, secondTarget}, color, sounds);
+    }
+
+    private static void register(Item cosmetic, String name, String collection, CosmeticTarget[] targets, int color, CosmeticSounds sounds) {
+        CosmeticTarget target = targets[0];
+        List<CosmeticTarget> additionalTargets = List.of(targets).subList(1, targets.length);
         Identifier skinId = BuiltInRegistries.ITEM.getKey(cosmetic);
-        CosmeticPatternComponent definition = new CosmeticPatternComponent(skinId, skinId, name, collection, target, color,
-                sounds.apply(), sounds.equip(), sounds.cast(), sounds.bite(), sounds.reel(), Optional.ofNullable(fallback), sounds.shoot(), sounds.attack());
+        CosmeticPatternComponent definition = new CosmeticPatternComponent(skinId, skinId, name, collection, target, color, sounds.apply(), sounds.equip(), sounds.cast(), sounds.bite(), sounds.reel(),
+                Optional.empty(), sounds.shoot(), sounds.attack(), additionalTargets);
 
         CosmeticPatterns.register(skinId, cosmeticTemplate(target), definition);
     }

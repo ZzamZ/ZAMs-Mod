@@ -28,7 +28,7 @@ public class BaseLootBoxSelectionScreen extends Screen {
 
     private static final Identifier TEXTURE = ZAMMod.id("textures/gui/spin_gui.png");
     private static final int GUI_WIDTH = 176;
-    private static final int GUI_HEIGHT = 70;
+    private static final int GUI_HEIGHT = 78;
     private static final int BUTTON_SIZE = 22;
     private static final int BUTTON_GAP = 8;
     private static final int CLAIM_BUTTON_WIDTH = 100;

@@ -35,6 +35,37 @@ public class ZAMJukeboxSongs {
     public static final ResourceKey<JukeboxSong> CASTLE_CRASHERS_CHAOZ_JAPAN = create("castle_crashers_chaoz_japan");
     public static final ResourceKey<JukeboxSong> CASTLE_CRASHERS_FLOODED_CASTLE = create("castle_crashers_flooded_castle");
 
+    //Call of Duty Zombies
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_JUGGERNOG = create("cod_zombies_juggernog");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SPEED_COLA = create("cod_zombies_speed_cola");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_DOUBLE_TAP = create("cod_zombies_double_tap");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_QUICK_REVIVE = create("cod_zombies_quick_revive");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_PHD = create("cod_zombies_phd");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_STAMINUP = create("cod_zombies_staminup");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_DEADSHOT = create("cod_zombies_deadshot");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_MULE_KICK = create("cod_zombies_mule_kick");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_TOMBSTONE = create("cod_zombies_tombstone");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_WHOS_WHO = create("cod_zombies_whos_who");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_VULTURE_AID = create("cod_zombies_vulture_aid");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_WIDOWS_WINE = create("cod_zombies_widows_wine");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_ELEMENTAL_POP = create("cod_zombies_elemental_pop");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_DEATH_PERCEPTION = create("cod_zombies_death_perception");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_MELEE_MACCHIATO = create("cod_zombies_melee_macchiato");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_WISP_TEA = create("cod_zombies_wisp_tea");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SOE_JUGGERNOG = create("cod_zombies_soe_juggernog");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SOE_SPEED_COLA = create("cod_zombies_soe_speed_cola");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SOE_DOUBLE_TAP = create("cod_zombies_soe_double_tap");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SOE_QUICK_REVIVE = create("cod_zombies_soe_quick_revive");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SOE_MULE_KICK = create("cod_zombies_soe_mule_kick");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_PACK_A_PUNCH = create("cod_zombies_pack_a_punch");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_FIRE_SALE = create("cod_zombies_fire_sale");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_DAMNED = create("cod_zombies_damned");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_WHERE_ARE_WE_GOING = create("cod_zombies_where_are_we_going");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_ALWAYS_RUNNING = create("cod_zombies_always_running");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SNAKESKIN_BOOTS = create("cod_zombies_snakeskin_boots");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_115 = create("cod_zombies_115");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SHEPHERD_OF_FIRE = create("cod_zombies_shepherd_of_fire");
+
     //Minecraft
     public static final ResourceKey<JukeboxSong> MINECRAFT_SUBWOOFER_LULLABY = create("minecraft_subwoofer_lullaby");
     public static final ResourceKey<JukeboxSong> MINECRAFT_HAGGSTROM = create("minecraft_haggstrom");
@@ -148,7 +179,37 @@ public class ZAMJukeboxSongs {
         register(context, CASTLE_CRASHERS_BARRACKS_SONG, ZAMSounds.CASTLE_CRASHERS_BARRACKS_SONG, 139, 1);
         register(context, CASTLE_CRASHERS_CHAOZ_JAPAN, ZAMSounds.CASTLE_CRASHERS_CHAOZ_JAPAN, 91, 1);
         register(context, CASTLE_CRASHERS_FLOODED_CASTLE, ZAMSounds.CASTLE_CRASHERS_FLOODED_CASTLE, 117, 1);
-        
+
+        //Call of Duty Zombies
+        register(context, COD_ZOMBIES_JUGGERNOG, ZAMSounds.COD_ZOMBIES_JUGGERNOG, 29, 2);
+        register(context, COD_ZOMBIES_SPEED_COLA, ZAMSounds.COD_ZOMBIES_SPEED_COLA, 30, 2);
+        register(context, COD_ZOMBIES_DOUBLE_TAP, ZAMSounds.COD_ZOMBIES_DOUBLE_TAP, 35, 2);
+        register(context, COD_ZOMBIES_QUICK_REVIVE, ZAMSounds.COD_ZOMBIES_QUICK_REVIVE, 27, 2);
+        register(context, COD_ZOMBIES_PHD, ZAMSounds.COD_ZOMBIES_PHD, 69, 2);
+        register(context, COD_ZOMBIES_STAMINUP, ZAMSounds.COD_ZOMBIES_STAMINUP, 59, 2);
+        register(context, COD_ZOMBIES_DEADSHOT, ZAMSounds.COD_ZOMBIES_DEADSHOT, 62, 2);
+        register(context, COD_ZOMBIES_MULE_KICK, ZAMSounds.COD_ZOMBIES_MULE_KICK, 60, 2);
+        register(context, COD_ZOMBIES_TOMBSTONE, ZAMSounds.COD_ZOMBIES_TOMBSTONE, 68, 2);
+        register(context, COD_ZOMBIES_WHOS_WHO, ZAMSounds.COD_ZOMBIES_WHOS_WHO, 63, 2);
+        register(context, COD_ZOMBIES_VULTURE_AID, ZAMSounds.COD_ZOMBIES_VULTURE_AID, 68, 2);
+        register(context, COD_ZOMBIES_WIDOWS_WINE, ZAMSounds.COD_ZOMBIES_WIDOWS_WINE, 45, 2);
+        register(context, COD_ZOMBIES_ELEMENTAL_POP, ZAMSounds.COD_ZOMBIES_ELEMENTAL_POP, 85, 2);
+        register(context, COD_ZOMBIES_DEATH_PERCEPTION, ZAMSounds.COD_ZOMBIES_DEATH_PERCEPTION, 89, 2);
+        register(context, COD_ZOMBIES_MELEE_MACCHIATO, ZAMSounds.COD_ZOMBIES_MELEE_MACCHIATO, 107, 2);
+        register(context, COD_ZOMBIES_WISP_TEA, ZAMSounds.COD_ZOMBIES_WISP_TEA, 60, 2);
+        register(context, COD_ZOMBIES_SOE_JUGGERNOG, ZAMSounds.COD_ZOMBIES_SOE_JUGGERNOG, 21, 2);
+        register(context, COD_ZOMBIES_SOE_SPEED_COLA, ZAMSounds.COD_ZOMBIES_SOE_SPEED_COLA, 34, 2);
+        register(context, COD_ZOMBIES_SOE_DOUBLE_TAP, ZAMSounds.COD_ZOMBIES_SOE_DOUBLE_TAP, 51, 2);
+        register(context, COD_ZOMBIES_SOE_QUICK_REVIVE, ZAMSounds.COD_ZOMBIES_SOE_QUICK_REVIVE, 38, 2);
+        register(context, COD_ZOMBIES_SOE_MULE_KICK, ZAMSounds.COD_ZOMBIES_SOE_MULE_KICK, 37, 2);
+        register(context, COD_ZOMBIES_PACK_A_PUNCH, ZAMSounds.COD_ZOMBIES_PACK_A_PUNCH, 132, 2);
+        register(context, COD_ZOMBIES_FIRE_SALE, ZAMSounds.COD_ZOMBIES_FIRE_SALE, 76, 2);
+        register(context, COD_ZOMBIES_DAMNED, ZAMSounds.COD_ZOMBIES_DAMNED, 98, 2);
+        register(context, COD_ZOMBIES_WHERE_ARE_WE_GOING, ZAMSounds.COD_ZOMBIES_WHERE_ARE_WE_GOING, 312, 2);
+        register(context, COD_ZOMBIES_SNAKESKIN_BOOTS, ZAMSounds.COD_ZOMBIES_SNAKESKIN_BOOTS, 181, 2);
+        register(context, COD_ZOMBIES_115, ZAMSounds.COD_ZOMBIES_115, 228, 2);
+        register(context, COD_ZOMBIES_SHEPHERD_OF_FIRE, ZAMSounds.COD_ZOMBIES_SHEPHERD_OF_FIRE, 452, 2);
+
         //Minecraft
         register(context, MINECRAFT_SUBWOOFER_LULLABY, ZAMSounds.MINECRAFT_SUBWOOFER_LULLABY, 209, 5);
         register(context, MINECRAFT_HAGGSTROM, ZAMSounds.MINECRAFT_HAGGSTROM, 191, 2);

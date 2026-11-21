@@ -32,6 +32,7 @@ public class ZAMLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ZAMBlocks.SEA_JELLY_BLOCK);
 
         dropSelf(ZAMBlocks.CASTLE_CRASHERS_COMPLETION_BANNER);
+        dropSelf(ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER);
         dropSelf(ZAMBlocks.MINECRAFT_COMPLETION_BANNER);
         dropSelf(ZAMBlocks.SPONGEBOB_COMPLETION_BANNER);
         dropSelf(ZAMBlocks.STARDEW_VALLEY_COMPLETION_BANNER);

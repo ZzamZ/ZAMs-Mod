@@ -48,6 +48,7 @@ public class ZAMBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ZAMBlocks.FAIRY_LANTERNS.pink().properties().blockIdOrThrow())
 
                 .add(ZAMBlocks.CASTLE_CRASHERS_COMPLETION_BANNER.properties().blockIdOrThrow())
+                .add(ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.MINECRAFT_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.SPONGEBOB_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.STARDEW_VALLEY_COMPLETION_BANNER.properties().blockIdOrThrow())

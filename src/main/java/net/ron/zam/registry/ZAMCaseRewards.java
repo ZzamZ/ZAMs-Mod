@@ -14,6 +14,7 @@ import java.util.List;
 
 public final class ZAMCaseRewards {
     public static final Identifier CASTLE_CRASHERS_CASE = ZAMMod.id("castle_crashers_case");
+    public static final Identifier COD_ZOMBIES_CASE = ZAMMod.id("cod_zombies_case");
     public static final Identifier MINECRAFT_CASE = ZAMMod.id("minecraft_case");
     public static final Identifier SPONGEBOB_CASE = ZAMMod.id("spongebob_case");
     public static final Identifier STARDEW_VALLEY_CASE = ZAMMod.id("stardew_valley_case");
@@ -62,6 +63,59 @@ public final class ZAMCaseRewards {
 
                 () -> new ItemStack(ZAMBlocks.CASTLE_CRASHERS_COMPLETION_BANNER));
 
+        CaseRewards.registerDeferred(COD_ZOMBIES_CASE, () -> List.of(
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_PHD), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_DEADSHOT), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_VULTURE_AID), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_ELEMENTAL_POP), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_DEATH_PERCEPTION), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_MELEE_MACCHIATO), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_WISP_TEA), Rarity.COMMON),
+
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_STAMINUP), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_MULE_KICK), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_TOMBSTONE), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_WHOS_WHO), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COD_ZOMBIES_WIDOWS_WINE), Rarity.UNCOMMON),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.COD_ZOMBIES_JUGGERNOG),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_SOE_JUGGERNOG),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_SNAKESKIN_BOOTS),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_115)), Rarity.RARE),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.COD_ZOMBIES_SPEED_COLA),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_SOE_SPEED_COLA),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_FIRE_SALE),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_PACK_A_PUNCH)), Rarity.RARE),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.COD_ZOMBIES_DOUBLE_TAP),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_SOE_DOUBLE_TAP),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_DAMNED),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_SHEPHERD_OF_FIRE)), Rarity.RARE),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.COD_ZOMBIES_QUICK_REVIVE),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_SOE_QUICK_REVIVE),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_SOE_MULE_KICK),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_WHERE_ARE_WE_GOING)), Rarity.RARE),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.RED_ICON), List.of(
+                                pattern(ZAMCosmetics.COD_ZOMBIES_MARGWA_MASK),
+                                pattern(ZAMCosmetics.COD_ZOMBIES_APOTHICAN_MASK),
+                                pattern(ZAMCosmetics.COD_ZOMBIES_FLAMING_SKULL)), Rarity.EPIC),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.GOLD_ICON), List.of(
+                                pattern(ZAMCosmetics.COD_ZOMBIES_APOTHICAN_SWORD),
+                                pattern(ZAMCosmetics.COD_ZOMBIES_HELLS_RETRIEVER),
+                                pattern(ZAMCosmetics.COD_ZOMBIES_GOLDEN_SPORK),
+                                pattern(ZAMCosmetics.COD_ZOMBIES_ICE_STAFF),
+                                pattern(ZAMCosmetics.COD_ZOMBIES_WOLF_BOW)), Rarity.LEGENDARY)),
+
+                () -> new ItemStack(ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER));
+
         CaseRewards.registerDeferred(MINECRAFT_CASE, () -> List.of(
                 new RarityItem(new ItemStack(ZAMItems.MINECRAFT_SUBWOOFER_LULLABY), Rarity.COMMON),
                 new RarityItem(new ItemStack(ZAMItems.MINECRAFT_HAGGSTROM), Rarity.COMMON),
@@ -80,9 +134,9 @@ public final class ZAMCaseRewards {
                                 pattern(ZAMCosmetics.MINECRAFT_BEE_HELMET)), Rarity.EPIC),
 
                         RarityItem.mystery(new ItemStack(ZAMItems.GOLD_ICON), List.of(
-                                pattern(ZAMCosmetics.MINECRAFT_PIRATE_CUTLASS_SWORD),
-                                pattern(ZAMCosmetics.MINECRAFT_ANCHOR_MACE),
-                                pattern(ZAMCosmetics.MINECRAFT_ECHO_OF_THE_VALLEY_BOW)), Rarity.LEGENDARY)),
+                                pattern(ZAMCosmetics.MINECRAFT_PIRATE_CUTLASS),
+                                pattern(ZAMCosmetics.MINECRAFT_ANCHOR),
+                                pattern(ZAMCosmetics.MINECRAFT_ECHO_OF_THE_VALLEY)), Rarity.LEGENDARY)),
 
                 () -> new ItemStack(ZAMBlocks.MINECRAFT_COMPLETION_BANNER));
 

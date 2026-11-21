@@ -1,6 +1,5 @@
 package net.ron.zam.registry;
 
-import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -69,7 +68,38 @@ public class ZAMItems {
     public static final Item CASTLE_CRASHERS_BARRACKS_SONG = collectionDisc("castle_crashers_barracks_song", "Castle Crashers", ZAMJukeboxSongs.CASTLE_CRASHERS_BARRACKS_SONG, Rarity.UNCOMMON);
     public static final Item CASTLE_CRASHERS_FLOODED_CASTLE = collectionDisc("castle_crashers_flooded_castle", "Castle Crashers", ZAMJukeboxSongs.CASTLE_CRASHERS_FLOODED_CASTLE, Rarity.UNCOMMON);
     public static final Item CASTLE_CRASHERS_CHAOZ_JAPAN = collectionDisc("castle_crashers_chaoz_japan", "Castle Crashers", ZAMJukeboxSongs.CASTLE_CRASHERS_CHAOZ_JAPAN, Rarity.RARE);
-    
+
+    //Call of Duty Zombies (18)
+    public static final Item COD_ZOMBIES_CASE = collectionCase("cod_zombies_case");
+    public static final Item COD_ZOMBIES_JUGGERNOG = collectionDisc("cod_zombies_juggernog", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_SPEED_COLA = collectionDisc("cod_zombies_speed_cola", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_SPEED_COLA, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_DOUBLE_TAP = collectionDisc("cod_zombies_double_tap", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_DOUBLE_TAP, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_QUICK_REVIVE = collectionDisc("cod_zombies_quick_revive", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_QUICK_REVIVE, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_PHD = collectionDisc("cod_zombies_phd", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_PHD, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_STAMINUP = collectionDisc("cod_zombies_staminup", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_STAMINUP, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_DEADSHOT = collectionDisc("cod_zombies_deadshot", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_DEADSHOT, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_MULE_KICK = collectionDisc("cod_zombies_mule_kick", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_MULE_KICK, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_TOMBSTONE = collectionDisc("cod_zombies_tombstone", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_TOMBSTONE, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_WHOS_WHO = collectionDisc("cod_zombies_whos_who", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_WHOS_WHO, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_VULTURE_AID = collectionDisc("cod_zombies_vulture_aid", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_VULTURE_AID, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_WIDOWS_WINE = collectionDisc("cod_zombies_widows_wine", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_WIDOWS_WINE, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_ELEMENTAL_POP = collectionDisc("cod_zombies_elemental_pop", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_ELEMENTAL_POP, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_DEATH_PERCEPTION = collectionDisc("cod_zombies_death_perception", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_DEATH_PERCEPTION, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_MELEE_MACCHIATO = collectionDisc("cod_zombies_melee_macchiato", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_MELEE_MACCHIATO, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_WISP_TEA = collectionDisc("cod_zombies_wisp_tea", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_WISP_TEA, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_SOE_JUGGERNOG = collectionDisc("cod_zombies_soe_juggernog", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_SOE_JUGGERNOG, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_SOE_SPEED_COLA = collectionDisc("cod_zombies_soe_speed_cola", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_SOE_SPEED_COLA, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_SOE_DOUBLE_TAP = collectionDisc("cod_zombies_soe_double_tap", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_SOE_DOUBLE_TAP, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_SOE_QUICK_REVIVE = collectionDisc("cod_zombies_soe_quick_revive", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_SOE_QUICK_REVIVE, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_SOE_MULE_KICK = collectionDisc("cod_zombies_soe_mule_kick", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_SOE_MULE_KICK, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_PACK_A_PUNCH = collectionDisc("cod_zombies_pack_a_punch", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_PACK_A_PUNCH, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_FIRE_SALE = collectionDisc("cod_zombies_fire_sale", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_FIRE_SALE, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_DAMNED = collectionDisc("cod_zombies_damned", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_DAMNED, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_WHERE_ARE_WE_GOING = collectionDisc("cod_zombies_where_are_we_going", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_WHERE_ARE_WE_GOING, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_SNAKESKIN_BOOTS = collectionDisc("cod_zombies_snakeskin_boots", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_SNAKESKIN_BOOTS, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_115 = collectionDisc("cod_zombies_115", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_115, Rarity.UNCOMMON);
+    public static final Item COD_ZOMBIES_SHEPHERD_OF_FIRE = collectionDisc("cod_zombies_shepherd_of_fire", "Call of Duty Zombies", ZAMJukeboxSongs.COD_ZOMBIES_SHEPHERD_OF_FIRE, Rarity.UNCOMMON);
+
     // Minecraft (9)
     public static final Item MINECRAFT_CASE = collectionCase("minecraft_case");
     public static final Item MINECRAFT_SUBWOOFER_LULLABY = collectionDisc("minecraft_subwoofer_lullaby", "Minecraft", ZAMJukeboxSongs.MINECRAFT_SUBWOOFER_LULLABY, Rarity.RARE);

@@ -204,6 +204,12 @@ public class ZAMRecipeProvider extends FabricRecipeProvider {
                         .define('S', ZAMTags.CASTLE_CRASHERS_MUSIC_DISCS)
                         .unlockedBy("has_record_for_castle_crashers_case", has(ZAMTags.CASTLE_CRASHERS_MUSIC_DISCS)).save(output);
 
+                shaped(RecipeCategory.MISC, ZAMItems.COD_ZOMBIES_CASE)
+                        .pattern("SS ")
+                        .pattern("SS ")
+                        .define('S', ZAMTags.COD_ZOMBIES_MUSIC_DISCS)
+                        .unlockedBy("has_record_for_cod_zombies_case", has(ZAMTags.COD_ZOMBIES_MUSIC_DISCS)).save(output);
+
                 shaped(RecipeCategory.MISC, ZAMItems.MINECRAFT_CASE)
                         .pattern("SS ")
                         .pattern("SS ")

@@ -20,6 +20,7 @@ public final class ZAMBlockEntities {
     public static final BlockEntityType<CompletionBannerBlockEntity> COMPLETION_BANNER =
             register("completion_banner", FabricBlockEntityTypeBuilder.create(CompletionBannerBlockEntity::new,
                     ZAMBlocks.CASTLE_CRASHERS_COMPLETION_BANNER,
+                    ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER,
                     ZAMBlocks.MINECRAFT_COMPLETION_BANNER,
                     ZAMBlocks.SPONGEBOB_COMPLETION_BANNER,
                     ZAMBlocks.STARDEW_VALLEY_COMPLETION_BANNER,

@@ -3,62 +3,88 @@ package net.ron.zam.common.component;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import io.netty.buffer.ByteBuf;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.resources.Identifier;
 import net.ron.zam.util.cosmetic.CosmeticTarget;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-public record CosmeticPatternComponent(Identifier skinId, Identifier model, String displayName, String collection, CosmeticTarget target, int tooltipColor, Optional<Identifier> applySound, Optional<Identifier> equipSound, Optional<Identifier> castSound, Optional<Identifier> biteSound, Optional<Identifier> reelSound, Optional<CosmeticTarget> fallbackTarget, Optional<Identifier> shootSound, Optional<Identifier> attackSound) {
+public record CosmeticPatternComponent(Identifier skinId, Identifier model, String displayName, String collection, CosmeticTarget target, int tooltipColor, Optional<Identifier> applySound, Optional<Identifier> equipSound, Optional<Identifier> castSound, Optional<Identifier> biteSound, Optional<Identifier> reelSound, Optional<CosmeticTarget> fallbackTarget, Optional<Identifier> shootSound, Optional<Identifier> attackSound, List<CosmeticTarget> additionalTargets) {
     private static final Codec<CosmeticTarget> TARGET_CODEC = Codec.STRING.comapFlatMap(
             name -> CosmeticTarget.fromSerializedName(name).map(DataResult::success).orElseGet(
                     () -> DataResult.error(() -> "Unknown cosmetic target: " + name)), CosmeticTarget::serializedName);
 
+    private static final StreamCodec<ByteBuf, CosmeticTarget> TARGET_STREAM_CODEC =
+            ByteBufCodecs.STRING_UTF8.map(CosmeticTarget::require, CosmeticTarget::serializedName);
+
+    private static final StreamCodec<ByteBuf, List<CosmeticTarget>> TARGET_LIST_STREAM_CODEC =
+            ByteBufCodecs.collection(ArrayList::new, TARGET_STREAM_CODEC);
+
     public static final Codec<CosmeticPatternComponent> CODEC = RecordCodecBuilder.create(
             instance -> instance.group(Identifier.CODEC.fieldOf("skin").forGetter(CosmeticPatternComponent::skinId),
-                    Identifier.CODEC.fieldOf("model").forGetter(CosmeticPatternComponent::model),
-                    Codec.STRING.fieldOf("name").forGetter(CosmeticPatternComponent::displayName),
-                    Codec.STRING.optionalFieldOf("collection", "").forGetter(CosmeticPatternComponent::collection),
-                    TARGET_CODEC.fieldOf("target").forGetter(CosmeticPatternComponent::target),
-                    Codec.INT.optionalFieldOf("tooltip_color", 0xFFD700).forGetter(CosmeticPatternComponent::tooltipColor),
-                    Identifier.CODEC.optionalFieldOf("apply_sound").forGetter(CosmeticPatternComponent::applySound),
-                    Identifier.CODEC.optionalFieldOf("equip_sound").forGetter(CosmeticPatternComponent::equipSound),
-                    Identifier.CODEC.optionalFieldOf("cast_sound").forGetter(CosmeticPatternComponent::castSound),
-                    Identifier.CODEC.optionalFieldOf("bite_sound").forGetter(CosmeticPatternComponent::biteSound),
-                    Identifier.CODEC.optionalFieldOf("reel_sound").forGetter(CosmeticPatternComponent::reelSound),
-                    TARGET_CODEC.optionalFieldOf("fallback_target").forGetter(CosmeticPatternComponent::fallbackTarget),
-                    Identifier.CODEC.optionalFieldOf("shoot_sound").forGetter(CosmeticPatternComponent::shootSound), Identifier.CODEC.optionalFieldOf("attack_sound").forGetter(CosmeticPatternComponent::attackSound)).apply(instance, CosmeticPatternComponent::new));
+                            Identifier.CODEC.fieldOf("model").forGetter(CosmeticPatternComponent::model),
+                            Codec.STRING.fieldOf("name").forGetter(CosmeticPatternComponent::displayName),
+                            Codec.STRING.optionalFieldOf("collection", "").forGetter(CosmeticPatternComponent::collection),
+                            TARGET_CODEC.fieldOf("target").forGetter(CosmeticPatternComponent::target),
+                            Codec.INT.optionalFieldOf("tooltip_color", 0xFFD700).forGetter(CosmeticPatternComponent::tooltipColor),
+                            Identifier.CODEC.optionalFieldOf("apply_sound").forGetter(CosmeticPatternComponent::applySound),
+                            Identifier.CODEC.optionalFieldOf("equip_sound").forGetter(CosmeticPatternComponent::equipSound),
+                            Identifier.CODEC.optionalFieldOf("cast_sound").forGetter(CosmeticPatternComponent::castSound),
+                            Identifier.CODEC.optionalFieldOf("bite_sound").forGetter(CosmeticPatternComponent::biteSound),
+                            Identifier.CODEC.optionalFieldOf("reel_sound").forGetter(CosmeticPatternComponent::reelSound),
+                            TARGET_CODEC.optionalFieldOf("fallback_target").forGetter(CosmeticPatternComponent::fallbackTarget),
+                            Identifier.CODEC.optionalFieldOf("shoot_sound").forGetter(CosmeticPatternComponent::shootSound),
+                            Identifier.CODEC.optionalFieldOf("attack_sound").forGetter(CosmeticPatternComponent::attackSound),
+                            TARGET_CODEC.listOf().optionalFieldOf("additional_targets", List.of())
+                                    .forGetter(CosmeticPatternComponent::additionalTargets))
+                    .apply(instance, CosmeticPatternComponent::new));
 
     private static final StreamCodec<RegistryFriendlyByteBuf, CosmeticPatternComponent> BASE_STREAM_CODEC =
             StreamCodec.composite(Identifier.STREAM_CODEC, CosmeticPatternComponent::skinId, Identifier.STREAM_CODEC,
                     CosmeticPatternComponent::model, ByteBufCodecs.STRING_UTF8, CosmeticPatternComponent::displayName,
                     ByteBufCodecs.STRING_UTF8, CosmeticPatternComponent::collection,
-                    ByteBufCodecs.STRING_UTF8.map(CosmeticTarget::require, CosmeticTarget::serializedName),
-                    CosmeticPatternComponent::target, ByteBufCodecs.VAR_INT, CosmeticPatternComponent::tooltipColor,
-                    ByteBufCodecs.optional(Identifier.STREAM_CODEC), CosmeticPatternComponent::applySound,
-                    ByteBufCodecs.optional(Identifier.STREAM_CODEC), CosmeticPatternComponent::equipSound,
-                    ByteBufCodecs.optional(Identifier.STREAM_CODEC), CosmeticPatternComponent::castSound,
-                    ByteBufCodecs.optional(Identifier.STREAM_CODEC), CosmeticPatternComponent::biteSound,
-                    ByteBufCodecs.optional(Identifier.STREAM_CODEC), CosmeticPatternComponent::reelSound,
-                    ByteBufCodecs.optional(ByteBufCodecs.STRING_UTF8.map(CosmeticTarget::require, CosmeticTarget::serializedName)),
+                    TARGET_STREAM_CODEC, CosmeticPatternComponent::target, ByteBufCodecs.VAR_INT,
+                    CosmeticPatternComponent::tooltipColor, ByteBufCodecs.optional(Identifier.STREAM_CODEC),
+                    CosmeticPatternComponent::applySound, ByteBufCodecs.optional(Identifier.STREAM_CODEC),
+                    CosmeticPatternComponent::equipSound, ByteBufCodecs.optional(Identifier.STREAM_CODEC),
+                    CosmeticPatternComponent::castSound, ByteBufCodecs.optional(Identifier.STREAM_CODEC),
+                    CosmeticPatternComponent::biteSound, ByteBufCodecs.optional(Identifier.STREAM_CODEC),
+                    CosmeticPatternComponent::reelSound, ByteBufCodecs.optional(
+                            ByteBufCodecs.STRING_UTF8.map(CosmeticTarget::require, CosmeticTarget::serializedName)),
                     CosmeticPatternComponent::fallbackTarget, CosmeticPatternComponent::new);
 
     public static final StreamCodec<RegistryFriendlyByteBuf, CosmeticPatternComponent> STREAM_CODEC =
             StreamCodec.composite(BASE_STREAM_CODEC, value -> value,
                     ByteBufCodecs.optional(Identifier.STREAM_CODEC), CosmeticPatternComponent::shootSound,
                     ByteBufCodecs.optional(Identifier.STREAM_CODEC), CosmeticPatternComponent::attackSound,
-                    (value, shoot, attack) -> new CosmeticPatternComponent(value.skinId(), value.model(), value.displayName(),
-                            value.collection(), value.target(), value.tooltipColor(), value.applySound(),
-                            value.equipSound(), value.castSound(), value.biteSound(), value.reelSound(),
-                            value.fallbackTarget(), shoot, attack));
+                    TARGET_LIST_STREAM_CODEC, CosmeticPatternComponent::additionalTargets,
+                    (value, shoot, attack, additionalTargets) -> new CosmeticPatternComponent(value.skinId(),
+                            value.model(), value.displayName(), value.collection(), value.target(),
+                            value.tooltipColor(), value.applySound(), value.equipSound(), value.castSound(),
+                            value.biteSound(), value.reelSound(), value.fallbackTarget(), shoot, attack,
+                            additionalTargets));
+
+    public CosmeticPatternComponent(Identifier skinId, Identifier model, String displayName, String collection, CosmeticTarget target, int tooltipColor, Optional<Identifier> applySound, Optional<Identifier> equipSound, Optional<Identifier> castSound, Optional<Identifier> biteSound, Optional<Identifier> reelSound, Optional<CosmeticTarget> fallbackTarget, Optional<Identifier> shootSound, Optional<Identifier> attackSound) {
+        this(skinId, model, displayName, collection, target, tooltipColor, applySound, equipSound, castSound,
+                biteSound, reelSound, fallbackTarget, shootSound, attackSound, List.of());
+    }
 
     public CosmeticPatternComponent(Identifier skinId, Identifier model, String displayName, String collection, CosmeticTarget target, int tooltipColor, Optional<Identifier> applySound, Optional<Identifier> equipSound, Optional<Identifier> castSound, Optional<Identifier> biteSound, Optional<Identifier> reelSound, Optional<CosmeticTarget> fallbackTarget) {
-        this(skinId, model, displayName, collection, target, tooltipColor, applySound, equipSound,
-                castSound, biteSound, reelSound, fallbackTarget, Optional.empty(), Optional.empty());
+        this(skinId, model, displayName, collection, target, tooltipColor, applySound, equipSound, castSound,
+                biteSound, reelSound, fallbackTarget, Optional.empty(), Optional.empty(), List.of());
     }
+
+    public CosmeticPatternComponent(Identifier skinId, Identifier model, String displayName, String collection, CosmeticTarget target, int tooltipColor, Optional<Identifier> applySound, Optional<Identifier> equipSound, Optional<Identifier> castSound, Optional<Identifier> biteSound, Optional<Identifier> reelSound) {
+        this(skinId, model, displayName, collection, target, tooltipColor, applySound, equipSound, castSound,
+                biteSound, reelSound, Optional.empty(), Optional.empty(), Optional.empty(), List.of());
+    }
+
     public CosmeticPatternComponent {
         Objects.requireNonNull(skinId, "skinId");
         Objects.requireNonNull(model, "model");
@@ -73,17 +99,14 @@ public record CosmeticPatternComponent(Identifier skinId, Identifier model, Stri
         Objects.requireNonNull(reelSound, "reelSound");
         Objects.requireNonNull(shootSound, "shootSound");
         Objects.requireNonNull(attackSound, "attackSound");
+        additionalTargets = List.copyOf(Objects.requireNonNull(additionalTargets, "additionalTargets"));
         if (displayName.isBlank())
             throw new IllegalArgumentException("Cosmetic name cannot be blank");
     }
 
-    public CosmeticPatternComponent(Identifier skinId, Identifier model, String displayName, String collection, CosmeticTarget target, int tooltipColor, Optional<Identifier> applySound, Optional<Identifier> equipSound, Optional<Identifier> castSound, Optional<Identifier> biteSound, Optional<Identifier> reelSound) {
-        this(skinId, model, displayName, collection, target, tooltipColor, applySound, equipSound,
-                castSound, biteSound, reelSound, Optional.empty());
-    }
-
-    public CosmeticTarget effectiveTarget() {
-        return target.resolve(fallbackTarget);
+    public List<CosmeticTarget> targets() {
+        return java.util.stream.Stream.concat(java.util.stream.Stream.of(target), additionalTargets.stream())
+                .map(CosmeticTarget::resolveAvailable).flatMap(Optional::stream).distinct().toList();
     }
 
     public String patternName() {
@@ -92,4 +115,3 @@ public record CosmeticPatternComponent(Identifier skinId, Identifier model, Stri
                 displayName.substring(prefix.length()) : displayName;
     }
 }
-
