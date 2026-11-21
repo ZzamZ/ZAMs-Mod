@@ -9,7 +9,6 @@ import net.minecraft.references.ItemIds;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Items;
 import net.ron.zam.registry.ZAMItems;
 import net.ron.zam.registry.ZAMTags;
 
@@ -84,7 +83,7 @@ public class ZAMItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_PACK_A_PUNCH))
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_FIRE_SALE))
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_DAMNED))
-                .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_WHERE_ARE_WE_GOING))
+                .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_RUSTY_CAGE))
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_SNAKESKIN_BOOTS))
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_115))
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_SHEPHERD_OF_FIRE));

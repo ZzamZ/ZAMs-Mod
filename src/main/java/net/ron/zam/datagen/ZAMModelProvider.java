@@ -96,7 +96,7 @@ public class ZAMModelProvider  extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ZAMItems.COD_ZOMBIES_PACK_A_PUNCH, ModelTemplates.MUSIC_DISC);
         itemModelGenerators.generateFlatItem(ZAMItems.COD_ZOMBIES_FIRE_SALE, ModelTemplates.MUSIC_DISC);
         itemModelGenerators.generateFlatItem(ZAMItems.COD_ZOMBIES_DAMNED, ModelTemplates.MUSIC_DISC);
-        itemModelGenerators.generateFlatItem(ZAMItems.COD_ZOMBIES_WHERE_ARE_WE_GOING, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.COD_ZOMBIES_RUSTY_CAGE, ModelTemplates.MUSIC_DISC);
         itemModelGenerators.generateFlatItem(ZAMItems.COD_ZOMBIES_SNAKESKIN_BOOTS, ModelTemplates.MUSIC_DISC);
         itemModelGenerators.generateFlatItem(ZAMItems.COD_ZOMBIES_115, ModelTemplates.MUSIC_DISC);
         itemModelGenerators.generateFlatItem(ZAMItems.COD_ZOMBIES_SHEPHERD_OF_FIRE, ModelTemplates.MUSIC_DISC);

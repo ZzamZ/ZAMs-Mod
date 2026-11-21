@@ -60,8 +60,7 @@ public class ZAMJukeboxSongs {
     public static final ResourceKey<JukeboxSong> COD_ZOMBIES_PACK_A_PUNCH = create("cod_zombies_pack_a_punch");
     public static final ResourceKey<JukeboxSong> COD_ZOMBIES_FIRE_SALE = create("cod_zombies_fire_sale");
     public static final ResourceKey<JukeboxSong> COD_ZOMBIES_DAMNED = create("cod_zombies_damned");
-    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_WHERE_ARE_WE_GOING = create("cod_zombies_where_are_we_going");
-    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_ALWAYS_RUNNING = create("cod_zombies_always_running");
+    public static final ResourceKey<JukeboxSong> COD_ZOMBIES_RUSTY_CAGE = create("cod_zombies_rusty_cage");
     public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SNAKESKIN_BOOTS = create("cod_zombies_snakeskin_boots");
     public static final ResourceKey<JukeboxSong> COD_ZOMBIES_115 = create("cod_zombies_115");
     public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SHEPHERD_OF_FIRE = create("cod_zombies_shepherd_of_fire");
@@ -205,7 +204,7 @@ public class ZAMJukeboxSongs {
         register(context, COD_ZOMBIES_PACK_A_PUNCH, ZAMSounds.COD_ZOMBIES_PACK_A_PUNCH, 132, 2);
         register(context, COD_ZOMBIES_FIRE_SALE, ZAMSounds.COD_ZOMBIES_FIRE_SALE, 76, 2);
         register(context, COD_ZOMBIES_DAMNED, ZAMSounds.COD_ZOMBIES_DAMNED, 98, 2);
-        register(context, COD_ZOMBIES_WHERE_ARE_WE_GOING, ZAMSounds.COD_ZOMBIES_WHERE_ARE_WE_GOING, 312, 2);
+        register(context, COD_ZOMBIES_RUSTY_CAGE, ZAMSounds.COD_ZOMBIES_RUSTY_CAGE, 174, 2);
         register(context, COD_ZOMBIES_SNAKESKIN_BOOTS, ZAMSounds.COD_ZOMBIES_SNAKESKIN_BOOTS, 181, 2);
         register(context, COD_ZOMBIES_115, ZAMSounds.COD_ZOMBIES_115, 228, 2);
         register(context, COD_ZOMBIES_SHEPHERD_OF_FIRE, ZAMSounds.COD_ZOMBIES_SHEPHERD_OF_FIRE, 452, 2);

@@ -58,7 +58,7 @@
   "cod_zombies.snakeskin_boots": {"sounds": [{"name": "zam:cod_zombies/snakeskin_boots", "stream": true}]},
   "cod_zombies.115": {"sounds": [{"name": "zam:cod_zombies/115", "stream": true}]},
   "cod_zombies.shepherd_of_fire": {"sounds": [{"name": "zam:cod_zombies/shepherd_of_fire", "stream": true}]},
-  "cod_zombies.where_are_we_going": {"sounds": [{"name": "zam:cod_zombies/where_are_we_going", "stream": true}]},
+  "cod_zombies.rusty_cage": {"sounds": [{"name": "zam:cod_zombies/rusty_cage", "stream": true}]},
   "cod_zombies.hells_retriever_cosmetic_equip": {"subtitle": "Cosmetic equipped", "category": "player", "sounds": [{"name": "zam:cod_zombies/hells_retriever_cosmetic_equip", "volume": 1.0, "pitch": 1.0}]},
   "cod_zombies.wolf_bow_cosmetic_equip": {"subtitle": "Cosmetic equipped", "category": "player", "sounds": [{"name": "zam:cod_zombies/wolf_bow_cosmetic_equip", "volume": 1.0, "pitch": 1.0}]},
   "cod_zombies.wolf_bow_shoot": {"subtitle": "Arrow fired", "sounds": ["zam:cod_zombies/wolf_bow_shoot_0", "zam:cod_zombies/wolf_bow_shoot_1", "zam:cod_zombies/wolf_bow_shoot_2"]},

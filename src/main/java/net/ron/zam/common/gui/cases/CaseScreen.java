@@ -81,8 +81,7 @@ public class CaseScreen extends AbstractContainerScreen<CaseMenu> {
     @Override
     public void extractBackground(GuiGraphicsExtractor gfx, int mouseX, int mouseY, float partialTicks) {
         extractTransparentBackground(gfx);
-        gfx.blit(RenderPipelines.GUI_TEXTURED, caseTexture, leftPos, topPos, 0, 0, imageWidth,
-                banner.isEmpty() ? 184 : panelY(), 256, 256);
+        gfx.blit(RenderPipelines.GUI_TEXTURED, caseTexture, leftPos, topPos, 0, 0, imageWidth, banner.isEmpty() ? 184 : panelY(), 256, 256);
         for (int index = 0; index < menu.getLootItems().size(); index++) {
             var slot = menu.slots.get(index);
             gfx.fill(leftPos + slot.x, topPos + slot.y, leftPos + slot.x + 16, topPos + slot.y + 16,

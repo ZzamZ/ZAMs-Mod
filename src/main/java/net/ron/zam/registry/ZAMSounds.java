@@ -68,7 +68,7 @@ public class ZAMSounds {
     public static final SoundEvent COD_ZOMBIES_PACK_A_PUNCH = registerSoundEvent("cod_zombies.pack_a_punch");
     public static final SoundEvent COD_ZOMBIES_FIRE_SALE = registerSoundEvent("cod_zombies.fire_sale");
     public static final SoundEvent COD_ZOMBIES_DAMNED = registerSoundEvent("cod_zombies.damned");
-    public static final SoundEvent COD_ZOMBIES_WHERE_ARE_WE_GOING = registerSoundEvent("cod_zombies.where_are_we_going");
+    public static final SoundEvent COD_ZOMBIES_RUSTY_CAGE = registerSoundEvent("cod_zombies.rusty_cage");
     public static final SoundEvent COD_ZOMBIES_SNAKESKIN_BOOTS = registerSoundEvent("cod_zombies.snakeskin_boots");
     public static final SoundEvent COD_ZOMBIES_115 = registerSoundEvent("cod_zombies.115");
     public static final SoundEvent COD_ZOMBIES_SHEPHERD_OF_FIRE = registerSoundEvent("cod_zombies.shepherd_of_fire");

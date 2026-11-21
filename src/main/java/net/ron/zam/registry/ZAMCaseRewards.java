@@ -100,7 +100,7 @@ public final class ZAMCaseRewards {
                                 new ItemStack(ZAMItems.COD_ZOMBIES_QUICK_REVIVE),
                                 new ItemStack(ZAMItems.COD_ZOMBIES_SOE_QUICK_REVIVE),
                                 new ItemStack(ZAMItems.COD_ZOMBIES_SOE_MULE_KICK),
-                                new ItemStack(ZAMItems.COD_ZOMBIES_WHERE_ARE_WE_GOING)), Rarity.RARE),
+                                new ItemStack(ZAMItems.COD_ZOMBIES_RUSTY_CAGE)), Rarity.RARE),
 
                         RarityItem.mystery(new ItemStack(ZAMItems.RED_ICON), List.of(
                                 pattern(ZAMCosmetics.COD_ZOMBIES_MARGWA_MASK),
