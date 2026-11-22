@@ -154,6 +154,7 @@ public class CaseScreen extends AbstractContainerScreen<CaseMenu> {
 
         this.openButton = Button.builder(Component.literal("Open Case"), button -> {
             releaseOpenFocus = true;
+            assert minecraft.player != null;
             if (menu.hasRequiredItems(minecraft.player)) {
                 ClientPlayNetworking.send(new ConsumeLootBoxItemsPacket());
             } else {
@@ -317,11 +318,8 @@ public class CaseScreen extends AbstractContainerScreen<CaseMenu> {
         if (!lines.isEmpty())
             return lines;
 
-        TooltipFlag flag =
-                this.minecraft.options.advancedItemTooltips ? TooltipFlag.Default.ADVANCED : TooltipFlag.Default.NORMAL;
-
-        Item.TooltipContext ctx =
-                this.minecraft.level != null ? Item.TooltipContext.of(this.minecraft.level) : Item.TooltipContext.EMPTY;
+        TooltipFlag flag = this.minecraft.options.advancedItemTooltips ? TooltipFlag.Default.ADVANCED : TooltipFlag.Default.NORMAL;
+        Item.TooltipContext ctx = this.minecraft.level != null ? Item.TooltipContext.of(this.minecraft.level) : Item.TooltipContext.EMPTY;
 
         return stack.getTooltipLines(ctx, this.minecraft.player, flag);
     }

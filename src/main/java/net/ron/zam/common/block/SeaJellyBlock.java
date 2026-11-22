@@ -31,7 +31,7 @@ public class SeaJellyBlock extends Block {
             return super.useItemOn(stack, state, level, pos, player, hand, hit);
         }
 
-        if (level instanceof ServerLevel serverLevel) {
+        if (level instanceof ServerLevel) {
 
             popResource(level, pos, new ItemStack(ZAMItems.SEA_JELLY));
 

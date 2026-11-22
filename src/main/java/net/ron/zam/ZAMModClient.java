@@ -6,10 +6,7 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.ClientTooltipComponentCallback;
 import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.client.model.object.boat.BoatModel;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
-import net.minecraft.client.renderer.entity.BoatRenderer;
-import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.item.ItemStack;
@@ -25,7 +22,7 @@ import net.ron.zam.common.packet.CaseRollResultPacket;
 import net.ron.zam.registry.ZAMBlockEntities;
 import net.ron.zam.registry.ZAMMenuTypes;
 import net.ron.zam.registry.ZAMSounds;
-import net.ron.zam.util.casesystem.gui.BaseSpinScreen;
+import net.ron.zam.common.gui.cases.CaseSpinScreen;
 import net.ron.zam.util.musicbox.SoundTracker;
 import net.ron.zam.util.tooltip.*;
 
@@ -80,7 +77,7 @@ public class ZAMModClient implements ClientModInitializer {
                     ZAMSounds.CASE_SPIN, SoundSource.UI, 3.0F, 1.0F, false);
 
             context.client().gui.setScreen(
-                    new BaseSpinScreen(menu.getLootItems(), title, entry, slotIndex));
+                    new CaseSpinScreen(menu.getLootItems(), title, entry, slotIndex));
         });
     }
 }

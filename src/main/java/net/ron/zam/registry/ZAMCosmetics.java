@@ -31,6 +31,20 @@ public final class ZAMCosmetics {
     public static final Item COD_ZOMBIES_APOTHICAN_MASK = ZAMItems.registerItem("cod_zombies_apothican_mask", Item::new);
     public static final Item COD_ZOMBIES_FLAMING_SKULL = ZAMItems.registerItem("cod_zombies_flaming_skull", Item::new);
 
+    public static final Item COUNTER_STRIKE_NIGHTWISH = ZAMItems.registerItem("counter_strike_nightwish", Item::new);
+    public static final Item COUNTER_STRIKE_DOPPLER_KNIFE = ZAMItems.registerItem("counter_strike_doppler_knife", Item::new);
+    public static final Item COUNTER_STRIKE_GLITCHPOP_DAGGER = ZAMItems.registerItem("counter_strike_glitchpop_dagger", Item::new);
+    public static final Item COUNTER_STRIKE_TACTICAL_HEADGEAR = ZAMItems.registerItem("counter_strike_tactical_headgear", Item::new);
+    public static final Item COUNTER_STRIKE_DUM_NOTE = ZAMItems.registerItem("counter_strike_dum_note", Item::new);
+
+    public static final Item DRAGON_BALL_POWER_POLL = ZAMItems.registerItem("dragon_ball_power_poll", Item::new);
+    public static final Item DRAGON_BALL_SICKLE_OF_SORROW = ZAMItems.registerItem("dragon_ball_sickle_of_sorrow", Item::new);
+    public static final Item DRAGON_BALL_SUPER_SAIYAN_HAIR = ZAMItems.registerItem("dragon_ball_super_saiyan_hair", Item::new);
+
+    public static final Item HXH_GONS_FISHING_ROD = ZAMItems.registerItem("hxh_gons_fishing_rod", Item::new);
+    public static final Item HXH_CRAZY_SLOTS_SCYTHE = ZAMItems.registerItem("hxh_crazy_slots_scythe", Item::new);
+    public static final Item HXH_GONS_HAIR = ZAMItems.registerItem("hxh_gons_hair", Item::new);
+
     public static final Item MINECRAFT_PIRATE_CUTLASS = ZAMItems.registerItem("minecraft_pirate_cutlass", Item::new);
     public static final Item MINECRAFT_ECHO_OF_THE_VALLEY = ZAMItems.registerItem("minecraft_echo_of_the_valley", Item::new);
     public static final Item MINECRAFT_ANCHOR = ZAMItems.registerItem("minecraft_anchor", Item::new);
@@ -73,6 +87,20 @@ public final class ZAMCosmetics {
         register(COD_ZOMBIES_MARGWA_MASK, "Margwa Mask", "Call of Duty Zombies", CosmeticTarget.HELMET, 0x526B38, CosmeticSounds.apply(ZAMSounds.COD_ZOMBIES_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.COD_ZOMBIES_MARGWA_EQUIP.location()));
         register(COD_ZOMBIES_APOTHICAN_MASK, "Apothican Mask", "Call of Duty Zombies", CosmeticTarget.HELMET, 0x38264A, CosmeticSounds.apply(ZAMSounds.COD_ZOMBIES_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.COD_ZOMBIES_APOTHICAN_EQUIP.location()));
         register(COD_ZOMBIES_FLAMING_SKULL, "Epic Flaming Skull", "Call of Duty Zombies", CosmeticTarget.HELMET, 0xFF3B0A, CosmeticSounds.apply(ZAMSounds.COD_ZOMBIES_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.COD_ZOMBIES_SKULL_EQUIP.location()));
+
+        register(COUNTER_STRIKE_NIGHTWISH, "Nightwish", "Counter Strike", CosmeticTarget.AXE, 0xE84B9B, CosmeticSounds.apply(ZAMSounds.COUNTER_STRIKE_NIGHTWISH_EQUIP.location()));
+        register(COUNTER_STRIKE_DOPPLER_KNIFE, "M9 Bayonet Doppler Sapphire", "Counter Strike", CosmeticTarget.KNIFE, CosmeticTarget.SWORD, 0x6633CC, CosmeticSounds.apply(ZAMSounds.COUNTER_STRIKE_DOPPLER_EQUIP.location()));
+        register(COUNTER_STRIKE_GLITCHPOP_DAGGER, "Glitchpop Dagger", "Counter Strike", CosmeticTarget.KNIFE, CosmeticTarget.SWORD, 0x38E6FF, CosmeticSounds.apply(ZAMSounds.COUNTER_STRIKE_GLITCHPOP_EQUIP.location()));
+        register(COUNTER_STRIKE_DUM_NOTE, "Sticky Note", "Counter Strike", CosmeticTarget.HELMET, 0xB89A62, CosmeticSounds.apply(ZAMSounds.COUNTER_STRIKE_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.COUNTER_STRIKE_SUS_EQUIP.location()));
+        register(COUNTER_STRIKE_TACTICAL_HEADGEAR, "\"Tactical\" Headgear", "Counter Strike", CosmeticTarget.HELMET, 0xB89A62, CosmeticSounds.apply(ZAMSounds.COUNTER_STRIKE_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.COUNTER_STRIKE_TACTICAL_EQUIP.location()));
+
+        register(DRAGON_BALL_POWER_POLL, "Power Poll", "Dragon Ball", CosmeticTarget.SPEAR, 0xCC2222, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()));
+        register(DRAGON_BALL_SICKLE_OF_SORROW, "Sickle of Sorrow", "Dragon Ball", CosmeticTarget.HOE, 0xE040FB, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()));
+        register(DRAGON_BALL_SUPER_SAIYAN_HAIR, "Super Saiyan Hair", "Dragon Ball", CosmeticTarget.HELMET, 0xFFD700, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.DRAGON_BALL_EQUIP.location()));
+
+        register(HXH_GONS_FISHING_ROD, "Gon's Fishing Rod", "Hunter X Hunter", CosmeticTarget.FISHING_ROD, 0x4A9B45, CosmeticSounds.apply(ZAMSounds.HXH_COSMETIC_EQUIP.location()));
+        register(HXH_CRAZY_SLOTS_SCYTHE, "Crazy Slots Scythe", "Hunter X Hunter", CosmeticTarget.HOE, 0xC0C0C0, CosmeticSounds.apply(ZAMSounds.HXH_COSMETIC_EQUIP.location()));
+        register(HXH_GONS_HAIR, "Gon's Hair", "Hunter X Hunter", CosmeticTarget.HELMET, 0x173D24, CosmeticSounds.apply(ZAMSounds.HXH_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.HXH_EQUIP.location()));
 
         register(MINECRAFT_PIRATE_CUTLASS, "Pirate Cutlass", "Minecraft", CosmeticTarget.SWORD, 0xA3BEC9, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_GENERIC.value().location()));
         register(MINECRAFT_ANCHOR, "Anchor", "Minecraft", CosmeticTarget.MACE, 0x647D87, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_GENERIC.value().location()));

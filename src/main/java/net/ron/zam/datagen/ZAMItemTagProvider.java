@@ -7,8 +7,11 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.references.ItemIds;
 import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.ron.zam.ZAMMod;
 import net.ron.zam.registry.ZAMItems;
 import net.ron.zam.registry.ZAMTags;
 
@@ -18,6 +21,8 @@ public class ZAMItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
     public ZAMItemTagProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registryLookupFuture) {
         super(output, registryLookupFuture);
     }
+
+    private static final ResourceKey<Item> SEA_JELLY_ITEM_KEY = ResourceKey.create(Registries.ITEM, ZAMMod.id("sea_jelly_block"));
 
     @Override
     protected void addTags(HolderLookup.Provider registries) {
@@ -87,6 +92,38 @@ public class ZAMItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_SNAKESKIN_BOOTS))
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_115))
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_SHEPHERD_OF_FIRE));
+
+        tag(ZAMTags.COUNTER_STRIKE_MUSIC_DISCS)
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_DASHSTAR))
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_CARAMEL_DANCING))
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_EZ4ENCE))
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_FLASHBANG_DANCE))
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_ULTIMATE))
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_CRAB_RAVE))
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_GOLD_STEPS))
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_DIE_FOR_YOU))
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_GO_THEME))
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_2_THEME));
+
+        tag(ZAMTags.DRAGON_BALL_MUSIC_DISCS)
+                .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_GT_RECAP))
+                .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_THE_DRINK))
+                .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_ULTIMATE_BATTLE))
+                .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_ULTRA_INSTINCT))
+                .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_GATEBREAKER))
+                .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_DAN_DAN))
+                .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_CHA_LA))
+                .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_BROLY_VS_GOGETA));
+
+        tag(ZAMTags.HXH_MUSIC_DISCS)
+                .add(ZAMItems.getRK(ZAMItems.HXH_HUNTING_FOR_YOUR_DREAM))
+                .add(ZAMItems.getRK(ZAMItems.HXH_ALL_I_NEED_IS_MONEY))
+                .add(ZAMItems.getRK(ZAMItems.HXH_HYORI_ITTAI))
+                .add(ZAMItems.getRK(ZAMItems.HXH_HISOKA_THEME))
+                .add(ZAMItems.getRK(ZAMItems.HXH_FROM_WHALE_ISLAND))
+                .add(ZAMItems.getRK(ZAMItems.HXH_BOYS_BE_COURAGEOUS))
+                .add(ZAMItems.getRK(ZAMItems.HXH_WORLD_OF_ADVENTURES))
+                .add(ZAMItems.getRK(ZAMItems.HXH_DEPARTURE));
 
         tag(ZAMTags.MINECRAFT_MUSIC_DISCS)
                 .add(ZAMItems.getRK(ZAMItems.MINECRAFT_MINECRAFT))
@@ -181,14 +218,26 @@ public class ZAMItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
         tag(ZAMTags.CASES)
                 .add(ZAMItems.getRK(ZAMItems.CASTLE_CRASHERS_CASE))
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_CASE))
+                .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_CASE))
+                .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_CASE))
+                .add(ZAMItems.getRK(ZAMItems.HXH_CASE))
                 .add(ZAMItems.getRK(ZAMItems.MINECRAFT_CASE))
                 .add(ZAMItems.getRK(ZAMItems.SPONGEBOB_CASE))
                 .add(ZAMItems.getRK(ZAMItems.STARDEW_VALLEY_CASE))
                 .add(ZAMItems.getRK(ZAMItems.UNDERTALE_CASE));
 
+        tag(ItemTags.SULFUR_CUBE_SWALLOWABLE)
+                .add(SEA_JELLY_ITEM_KEY);
+
+        tag(ItemTags.SULFUR_CUBE_ARCHETYPE_FAST_FLAT)
+                .add(SEA_JELLY_ITEM_KEY);
+
         tag(ConventionalItemTags.MUSIC_DISCS)
                 .addTag(ZAMTags.CASTLE_CRASHERS_MUSIC_DISCS)
                 .addTag(ZAMTags.COD_ZOMBIES_MUSIC_DISCS)
+                .addTag(ZAMTags.COUNTER_STRIKE_MUSIC_DISCS)
+                .addTag(ZAMTags.DRAGON_BALL_MUSIC_DISCS)
+                .addTag(ZAMTags.HXH_MUSIC_DISCS)
                 .addTag(ZAMTags.MINECRAFT_MUSIC_DISCS)
                 .addTag(ZAMTags.SPONGEBOB_MUSIC_DISCS)
                 .addTag(ZAMTags.STARDEW_VALLEY_MUSIC_DISCS)

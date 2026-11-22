@@ -28,7 +28,7 @@ public class RecordRackBlockEntityRenderer implements BlockEntityRenderer<Record
     private final ItemModelResolver itemModelResolver;
 
     private static final double[] PEG_Z_OFFSETS = {
-                    2.0 / 16.0, 4.0 / 16.0, 6.0 / 16.0, 8.0 / 16.0, 10.0 / 16.0, 12.0 / 16.0, 14.0 / 16.0
+            2.0 / 16.0, 4.0 / 16.0, 6.0 / 16.0, 8.0 / 16.0, 10.0 / 16.0, 12.0 / 16.0, 14.0 / 16.0
     };
 
     public RecordRackBlockEntityRenderer(BlockEntityRendererProvider.Context context) {
@@ -98,8 +98,12 @@ public class RecordRackBlockEntityRenderer implements BlockEntityRenderer<Record
             if (stack.isEmpty())
                 continue;
 
+            int pegIndex = state.facing.getAxis() == Direction.Axis.Z
+                    ? RecordRackBlockEntity.SIZE - 1 - slot
+                    : slot;
+
             poseStack.pushPose();
-            poseStack.translate(0.5, 0.2, PEG_Z_OFFSETS[slot]);
+            poseStack.translate(0.5, 0.2, PEG_Z_OFFSETS[pegIndex]);
             poseStack.scale(0.6F, 0.6F, 1.0F);
             state.itemStates[slot].submit(poseStack, collector, light, OverlayTexture.NO_OVERLAY, 0);
             poseStack.popPose();

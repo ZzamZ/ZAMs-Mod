@@ -106,9 +106,11 @@ public class CaseMenu extends AbstractContainerMenu {
     @Override
     public boolean clickMenuButton(Player player, int button) {
         if (button != COLLECT_BANNER_BUTTON || player != owner || !(player instanceof ServerPlayer serverPlayer)
-                || player.containerMenu != this || !CaseCompletion.isUnlocked(player, getCaseEntry())) return false;
+                || player.containerMenu != this || !CaseCompletion.isUnlocked(player, getCaseEntry()))
+            return false;
         ItemStack banner = getCaseEntry().completionBanner();
-        if (banner.isEmpty()) return false;
+        if (banner.isEmpty())
+            return false;
         stampBanner(banner, player);
         player.getInventory().add(banner);
         if (!banner.isEmpty()) {

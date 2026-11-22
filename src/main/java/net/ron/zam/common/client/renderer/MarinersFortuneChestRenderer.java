@@ -28,18 +28,14 @@ import net.ron.zam.common.block.fortune.MarinersFortuneChestBlockEntity;
 import org.jetbrains.annotations.NotNull;
 
 public class MarinersFortuneChestRenderer implements BlockEntityRenderer<@NotNull MarinersFortuneChestBlockEntity, @NotNull ChestRenderState> {
-
     private final SpriteGetter materials;
     private final ChestModel singleModel;
     private final ChestModel doubleLeftModel;
     private final ChestModel doubleRightModel;
 
-    private static final SpriteId SINGLE =
-            Sheets.CHEST_MAPPER.apply(Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "mariners_fortune"));
-    private static final SpriteId LEFT =
-            Sheets.CHEST_MAPPER.apply(Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "mariners_fortune_left"));
-    private static final SpriteId RIGHT =
-            Sheets.CHEST_MAPPER.apply(Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "mariners_fortune_right"));
+    private static final SpriteId SINGLE = Sheets.CHEST_MAPPER.apply(Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "mariners_fortune"));
+    private static final SpriteId LEFT = Sheets.CHEST_MAPPER.apply(Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "mariners_fortune_left"));
+    private static final SpriteId RIGHT = Sheets.CHEST_MAPPER.apply(Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "mariners_fortune_right"));
 
     public MarinersFortuneChestRenderer(BlockEntityRendererProvider.Context context) {
         this.materials = context.sprites();
@@ -63,9 +59,12 @@ public class MarinersFortuneChestRenderer implements BlockEntityRenderer<@NotNul
         state.material = ChestRenderState.ChestMaterialType.REGULAR;
 
         DoubleBlockCombiner.NeighborCombineResult<? extends @NotNull ChestBlockEntity> result =
-                blockState.getBlock() instanceof ChestBlock chest ?
-                        chest.combine(blockState, blockEntity.getLevel(), blockEntity.getBlockPos(), true) :
-                        DoubleBlockCombiner.Combiner::acceptNone;
+                null;
+        if (blockEntity.getLevel() != null) {
+            result = blockState.getBlock() instanceof ChestBlock chest ?
+                    chest.combine(blockState, blockEntity.getLevel(), blockEntity.getBlockPos(), true) :
+                    DoubleBlockCombiner.Combiner::acceptNone;
+        }
 
         state.open = result.apply(ChestBlock.opennessCombiner(blockEntity)).get(tickDelta);
 

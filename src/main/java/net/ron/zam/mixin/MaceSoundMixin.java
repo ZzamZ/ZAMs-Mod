@@ -22,9 +22,7 @@ public abstract class MaceSoundMixin {
     private void zam$playCosmeticSmash(ServerLevel level, Entity source, double x, double y, double z, SoundEvent sound, SoundSource category, float volume, float pitch, Operation<Void> original, ItemStack mace, LivingEntity target, LivingEntity attacker) {
         var cosmetic = mace.get(ZAMComponents.APPLIED_COSMETIC);
         SoundEvent replacement = cosmetic == null ? sound : cosmetic.patternDefinition()
-                .flatMap(CosmeticPatternComponent::attackSound).flatMap(BuiltInRegistries.SOUND_EVENT::get)
-                .map(Holder.Reference::value).orElse(sound);
-        original.call(level, source, x, y, z, replacement, category,
-                replacement != sound ? 1.0F : volume, replacement != sound ? 1.0F : pitch);
+                .flatMap(CosmeticPatternComponent::attackSound).flatMap(BuiltInRegistries.SOUND_EVENT::get).map(Holder.Reference::value).orElse(sound);
+        original.call(level, source, x, y, z, replacement, category, replacement != sound ? 1.0F : volume, replacement != sound ? 1.0F : pitch);
     }
 }

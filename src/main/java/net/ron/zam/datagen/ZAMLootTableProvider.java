@@ -3,6 +3,10 @@ package net.ron.zam.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.ron.zam.registry.ZAMBlocks;
 
 import java.util.concurrent.CompletableFuture;
@@ -31,12 +35,15 @@ public class ZAMLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ZAMBlocks.MARINERS_FORTUNE);
         dropSelf(ZAMBlocks.SEA_JELLY_BLOCK);
 
-        dropSelf(ZAMBlocks.CASTLE_CRASHERS_COMPLETION_BANNER);
-        dropSelf(ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER);
-        dropSelf(ZAMBlocks.MINECRAFT_COMPLETION_BANNER);
-        dropSelf(ZAMBlocks.SPONGEBOB_COMPLETION_BANNER);
-        dropSelf(ZAMBlocks.STARDEW_VALLEY_COMPLETION_BANNER);
-        dropSelf(ZAMBlocks.UNDERTALE_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.CASTLE_CRASHERS_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.COUNTER_STRIKE_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.DRAGON_BALL_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.HXH_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.MINECRAFT_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.SPONGEBOB_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.STARDEW_VALLEY_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.UNDERTALE_COMPLETION_BANNER);
 
         dropSelf(ZAMBlocks.FAIRY_LANTERNS.white());
         dropSelf(ZAMBlocks.FAIRY_LANTERNS.lightGray());
@@ -54,6 +61,13 @@ public class ZAMLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ZAMBlocks.FAIRY_LANTERNS.purple());
         dropSelf(ZAMBlocks.FAIRY_LANTERNS.magenta());
         dropSelf(ZAMBlocks.FAIRY_LANTERNS.pink());
+    }
+
+    private void dropCompletionBanner(Block block) {
+        add(block, createSingleItemTable(block)
+                .apply(CopyComponentsFunction.copyComponentsFromBlockEntity(LootContextParams.BLOCK_ENTITY)
+                        .include(DataComponents.CUSTOM_DATA)
+                        .include(DataComponents.LORE)));
     }
 }
 

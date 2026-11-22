@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.entity.SulfurCubeArchetypes;
 import net.ron.zam.registry.ZAMBlocks;
 
 import java.util.concurrent.CompletableFuture;
@@ -49,6 +50,9 @@ public class ZAMBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
 
                 .add(ZAMBlocks.CASTLE_CRASHERS_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER.properties().blockIdOrThrow())
+                .add(ZAMBlocks.COUNTER_STRIKE_COMPLETION_BANNER.properties().blockIdOrThrow())
+                .add(ZAMBlocks.DRAGON_BALL_COMPLETION_BANNER.properties().blockIdOrThrow())
+                .add(ZAMBlocks.HXH_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.MINECRAFT_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.SPONGEBOB_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.STARDEW_VALLEY_COMPLETION_BANNER.properties().blockIdOrThrow())

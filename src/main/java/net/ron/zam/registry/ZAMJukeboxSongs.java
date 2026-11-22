@@ -65,6 +65,38 @@ public class ZAMJukeboxSongs {
     public static final ResourceKey<JukeboxSong> COD_ZOMBIES_115 = create("cod_zombies_115");
     public static final ResourceKey<JukeboxSong> COD_ZOMBIES_SHEPHERD_OF_FIRE = create("cod_zombies_shepherd_of_fire");
 
+    //Counter Strike
+    public static final ResourceKey<JukeboxSong> COUNTER_STRIKE_GOLD_STEPS = create("counter_strike_gold_steps");
+    public static final ResourceKey<JukeboxSong> COUNTER_STRIKE_DASHSTAR = create("counter_strike_dashstar");
+    public static final ResourceKey<JukeboxSong> COUNTER_STRIKE_EZ4ENCE = create("counter_strike_ez4ence");
+    public static final ResourceKey<JukeboxSong> COUNTER_STRIKE_ULTIMATE = create("counter_strike_ultimate");
+    public static final ResourceKey<JukeboxSong> COUNTER_STRIKE_FLASHBANG_DANCE = create("counter_strike_flashbang_dance");
+    public static final ResourceKey<JukeboxSong> COUNTER_STRIKE_DIE_FOR_YOU = create("counter_strike_die_for_you");
+    public static final ResourceKey<JukeboxSong> COUNTER_STRIKE_GO_THEME = create("counter_strike_go_theme");
+    public static final ResourceKey<JukeboxSong> COUNTER_STRIKE_2_THEME = create("counter_strike_2_theme");
+    public static final ResourceKey<JukeboxSong> COUNTER_STRIKE_CARAMEL_DANCING = create("counter_strike_caramel_dancing");
+    public static final ResourceKey<JukeboxSong> COUNTER_STRIKE_CRAB_RAVE = create("counter_strike_crab_rave");
+
+    //Dragon Ball
+    public static final ResourceKey<JukeboxSong> DRAGON_BALL_GATEBREAKER = create("dragon_ball_gatebreaker");
+    public static final ResourceKey<JukeboxSong> DRAGON_BALL_DAN_DAN = create("dragon_ball_dan_dan");
+    public static final ResourceKey<JukeboxSong> DRAGON_BALL_CHA_LA = create("dragon_ball_cha_la");
+    public static final ResourceKey<JukeboxSong> DRAGON_BALL_ULTRA_INSTINCT = create("dragon_ball_ultra_instinct");
+    public static final ResourceKey<JukeboxSong> DRAGON_BALL_ULTIMATE_BATTLE = create("dragon_ball_ultimate_battle");
+    public static final ResourceKey<JukeboxSong> DRAGON_BALL_BROLY_VS_GOGETA = create("dragon_ball_broly_vs_gogeta");
+    public static final ResourceKey<JukeboxSong> DRAGON_BALL_GT_RECAP = create("dragon_ball_gt_recap");
+    public static final ResourceKey<JukeboxSong> DRAGON_BALL_THE_DRINK = create("dragon_ball_the_drink");
+
+    //Hunter X Hunter
+    public static final ResourceKey<JukeboxSong> HXH_HUNTING_FOR_YOUR_DREAM = create("hxh_hunting_for_your_dream");
+    public static final ResourceKey<JukeboxSong> HXH_ALL_I_NEED_IS_MONEY = create("hxh_all_i_need_is_money");
+    public static final ResourceKey<JukeboxSong> HXH_DEPARTURE = create("hxh_departure");
+    public static final ResourceKey<JukeboxSong> HXH_HYORI_ITTAI = create("hxh_hyori_ittai");
+    public static final ResourceKey<JukeboxSong> HXH_FROM_WHALE_ISLAND = create("hxh_from_whale_island");
+    public static final ResourceKey<JukeboxSong> HXH_HISOKA_THEME = create("hxh_hisoka_theme");
+    public static final ResourceKey<JukeboxSong> HXH_WORLD_OF_ADVENTURES = create("hxh_world_of_adventures");
+    public static final ResourceKey<JukeboxSong> HXH_BOYS_BE_COURAGEOUS = create("hxh_boys_be_courageous");
+
     //Minecraft
     public static final ResourceKey<JukeboxSong> MINECRAFT_SUBWOOFER_LULLABY = create("minecraft_subwoofer_lullaby");
     public static final ResourceKey<JukeboxSong> MINECRAFT_HAGGSTROM = create("minecraft_haggstrom");
@@ -208,6 +240,38 @@ public class ZAMJukeboxSongs {
         register(context, COD_ZOMBIES_SNAKESKIN_BOOTS, ZAMSounds.COD_ZOMBIES_SNAKESKIN_BOOTS, 181, 2);
         register(context, COD_ZOMBIES_115, ZAMSounds.COD_ZOMBIES_115, 228, 2);
         register(context, COD_ZOMBIES_SHEPHERD_OF_FIRE, ZAMSounds.COD_ZOMBIES_SHEPHERD_OF_FIRE, 452, 2);
+
+        //Counter Strike
+        register(context, COUNTER_STRIKE_GOLD_STEPS, ZAMSounds.COUNTER_STRIKE_GOLD_STEPS, 193, 3);
+        register(context, COUNTER_STRIKE_DASHSTAR, ZAMSounds.COUNTER_STRIKE_DASHSTAR, 197, 3);
+        register(context, COUNTER_STRIKE_EZ4ENCE, ZAMSounds.COUNTER_STRIKE_EZ4ENCE, 155, 3);
+        register(context, COUNTER_STRIKE_ULTIMATE, ZAMSounds.COUNTER_STRIKE_ULTIMATE, 190, 3);
+        register(context, COUNTER_STRIKE_FLASHBANG_DANCE, ZAMSounds.COUNTER_STRIKE_FLASHBANG_DANCE, 157, 3);
+        register(context, COUNTER_STRIKE_DIE_FOR_YOU, ZAMSounds.COUNTER_STRIKE_DIE_FOR_YOU, 218, 3);
+        register(context, COUNTER_STRIKE_GO_THEME, ZAMSounds.COUNTER_STRIKE_GO_THEME, 128, 3);
+        register(context, COUNTER_STRIKE_2_THEME, ZAMSounds.COUNTER_STRIKE_2_THEME, 209, 3);
+        register(context, COUNTER_STRIKE_CARAMEL_DANCING, ZAMSounds.COUNTER_STRIKE_CARAMEL_DANCING, 178, 3);
+        register(context, COUNTER_STRIKE_CRAB_RAVE, ZAMSounds.COUNTER_STRIKE_CRAB_RAVE, 165, 3);
+
+        //Dragon Ball
+        register(context, DRAGON_BALL_GATEBREAKER, ZAMSounds.DRAGON_BALL_GATEBREAKER, 106, 1);
+        register(context, DRAGON_BALL_DAN_DAN, ZAMSounds.DRAGON_BALL_DAN_DAN, 214, 1);
+        register(context, DRAGON_BALL_CHA_LA, ZAMSounds.DRAGON_BALL_CHA_LA, 199, 1);
+        register(context, DRAGON_BALL_ULTRA_INSTINCT, ZAMSounds.DRAGON_BALL_ULTRA_INSTINCT, 167, 1);
+        register(context, DRAGON_BALL_ULTIMATE_BATTLE, ZAMSounds.DRAGON_BALL_ULTIMATE_BATTLE, 240, 1);
+        register(context, DRAGON_BALL_BROLY_VS_GOGETA, ZAMSounds.DRAGON_BALL_BROLY_VS_GOGETA, 238, 1);
+        register(context, DRAGON_BALL_GT_RECAP, ZAMSounds.DRAGON_BALL_GT_RECAP, 91, 1);
+        register(context, DRAGON_BALL_THE_DRINK, ZAMSounds.DRAGON_BALL_THE_DRINK, 134, 1);
+
+        //Hunter X Hunter
+        register(context, HXH_HUNTING_FOR_YOUR_DREAM, ZAMSounds.HXH_HUNTING_FOR_YOUR_DREAM, 81, 2);
+        register(context, HXH_ALL_I_NEED_IS_MONEY, ZAMSounds.HXH_ALL_I_NEED_IS_MONEY, 91, 2);
+        register(context, HXH_DEPARTURE, ZAMSounds.HXH_DEPARTURE, 84, 2);
+        register(context, HXH_HYORI_ITTAI, ZAMSounds.HXH_HYORI_ITTAI, 91, 2);
+        register(context, HXH_FROM_WHALE_ISLAND, ZAMSounds.HXH_FROM_WHALE_ISLAND,121, 2);
+        register(context, HXH_HISOKA_THEME, ZAMSounds.HXH_HISOKA_THEME, 70, 2);
+        register(context, HXH_WORLD_OF_ADVENTURES, ZAMSounds.HXH_WORLD_OF_ADVENTURES, 161, 2);
+        register(context, HXH_BOYS_BE_COURAGEOUS, ZAMSounds.HXH_BOYS_BE_COURAGEOUS, 70, 2);
 
         //Minecraft
         register(context, MINECRAFT_SUBWOOFER_LULLABY, ZAMSounds.MINECRAFT_SUBWOOFER_LULLABY, 209, 5);

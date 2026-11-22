@@ -84,6 +84,49 @@ public class ZAMSounds {
     public static final SoundEvent COD_ZOMBIES_COSMETIC_EQUIP = registerSoundEvent("cod_zombies.cosmetic_equip");
 
     //Minecraft
+    public static final SoundEvent COUNTER_STRIKE_GOLD_STEPS = registerSoundEvent("counter_strike.gold_steps");
+    public static final SoundEvent COUNTER_STRIKE_DASHSTAR = registerSoundEvent("counter_strike.dashstar");
+    public static final SoundEvent COUNTER_STRIKE_EZ4ENCE = registerSoundEvent("counter_strike.ez4ence");
+    public static final SoundEvent COUNTER_STRIKE_ULTIMATE = registerSoundEvent("counter_strike.ultimate");
+    public static final SoundEvent COUNTER_STRIKE_FLASHBANG_DANCE = registerSoundEvent("counter_strike.flashbang_dance");
+    public static final SoundEvent COUNTER_STRIKE_DIE_FOR_YOU = registerSoundEvent("counter_strike.die_for_you");
+    public static final SoundEvent COUNTER_STRIKE_GO_THEME = registerSoundEvent("counter_strike.go_theme");
+    public static final SoundEvent COUNTER_STRIKE_2_THEME = registerSoundEvent("counter_strike.2_theme");
+    public static final SoundEvent COUNTER_STRIKE_CARAMEL_DANCING = registerSoundEvent("counter_strike.caramel_dancing");
+    public static final SoundEvent COUNTER_STRIKE_CRAB_RAVE = registerSoundEvent("counter_strike.crab_rave");
+    public static final SoundEvent COUNTER_STRIKE_COSMETIC_EQUIP = registerSoundEvent("counter_strike.cosmetic_equip");
+    public static final SoundEvent COUNTER_STRIKE_GLITCHPOP_EQUIP = registerSoundEvent("counter_strike.glitchpop_equip");
+    public static final SoundEvent COUNTER_STRIKE_DOPPLER_EQUIP = registerSoundEvent("counter_strike.doppler_equip");
+    public static final SoundEvent COUNTER_STRIKE_NIGHTWISH_EQUIP = registerSoundEvent("counter_strike.nightwish_equip");
+    public static final SoundEvent COUNTER_STRIKE_SUS_EQUIP = registerSoundEvent("counter_strike.sus_equip");
+    public static final SoundEvent COUNTER_STRIKE_TACTICAL_EQUIP = registerSoundEvent("counter_strike.tactical_equip");
+
+    //Dragon Ball
+    public static final SoundEvent DRAGON_BALL_GATEBREAKER = registerSoundEvent("dragon_ball.gatebreaker");
+    public static final SoundEvent DRAGON_BALL_DAN_DAN = registerSoundEvent("dragon_ball.dan_dan");
+    public static final SoundEvent DRAGON_BALL_CHA_LA = registerSoundEvent("dragon_ball.cha_la");
+    public static final SoundEvent DRAGON_BALL_ULTRA_INSTINCT = registerSoundEvent("dragon_ball.ultra_instinct");
+    public static final SoundEvent DRAGON_BALL_ULTIMATE_BATTLE = registerSoundEvent("dragon_ball.ultimate_battle");
+    public static final SoundEvent DRAGON_BALL_BROLY_VS_GOGETA = registerSoundEvent("dragon_ball.broly_vs_gogeta");
+    public static final SoundEvent DRAGON_BALL_GT_RECAP = registerSoundEvent("dragon_ball.gt_recap");
+    public static final SoundEvent DRAGON_BALL_THE_DRINK = registerSoundEvent("dragon_ball.the_drink");
+    public static final SoundEvent DRAGON_BALL_PEACEFUL_DAYS = registerSoundEvent("dragon_ball.peaceful_days");
+    public static final SoundEvent DRAGON_BALL_EQUIP = registerSoundEvent("dragon_ball.equip");
+    public static final SoundEvent DRAGON_BALL_COSMETIC_EQUIP = registerSoundEvent("dragon_ball.cosmetic_equip");
+
+    //Hunter X Hunter
+    public static final SoundEvent HXH_HUNTING_FOR_YOUR_DREAM = registerSoundEvent("hxh.hunting_for_your_dream");
+    public static final SoundEvent HXH_ALL_I_NEED_IS_MONEY = registerSoundEvent("hxh.all_i_need_is_money");
+    public static final SoundEvent HXH_DEPARTURE = registerSoundEvent("hxh.departure");
+    public static final SoundEvent HXH_HYORI_ITTAI = registerSoundEvent("hxh.hyori_ittai");
+    public static final SoundEvent HXH_FROM_WHALE_ISLAND = registerSoundEvent("hxh.from_whale_island");
+    public static final SoundEvent HXH_HISOKA_THEME = registerSoundEvent("hxh.hisoka_theme");
+    public static final SoundEvent HXH_WORLD_OF_ADVENTURES = registerSoundEvent("hxh.world_of_adventures");
+    public static final SoundEvent HXH_BOYS_BE_COURAGEOUS = registerSoundEvent("hxh.boys_be_courageous");
+    public static final SoundEvent HXH_EQUIP = registerSoundEvent("hxh.equip");
+    public static final SoundEvent HXH_COSMETIC_EQUIP = registerSoundEvent("hxh.cosmetic_equip");
+
+    //Minecraft
     public static final SoundEvent MINECRAFT_SUBWOOFER_LULLABY = registerSoundEvent("minecraft.subwoofer_lullaby");
     public static final SoundEvent MINECRAFT_HAGGSTROM = registerSoundEvent("minecraft.haggstrom");
     public static final SoundEvent MINECRAFT_MINECRAFT = registerSoundEvent("minecraft.minecraft");

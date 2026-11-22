@@ -120,8 +120,7 @@ public class RecordSleeveItem extends BundleItem {
     }
 
     @Override
-    public boolean overrideOtherStackedOnMe(ItemStack sleeve, ItemStack other, Slot slot,
-                                            ClickAction action, Player player, SlotAccess access) {
+    public boolean overrideOtherStackedOnMe(ItemStack sleeve, ItemStack other, Slot slot, ClickAction action, Player player, SlotAccess access) {
         if (sleeve.getCount() != 1 || !slot.allowModification(player)) return false;
 
         BundleContents contents = getContents(sleeve);
@@ -164,8 +163,7 @@ public class RecordSleeveItem extends BundleItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay display,
-                                Consumer<Component> tooltip, TooltipFlag flag) {
+    public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay display, Consumer<Component> tooltip, TooltipFlag flag) {
         int count = countDiscs(getContents(stack));
         if (count > 0) {
             tooltip.accept(Component.literal(count + " / " + MAX_DISCS).withStyle(ChatFormatting.GRAY));

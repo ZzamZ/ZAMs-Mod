@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "zam:block/counter_strike_completion_banner"
+  }
+}

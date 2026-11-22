@@ -107,6 +107,44 @@ public class ZAMModelProvider  extends FabricModelProvider {
         itemModelGenerators.generateBow(ZAMCosmetics.COD_ZOMBIES_WOLF_BOW);
         itemModelGenerators.generateSpear(ZAMCosmetics.COD_ZOMBIES_ICE_STAFF);
 
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_CASE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_GO_THEME, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_2_THEME, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_EZ4ENCE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_FLASHBANG_DANCE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_DASHSTAR, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_ULTIMATE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_GOLD_STEPS, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_CRAB_RAVE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_DIE_FOR_YOU, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.COUNTER_STRIKE_CARAMEL_DANCING, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.COUNTER_STRIKE_DOPPLER_KNIFE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.COUNTER_STRIKE_NIGHTWISH, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.COUNTER_STRIKE_GLITCHPOP_DAGGER, ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        itemModelGenerators.generateFlatItem(ZAMItems.DRAGON_BALL_CASE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMItems.DRAGON_BALL_BROLY_VS_GOGETA, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.DRAGON_BALL_CHA_LA, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.DRAGON_BALL_DAN_DAN, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.DRAGON_BALL_GATEBREAKER, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.DRAGON_BALL_GT_RECAP, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.DRAGON_BALL_ULTRA_INSTINCT, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.DRAGON_BALL_ULTIMATE_BATTLE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.DRAGON_BALL_THE_DRINK, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.DRAGON_BALL_SICKLE_OF_SORROW, ModelTemplates.FLAT_HANDHELD_ITEM);
+
+        itemModelGenerators.generateFlatItem(ZAMItems.HXH_CASE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMItems.HXH_ALL_I_NEED_IS_MONEY, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HXH_BOYS_BE_COURAGEOUS, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HXH_DEPARTURE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HXH_FROM_WHALE_ISLAND, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HXH_HISOKA_THEME, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HXH_HUNTING_FOR_YOUR_DREAM, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HXH_HYORI_ITTAI, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HXH_WORLD_OF_ADVENTURES, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.HXH_CRAZY_SLOTS_SCYTHE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFishingRod(ZAMCosmetics.HXH_GONS_FISHING_ROD);
+
         itemModelGenerators.generateFlatItem(ZAMItems.MINECRAFT_CASE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ZAMItems.MINECRAFT_SUBWOOFER_LULLABY, ModelTemplates.MUSIC_DISC);
         itemModelGenerators.generateFlatItem(ZAMItems.MINECRAFT_HAGGSTROM, ModelTemplates.MUSIC_DISC);

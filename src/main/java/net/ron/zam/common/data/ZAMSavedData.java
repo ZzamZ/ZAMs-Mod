@@ -89,6 +89,29 @@ public class ZAMSavedData extends SavedData {
         data.claim(data.completedCases, player, caseId);
     }
 
+    public static void revokeCase(MinecraftServer server, Player player, Identifier caseId) {
+        ZAMSavedData data = get(server);
+        UUID playerId = player.getUUID();
+        boolean changed = false;
+
+        Set<Identifier> completed = data.completedCases.get(playerId);
+        if (completed != null) {
+            changed |= completed.remove(caseId);
+        }
+
+        Set<Identifier> slots = data.caseSlots.get(playerId);
+        if (slots != null) {
+            String prefix = caseId.getPath() + "/slot_";
+            changed |= slots.removeIf(slot ->
+                    slot.getNamespace().equals(caseId.getNamespace())
+                            && slot.getPath().startsWith(prefix));
+        }
+
+        if (changed) {
+            data.setDirty();
+        }
+    }
+
     public void collectReward(Player player, ItemStack reward) {
         claim(collectedRewards, player, rewardId(reward));
     }

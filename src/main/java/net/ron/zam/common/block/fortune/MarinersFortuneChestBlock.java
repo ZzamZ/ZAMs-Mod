@@ -33,8 +33,6 @@ public class MarinersFortuneChestBlock extends ChestBlock {
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         BlockState state = super.getStateForPlacement(context);
-        if (state == null)
-            return null;
 
         FluidState fluid = context.getLevel().getFluidState(context.getClickedPos());
         return state.setValue(WATERLOGGED, fluid.getType() == Fluids.WATER);

@@ -53,14 +53,6 @@ public class CaseAdvancementTrigger extends SimpleCriterionTrigger<CaseAdvanceme
                     && completed.map(expected -> expected == isComplete).orElse(true);
         }
 
-        public static Criterion<TriggerInstance> anyReward() {
-            return criterion(Optional.empty(), Optional.empty(), Optional.empty(), Optional.empty());
-        }
-
-        public static Criterion<TriggerInstance> completedCase(Identifier id) {
-            return criterion(Optional.empty(), Optional.of(id), Optional.empty(), Optional.of(true));
-        }
-
         public static Criterion<TriggerInstance> rarity(Rarity rarity) {
             return criterion(Optional.empty(), Optional.empty(), Optional.of(rarity), Optional.empty());
         }

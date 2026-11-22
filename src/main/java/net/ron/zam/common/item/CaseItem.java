@@ -13,7 +13,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.Level;
 import net.ron.zam.util.casesystem.CaseRewards;
-import net.ron.zam.util.casesystem.gui.CaseMenuProvider;
+import net.ron.zam.util.casesystem.CaseMenuProvider;
 
 import java.util.function.Consumer;
 

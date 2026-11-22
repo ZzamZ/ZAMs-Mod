@@ -50,7 +50,11 @@ public final class CaseCompletion {
 
         ZAMSavedData data = ZAMSavedData.get(server);
         for (int index = 0; index < entry.possibleRewards().size(); index++) {
+            var reward = entry.possibleRewards().get(index);
             data.claimSlot(player, entry, index);
+            for (ItemStack option : reward.viewRewardPool()) {
+                data.collectReward(player, option);
+            }
         }
         ZAMSavedData.completeCase(server, player, entry.id());
     }

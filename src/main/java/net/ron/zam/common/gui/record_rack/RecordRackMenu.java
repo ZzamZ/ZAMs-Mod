@@ -16,7 +16,6 @@ public class RecordRackMenu extends AbstractContainerMenu {
 
     private static final int RACK_SLOTS = 7;
 
-    private final Container rack;
     private final ContainerLevelAccess access;
 
     public RecordRackMenu(int id, Inventory inv) {
@@ -25,7 +24,6 @@ public class RecordRackMenu extends AbstractContainerMenu {
 
     public RecordRackMenu(int id, Inventory inv, Container rack) {
         super(ZAMMenuTypes.RECORD_RACK, id);
-        this.rack = rack;
 
         if (rack instanceof RecordRackBlockEntity be) {
             this.access = ContainerLevelAccess.create(be.getLevel(), be.getBlockPos());
@@ -36,9 +34,9 @@ public class RecordRackMenu extends AbstractContainerMenu {
         int startX = 26;
         int y = 20;
 
-        for (int i = 0; i < RACK_SLOTS; i++) {
-            final int slotIndex = i;
+        for (int slotIndex = 0; slotIndex < RACK_SLOTS; slotIndex++) {
             this.addSlot(new Slot(rack, slotIndex, startX + slotIndex * 18, y) {
+
                 @Override
                 public boolean mayPlace(ItemStack stack) {
                     return isRackItem(stack);

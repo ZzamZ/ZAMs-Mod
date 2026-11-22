@@ -22,6 +22,8 @@ public final class CosmeticPatternClientTooltip implements ClientTooltipComponen
 
     @Override
     public int getHeight(Font font) {
+        if (data.applied())
+            return font.lineHeight * 2 + BLOCK_GAP + ICON_SIZE + 2;
         return font.lineHeight * 4 + BLOCK_GAP * 2 + ICON_SIZE + 2;
     }
 
@@ -29,9 +31,13 @@ public final class CosmeticPatternClientTooltip implements ClientTooltipComponen
     public int getWidth(Font font) {
         Component collection = collectionName();
         int width = font.width(collection);
-        width = Math.max(width, font.width(Component.translatable("tooltip.zam.cosmetic.applies_to")));
-        width = Math.max(width, INDENT + font.width(data.target()));
-        width = Math.max(width, font.width(Component.translatable("tooltip.zam.cosmetic.pattern")));
+        if (data.applied()) {
+            width = Math.max(width, font.width(Component.translatable("tooltip.zam.cosmetic.applied")));
+        } else {
+            width = Math.max(width, font.width(Component.translatable("tooltip.zam.cosmetic.applies_to")));
+            width = Math.max(width, INDENT + font.width(data.target()));
+            width = Math.max(width, font.width(Component.translatable("tooltip.zam.cosmetic.pattern")));
+        }
         return Math.max(width, INDENT + ICON_SIZE + GAP + font.width(data.name()));
     }
 
@@ -41,6 +47,15 @@ public final class CosmeticPatternClientTooltip implements ClientTooltipComponen
         Component collection = collectionName();
         g.text(font, collection, x, lineY, 0xFFFFFFFF, true);
         lineY += font.lineHeight + BLOCK_GAP;
+        if (data.applied()) {
+            g.text(font, Component.translatable("tooltip.zam.cosmetic.applied"), x, lineY, LABEL_COLOR, true);
+            lineY += font.lineHeight + 1;
+            g.item(data.preview(), x + INDENT, lineY);
+            g.itemDecorations(Minecraft.getInstance().font, data.preview(), x + INDENT, lineY);
+            g.text(font, Component.literal(data.name()), x + INDENT + ICON_SIZE + GAP, lineY + 4,
+                    0xFF000000 | data.color(), true);
+            return;
+        }
         g.text(font, Component.translatable("tooltip.zam.cosmetic.applies_to"), x, lineY, LABEL_COLOR, true);
         lineY += font.lineHeight;
         g.text(font, data.target(), x + INDENT, lineY, VALUE_COLOR, true);
@@ -49,8 +64,8 @@ public final class CosmeticPatternClientTooltip implements ClientTooltipComponen
         lineY += font.lineHeight + 1;
         g.item(data.preview(), x + INDENT, lineY);
         g.itemDecorations(Minecraft.getInstance().font, data.preview(), x + INDENT, lineY);
-        g.text(font, Component.literal(data.name()), x + INDENT + ICON_SIZE + GAP, lineY + 4, 0xFF000000 | data.color(),
-                true);
+        g.text(font, Component.literal(data.name()), x + INDENT + ICON_SIZE + GAP, lineY + 4,
+                0xFF000000 | data.color(), true);
     }
 
     private Component collectionName() {

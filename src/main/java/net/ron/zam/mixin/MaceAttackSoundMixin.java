@@ -16,8 +16,7 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 public abstract class MaceAttackSoundMixin {
     @ModifyVariable(method = "playServerSideSound", at = @At("HEAD"), argsOnly = true, name = "sound")
     private SoundEvent zam$replaceMaceHit(SoundEvent sound) {
-        if (sound != SoundEvents.PLAYER_ATTACK_STRONG && sound != SoundEvents.PLAYER_ATTACK_WEAK
-                && sound != SoundEvents.PLAYER_ATTACK_CRIT) return sound;
+        if (sound != SoundEvents.PLAYER_ATTACK_STRONG && sound != SoundEvents.PLAYER_ATTACK_WEAK && sound != SoundEvents.PLAYER_ATTACK_CRIT) return sound;
         Player player = (Player) (Object) this;
         var stack = player.getMainHandItem();
         if (!(stack.getItem() instanceof MaceItem)) return sound;

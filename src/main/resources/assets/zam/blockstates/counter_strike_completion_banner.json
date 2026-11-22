@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "zam:block/counter_strike_completion_banner" },
+    "facing=east":  { "model": "zam:block/counter_strike_completion_banner", "y":  90 },
+    "facing=south": { "model": "zam:block/counter_strike_completion_banner", "y": 180 },
+    "facing=west":  { "model": "zam:block/counter_strike_completion_banner", "y": 270 }
+  }
+}

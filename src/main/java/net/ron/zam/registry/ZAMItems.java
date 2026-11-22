@@ -102,16 +102,38 @@ public class ZAMItems {
 
     //Counter Strike (9)
     public static final Item COUNTER_STRIKE_CASE = collectionCase("counter_strike_case");
-    public static final Item COUNTER_STRIKE_GOLD_STEPS = collectionDisc("counter_strike_gold_steps", "Counter Strike", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
-    public static final Item COUNTER_STRIKE_DASHSTAR = collectionDisc("counter_strike_dashstar", "Counter Strike", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
-    public static final Item COUNTER_STRIKE_EZ4ENCE = collectionDisc("counter_strike_ez4ence", "Counter Strike", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
-    public static final Item COUNTER_STRIKE_ULTIMATE = collectionDisc("counter_strike_ultimate", "Counter Strike", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
-    public static final Item COUNTER_STRIKE_FLASHBANG_DANCE = collectionDisc("counter_strike_flashbang_dance", "Counter Strike", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
-    public static final Item COUNTER_STRIKE_DIE_FOR_YOU = collectionDisc("counter_strike_die_for_you", "Counter Strike", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
-    public static final Item COUNTER_STRIKE_GO_THEME = collectionDisc("counter_strike_go_theme", "Counter Strike", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
-    public static final Item COUNTER_STRIKE_2_THEME = collectionDisc("counter_strike_2_theme", "Counter Strike", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
-    public static final Item COUNTER_STRIKE_CARAMEL_DANCING = collectionDisc("counter_strike_caramel_dancing", "Counter Strike", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
-    public static final Item COUNTER_STRIKE_CRAB_RAVE = collectionDisc("counter_strike_crab_rave", "Counter Strike", ZAMJukeboxSongs.COD_ZOMBIES_JUGGERNOG, Rarity.UNCOMMON);
+    public static final Item COUNTER_STRIKE_GOLD_STEPS = collectionDisc("counter_strike_gold_steps", "Counter Strike", ZAMJukeboxSongs.COUNTER_STRIKE_GOLD_STEPS, Rarity.EPIC);
+    public static final Item COUNTER_STRIKE_DASHSTAR = collectionDisc("counter_strike_dashstar", "Counter Strike", ZAMJukeboxSongs.COUNTER_STRIKE_DASHSTAR, Rarity.UNCOMMON);
+    public static final Item COUNTER_STRIKE_EZ4ENCE = collectionDisc("counter_strike_ez4ence", "Counter Strike", ZAMJukeboxSongs.COUNTER_STRIKE_EZ4ENCE, Rarity.RARE);
+    public static final Item COUNTER_STRIKE_ULTIMATE = collectionDisc("counter_strike_ultimate", "Counter Strike", ZAMJukeboxSongs.COUNTER_STRIKE_ULTIMATE, Rarity.UNCOMMON);
+    public static final Item COUNTER_STRIKE_FLASHBANG_DANCE = collectionDisc("counter_strike_flashbang_dance", "Counter Strike", ZAMJukeboxSongs.COUNTER_STRIKE_FLASHBANG_DANCE, Rarity.RARE);
+    public static final Item COUNTER_STRIKE_DIE_FOR_YOU = collectionDisc("counter_strike_die_for_you", "Counter Strike", ZAMJukeboxSongs.COUNTER_STRIKE_DIE_FOR_YOU, Rarity.EPIC);
+    public static final Item COUNTER_STRIKE_GO_THEME = collectionDisc("counter_strike_go_theme", "Counter Strike", ZAMJukeboxSongs.COUNTER_STRIKE_GO_THEME, Rarity.UNCOMMON);
+    public static final Item COUNTER_STRIKE_2_THEME = collectionDisc("counter_strike_2_theme", "Counter Strike", ZAMJukeboxSongs.COUNTER_STRIKE_2_THEME, Rarity.UNCOMMON);
+    public static final Item COUNTER_STRIKE_CARAMEL_DANCING = collectionDisc("counter_strike_caramel_dancing", "Counter Strike", ZAMJukeboxSongs.COUNTER_STRIKE_CARAMEL_DANCING, Rarity.EPIC);
+    public static final Item COUNTER_STRIKE_CRAB_RAVE = collectionDisc("counter_strike_crab_rave", "Counter Strike", ZAMJukeboxSongs.COUNTER_STRIKE_CRAB_RAVE, Rarity.EPIC);
+
+    //Dragon Ball (9)
+    public static final Item DRAGON_BALL_CASE = collectionCase("dragon_ball_case");
+    public static final Item DRAGON_BALL_DAN_DAN = collectionDisc("dragon_ball_dan_dan", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_DAN_DAN, Rarity.RARE);
+    public static final Item DRAGON_BALL_GATEBREAKER = collectionDisc("dragon_ball_gatebreaker", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_GATEBREAKER, Rarity.UNCOMMON);
+    public static final Item DRAGON_BALL_BROLY_VS_GOGETA = collectionDisc("dragon_ball_broly_vs_gogeta", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_BROLY_VS_GOGETA, Rarity.UNCOMMON);
+    public static final Item DRAGON_BALL_CHA_LA = collectionDisc("dragon_ball_cha_la", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_CHA_LA, Rarity.EPIC);
+    public static final Item DRAGON_BALL_ULTIMATE_BATTLE = collectionDisc("dragon_ball_ultimate_battle", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_ULTIMATE_BATTLE, Rarity.UNCOMMON);
+    public static final Item DRAGON_BALL_ULTRA_INSTINCT = collectionDisc("dragon_ball_ultra_instinct", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_ULTRA_INSTINCT, Rarity.RARE);
+    public static final Item DRAGON_BALL_GT_RECAP = collectionDisc("dragon_ball_gt_recap", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_GT_RECAP, Rarity.UNCOMMON);
+    public static final Item DRAGON_BALL_THE_DRINK = collectionDisc("dragon_ball_the_drink", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_THE_DRINK, Rarity.RARE);
+
+    //Hunter X Hunter (9)
+    public static final Item HXH_CASE = collectionCase("hxh_case");
+    public static final Item HXH_HUNTING_FOR_YOUR_DREAM = collectionDisc("hxh_hunting_for_your_dream", "Hunter X Hunter", ZAMJukeboxSongs.HXH_HUNTING_FOR_YOUR_DREAM, Rarity.RARE);
+    public static final Item HXH_ALL_I_NEED_IS_MONEY = collectionDisc("hxh_all_i_need_is_money", "Hunter X Hunter", ZAMJukeboxSongs.HXH_ALL_I_NEED_IS_MONEY, Rarity.EPIC);
+    public static final Item HXH_DEPARTURE = collectionDisc("hxh_departure", "Hunter X Hunter", ZAMJukeboxSongs.HXH_DEPARTURE, Rarity.UNCOMMON);
+    public static final Item HXH_HYORI_ITTAI = collectionDisc("hxh_hyori_ittai", "Hunter X Hunter", ZAMJukeboxSongs.HXH_HYORI_ITTAI, Rarity.RARE);
+    public static final Item HXH_FROM_WHALE_ISLAND = collectionDisc("hxh_from_whale_island", "Hunter X Hunter", ZAMJukeboxSongs.HXH_FROM_WHALE_ISLAND, Rarity.UNCOMMON);
+    public static final Item HXH_HISOKA_THEME = collectionDisc("hxh_hisoka_theme", "Hunter X Hunter", ZAMJukeboxSongs.HXH_HISOKA_THEME, Rarity.RARE);
+    public static final Item HXH_WORLD_OF_ADVENTURES = collectionDisc("hxh_world_of_adventures", "Hunter X Hunter", ZAMJukeboxSongs.HXH_WORLD_OF_ADVENTURES, Rarity.UNCOMMON);
+    public static final Item HXH_BOYS_BE_COURAGEOUS = collectionDisc("hxh_boys_be_courageous", "Hunter X Hunter", ZAMJukeboxSongs.HXH_BOYS_BE_COURAGEOUS, Rarity.UNCOMMON);
 
     // Minecraft (9)
     public static final Item MINECRAFT_CASE = collectionCase("minecraft_case");

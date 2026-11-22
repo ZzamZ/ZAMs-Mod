@@ -9,11 +9,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.SmithingTrimRecipeBuilder;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
@@ -209,6 +207,24 @@ public class ZAMRecipeProvider extends FabricRecipeProvider {
                         .pattern("SS ")
                         .define('S', ZAMTags.COD_ZOMBIES_MUSIC_DISCS)
                         .unlockedBy("has_record_for_cod_zombies_case", has(ZAMTags.COD_ZOMBIES_MUSIC_DISCS)).save(output);
+
+                shaped(RecipeCategory.MISC, ZAMItems.COUNTER_STRIKE_CASE)
+                        .pattern("SS ")
+                        .pattern("SS ")
+                        .define('S', ZAMTags.COUNTER_STRIKE_MUSIC_DISCS)
+                        .unlockedBy("has_record_for_counter_strike_case", has(ZAMTags.COUNTER_STRIKE_MUSIC_DISCS)).save(output);
+
+                shaped(RecipeCategory.MISC, ZAMItems.DRAGON_BALL_CASE)
+                        .pattern("SS ")
+                        .pattern("SS ")
+                        .define('S', ZAMTags.DRAGON_BALL_MUSIC_DISCS)
+                        .unlockedBy("has_record_for_dragon_ball_case", has(ZAMTags.DRAGON_BALL_MUSIC_DISCS)).save(output);
+
+                shaped(RecipeCategory.MISC, ZAMItems.HXH_CASE)
+                        .pattern("SS ")
+                        .pattern("SS ")
+                        .define('S', ZAMTags.HXH_MUSIC_DISCS)
+                        .unlockedBy("has_record_for_hxh_case", has(ZAMTags.HXH_MUSIC_DISCS)).save(output);
 
                 shaped(RecipeCategory.MISC, ZAMItems.MINECRAFT_CASE)
                         .pattern("SS ")

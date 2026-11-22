@@ -33,6 +33,9 @@ public final class ZAMBlocks {
 
     public static final CompletionBannerBlock CASTLE_CRASHERS_COMPLETION_BANNER = completionBanner("castle_crashers_completion_banner", "Castle Crashers");
     public static final CompletionBannerBlock COD_ZOMBIES_COMPLETION_BANNER = completionBanner("cod_zombies_completion_banner", "Call of Duty Zombies");
+    public static final CompletionBannerBlock COUNTER_STRIKE_COMPLETION_BANNER = completionBanner("counter_strike_completion_banner", "Counter Strike");
+    public static final CompletionBannerBlock DRAGON_BALL_COMPLETION_BANNER = completionBanner("dragon_ball_completion_banner", "Dragon Ball");
+    public static final CompletionBannerBlock HXH_COMPLETION_BANNER = completionBanner("hxh_completion_banner", "Hunter X Hunter");
     public static final CompletionBannerBlock MINECRAFT_COMPLETION_BANNER = completionBanner("minecraft_completion_banner", "Minecraft");
     public static final CompletionBannerBlock SPONGEBOB_COMPLETION_BANNER = completionBanner("spongebob_completion_banner", "SpongeBob SquarePants");
     public static final CompletionBannerBlock STARDEW_VALLEY_COMPLETION_BANNER = completionBanner("stardew_valley_completion_banner", "Stardew Valley");

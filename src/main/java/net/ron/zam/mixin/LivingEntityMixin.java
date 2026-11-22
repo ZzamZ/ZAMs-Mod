@@ -15,10 +15,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
-    @ModifyExpressionValue(method = "onEquipItem", at = @At(value = "INVOKE",
-            target = "Lnet/minecraft/world/entity/LivingEntity;isSilent()Z"))
-    private boolean zam$silenceHelmetCosmeticChange(
-            boolean silent, EquipmentSlot slot, ItemStack oldStack, ItemStack stack) {
+    @ModifyExpressionValue(method = "onEquipItem", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;isSilent()Z"))
+    private boolean zam$silenceHelmetCosmeticChange(boolean silent, EquipmentSlot slot, ItemStack oldStack, ItemStack stack) {
         if (silent || slot != EquipmentSlot.HEAD || oldStack.isEmpty() || stack.isEmpty()) {
             return silent;
         }
@@ -34,9 +32,7 @@ public abstract class LivingEntityMixin {
         ItemStack original = oldCosmetic != null ? stack : oldStack;
 
         restored.set(DataComponents.ITEM_MODEL, cosmetic.originalModel());
-        cosmetic.originalEquippable().ifPresentOrElse(
-                value -> restored.set(DataComponents.EQUIPPABLE, value),
-                () -> restored.remove(DataComponents.EQUIPPABLE));
+        cosmetic.originalEquippable().ifPresentOrElse(value -> restored.set(DataComponents.EQUIPPABLE, value), () -> restored.remove(DataComponents.EQUIPPABLE));
         restored.remove(ZAMComponents.APPLIED_COSMETIC);
         return ItemStack.isSameItemSameComponents(restored, original);
     }

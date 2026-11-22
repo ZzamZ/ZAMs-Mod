@@ -57,10 +57,8 @@ public abstract class JukeboxBlockEntityMixin implements RecordSleeveJukeboxExte
 
         ItemStack insertedItem = jukebox.getTheItem();
 
-        boolean hasPlayableItem =
-                insertedItem.has(DataComponents.JUKEBOX_PLAYABLE) || insertedItem.getItem() instanceof RecordSleeveItem;
-        boolean wasPlaying = hasPlayableItem &&
-                (jukebox.getSongPlayer().isPlaying() || zam$recordSleevePlaying || zam$restartPending);
+        boolean hasPlayableItem = insertedItem.has(DataComponents.JUKEBOX_PLAYABLE) || insertedItem.getItem() instanceof RecordSleeveItem;
+        boolean wasPlaying = hasPlayableItem && (jukebox.getSongPlayer().isPlaying() || zam$recordSleevePlaying || zam$restartPending);
         output.putBoolean(ZAM_WAS_PLAYING, wasPlaying);
         output.putInt(ZAM_SLEEVE_TRACK, zam$recordSleeveTrack);
     }

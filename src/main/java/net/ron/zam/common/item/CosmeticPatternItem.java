@@ -80,8 +80,7 @@ public class CosmeticPatternItem extends Item {
         if (effectiveModel == null || tool.isEmpty() || tool.has(ZAMComponents.APPLIED_COSMETIC))
             return false;
 
-        CosmeticTarget matchedTarget = targets.stream().filter(candidate -> tool.is(candidate.tag()))
-                .findFirst().orElse(null);
+        CosmeticTarget matchedTarget = targets.stream().filter(candidate -> tool.is(candidate.tag())).findFirst().orElse(null);
         if (matchedTarget == null)
             return false;
 
@@ -89,8 +88,7 @@ public class CosmeticPatternItem extends Item {
         Identifier originalModel = tool.get(DataComponents.ITEM_MODEL);
         if (originalModel == null)
             return false;
-        tool.set(ZAMComponents.APPLIED_COSMETIC, new AppliedCosmeticComponent(skinId, originalModel,
-                Optional.ofNullable(tool.get(DataComponents.EQUIPPABLE)), effectiveColor, Optional.ofNullable(definition)));
+        tool.set(ZAMComponents.APPLIED_COSMETIC, new AppliedCosmeticComponent(skinId, originalModel, Optional.ofNullable(tool.get(DataComponents.EQUIPPABLE)), effectiveColor, Optional.ofNullable(definition)));
         tool.set(DataComponents.ITEM_MODEL, effectiveModel);
         Equippable equippable = appliedEquippable;
         if (definition != null) {

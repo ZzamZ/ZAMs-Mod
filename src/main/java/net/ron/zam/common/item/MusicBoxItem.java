@@ -76,13 +76,6 @@ public class MusicBoxItem extends Item {
         SERVER_PLAYBACK.put(player, new Playback(record.copy(), player.tickCount, duration));
     }
 
-    public static boolean isPlayingOnServer(Player player) {
-        Playback playback = SERVER_PLAYBACK.get(player);
-        return playback != null && playback.duration() > 0
-                && (findPlayingMusicBox(player).has(ZAMComponents.LOOPING)
-                || player.tickCount - playback.started() < playback.duration());
-    }
-
     private static ItemStack findPlayingMusicBox(Player player) {
         ItemStack carried = player.inventoryMenu.getCarried();
         if (hasRecord(carried) && !carried.has(ZAMComponents.PAUSED)) return carried;
@@ -181,8 +174,7 @@ public class MusicBoxItem extends Item {
     }
 
     @Override
-    public boolean overrideOtherStackedOnMe(ItemStack musicbox, ItemStack clickItem, Slot slot, ClickAction clickAction,
-                                            Player player, SlotAccess slotAccess) {
+    public boolean overrideOtherStackedOnMe(ItemStack musicbox, ItemStack clickItem, Slot slot, ClickAction clickAction, Player player, SlotAccess slotAccess) {
         if (!slot.allowModification(player)) {
             return false;
         }

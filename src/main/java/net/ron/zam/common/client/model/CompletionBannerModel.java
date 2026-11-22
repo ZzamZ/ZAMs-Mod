@@ -22,7 +22,6 @@ public class CompletionBannerModel extends Model<CompletionBannerRenderState> {
         this.flag = root.getChild("banner").getChild("flag");
     }
 
-    // The registered layer is the shared, stationary rod, using its own 64x64 texture.
     public static LayerDefinition createBodyLayer() {
         MeshDefinition mesh = new MeshDefinition();
         var banner = mesh.getRoot().addOrReplaceChild("banner", CubeListBuilder.create(),
@@ -47,11 +46,9 @@ public class CompletionBannerModel extends Model<CompletionBannerRenderState> {
             }
         }
         MeshDefinition mesh = new MeshDefinition();
-        var banner = mesh.getRoot().addOrReplaceChild("banner", CubeListBuilder.create(),
-                PartPose.offset(0.0F, -16.0F, 7.0F));
+        var banner = mesh.getRoot().addOrReplaceChild("banner", CubeListBuilder.create(), PartPose.offset(0.0F, -16.0F, 7.0F));
         CubeListBuilder cloth = CubeListBuilder.create();
         if (maxX >= minX) {
-            // Center the attachment at the top, allowing asymmetric details to extend below it.
             int topLeft = width, topRight = -1;
             for (int x = minX; x <= maxX; x++) {
                 if (opaque(image, x, minY, clothRows)) {
@@ -65,7 +62,6 @@ public class CompletionBannerModel extends Model<CompletionBannerRenderState> {
             cloth.mirror(true);
             face(cloth, minX - center, 0, w, h, Direction.SOUTH, minX - w - 2, minY - 1);
             cloth.mirror(false);
-            // Extrude only the opaque outline, including notches and holes, by one pixel.
             for (int y = minY; y <= maxY; y++) {
                 for (int x = minX; x <= maxX; x++) {
                     if (!opaque(image, x, y, clothRows)) continue;
@@ -90,8 +86,7 @@ public class CompletionBannerModel extends Model<CompletionBannerRenderState> {
                 && (image.getPixel(x, y) >>> 24) >= 128;
     }
 
-    private static void face(CubeListBuilder cloth, float x, float y, int width, int height,
-                             Direction direction, int u, int v) {
+    private static void face(CubeListBuilder cloth, float x, float y, int width, int height, Direction direction, int u, int v) {
         cloth.texOffs(u, v).addBox(x, y, -0.5F, width, height, 1.0F, Set.of(direction));
     }
 

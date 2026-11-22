@@ -15,6 +15,9 @@ import java.util.List;
 public final class ZAMCaseRewards {
     public static final Identifier CASTLE_CRASHERS_CASE = ZAMMod.id("castle_crashers_case");
     public static final Identifier COD_ZOMBIES_CASE = ZAMMod.id("cod_zombies_case");
+    public static final Identifier COUNTER_STRIKE_CASE = ZAMMod.id("counter_strike_case");
+    public static final Identifier DRAGON_BALL_CASE = ZAMMod.id("dragon_ball_case");
+    public static final Identifier HXH_CASE = ZAMMod.id("hxh_case");
     public static final Identifier MINECRAFT_CASE = ZAMMod.id("minecraft_case");
     public static final Identifier SPONGEBOB_CASE = ZAMMod.id("spongebob_case");
     public static final Identifier STARDEW_VALLEY_CASE = ZAMMod.id("stardew_valley_case");
@@ -115,6 +118,76 @@ public final class ZAMCaseRewards {
                                 pattern(ZAMCosmetics.COD_ZOMBIES_WOLF_BOW)), Rarity.LEGENDARY)),
 
                 () -> new ItemStack(ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER));
+
+        CaseRewards.registerDeferred(COUNTER_STRIKE_CASE, () -> List.of(
+                        new RarityItem(new ItemStack(ZAMItems.COUNTER_STRIKE_GO_THEME), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COUNTER_STRIKE_2_THEME), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COUNTER_STRIKE_DASHSTAR), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COUNTER_STRIKE_ULTIMATE), Rarity.COMMON),
+
+                        new RarityItem(new ItemStack(ZAMItems.COUNTER_STRIKE_EZ4ENCE), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.COUNTER_STRIKE_FLASHBANG_DANCE), Rarity.UNCOMMON),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.COUNTER_STRIKE_GOLD_STEPS),
+                                new ItemStack(ZAMItems.COUNTER_STRIKE_CRAB_RAVE),
+                                new ItemStack(ZAMItems.COUNTER_STRIKE_DIE_FOR_YOU),
+                                new ItemStack(ZAMItems.COUNTER_STRIKE_CARAMEL_DANCING)), Rarity.RARE),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.RED_ICON), List.of(
+                                pattern(ZAMCosmetics.COUNTER_STRIKE_TACTICAL_HEADGEAR),
+                                pattern(ZAMCosmetics.COUNTER_STRIKE_DUM_NOTE)), Rarity.EPIC),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.GOLD_ICON), List.of(
+                                pattern(ZAMCosmetics.COUNTER_STRIKE_DOPPLER_KNIFE),
+                                pattern(ZAMCosmetics.COUNTER_STRIKE_NIGHTWISH),
+                                pattern(ZAMCosmetics.COUNTER_STRIKE_GLITCHPOP_DAGGER)), Rarity.LEGENDARY)),
+
+                () -> new ItemStack(ZAMBlocks.COUNTER_STRIKE_COMPLETION_BANNER));
+
+        CaseRewards.registerDeferred(DRAGON_BALL_CASE, () -> List.of(
+                        new RarityItem(new ItemStack(ZAMItems.DRAGON_BALL_GATEBREAKER), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.DRAGON_BALL_BROLY_VS_GOGETA), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.DRAGON_BALL_ULTIMATE_BATTLE), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.DRAGON_BALL_GT_RECAP), Rarity.COMMON),
+
+                        new RarityItem(new ItemStack(ZAMItems.DRAGON_BALL_DAN_DAN), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.DRAGON_BALL_ULTRA_INSTINCT), Rarity.UNCOMMON),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.DRAGON_BALL_CHA_LA),
+                                new ItemStack(ZAMItems.DRAGON_BALL_THE_DRINK)), Rarity.RARE),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.RED_ICON), List.of(
+                                pattern(ZAMCosmetics.DRAGON_BALL_SUPER_SAIYAN_HAIR)), Rarity.EPIC),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.GOLD_ICON), List.of(
+                                pattern(ZAMCosmetics.DRAGON_BALL_POWER_POLL),
+                                pattern(ZAMCosmetics.DRAGON_BALL_SICKLE_OF_SORROW)), Rarity.LEGENDARY)),
+
+                () -> new ItemStack(ZAMBlocks.DRAGON_BALL_COMPLETION_BANNER));
+
+        CaseRewards.registerDeferred(HXH_CASE, () -> List.of(
+                        new RarityItem(new ItemStack(ZAMItems.HXH_DEPARTURE), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HXH_WORLD_OF_ADVENTURES), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HXH_BOYS_BE_COURAGEOUS), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HXH_FROM_WHALE_ISLAND), Rarity.COMMON),
+
+                        new RarityItem(new ItemStack(ZAMItems.HXH_HISOKA_THEME), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HXH_HYORI_ITTAI), Rarity.UNCOMMON),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.HXH_ALL_I_NEED_IS_MONEY),
+                                new ItemStack(ZAMItems.HXH_HUNTING_FOR_YOUR_DREAM)), Rarity.RARE),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.RED_ICON), List.of(
+                                pattern(ZAMCosmetics.HXH_GONS_HAIR)), Rarity.EPIC),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.GOLD_ICON), List.of(
+                                pattern(ZAMCosmetics.HXH_GONS_FISHING_ROD),
+                                pattern(ZAMCosmetics.HXH_CRAZY_SLOTS_SCYTHE)), Rarity.LEGENDARY)),
+
+                () -> new ItemStack(ZAMBlocks.HXH_COMPLETION_BANNER));
 
         CaseRewards.registerDeferred(MINECRAFT_CASE, () -> List.of(
                 new RarityItem(new ItemStack(ZAMItems.MINECRAFT_SUBWOOFER_LULLABY), Rarity.COMMON),
