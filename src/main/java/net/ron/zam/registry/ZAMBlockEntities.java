@@ -21,6 +21,7 @@ public final class ZAMBlockEntities {
                     ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER,
                     ZAMBlocks.COUNTER_STRIKE_COMPLETION_BANNER,
                     ZAMBlocks.DRAGON_BALL_COMPLETION_BANNER,
+                    ZAMBlocks.HOLIDAY_COMPLETION_BANNER,
                     ZAMBlocks.HXH_COMPLETION_BANNER,
                     ZAMBlocks.MINECRAFT_COMPLETION_BANNER,
                     ZAMBlocks.SPONGEBOB_COMPLETION_BANNER,

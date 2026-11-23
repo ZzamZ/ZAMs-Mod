@@ -220,6 +220,12 @@ public class ZAMRecipeProvider extends FabricRecipeProvider {
                         .define('S', ZAMTags.DRAGON_BALL_MUSIC_DISCS)
                         .unlockedBy("has_record_for_dragon_ball_case", has(ZAMTags.DRAGON_BALL_MUSIC_DISCS)).save(output);
 
+                shaped(RecipeCategory.MISC, ZAMItems.HOLIDAY_CASE)
+                        .pattern("SS ")
+                        .pattern("SS ")
+                        .define('S', ZAMTags.HOLIDAY_MUSIC_DISCS)
+                        .unlockedBy("has_record_for_holiday_case", has(ZAMTags.HOLIDAY_MUSIC_DISCS)).save(output);
+
                 shaped(RecipeCategory.MISC, ZAMItems.HXH_CASE)
                         .pattern("SS ")
                         .pattern("SS ")

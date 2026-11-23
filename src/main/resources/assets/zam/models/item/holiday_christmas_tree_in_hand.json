@@ -1,0 +1,6 @@
+{
+  "parent": "zam:item/christmas_tree_in_hand",
+  "textures": {
+    "layer0": "zam:item/holiday_christmas_tree_in_hand"
+  }
+}

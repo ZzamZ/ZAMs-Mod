@@ -133,6 +133,19 @@ public class ZAMModelProvider  extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ZAMItems.DRAGON_BALL_THE_DRINK, ModelTemplates.MUSIC_DISC);
         itemModelGenerators.generateFlatItem(ZAMCosmetics.DRAGON_BALL_SICKLE_OF_SORROW, ModelTemplates.FLAT_HANDHELD_ITEM);
 
+        itemModelGenerators.generateFlatItem(ZAMItems.HOLIDAY_CASE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMItems.HOLIDAY_LAST_CHRISTMAS, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HOLIDAY_WHITE_CHRISTMAS, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HOLIDAY_JINGLE_BELL_ROCK, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HOLIDAY_MARIAH_CAREY, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HOLIDAY_FELIZ_NAVIDAD, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HOLIDAY_THE_CHRISTMAS_SONG, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.HOLIDAY_HEAVY_METAL_CHRISTMAS, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.HOLIDAY_CANDY_CANE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.HOLIDAY_HOCKEY_STICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+
         itemModelGenerators.generateFlatItem(ZAMItems.HXH_CASE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ZAMItems.HXH_ALL_I_NEED_IS_MONEY, ModelTemplates.MUSIC_DISC);
         itemModelGenerators.generateFlatItem(ZAMItems.HXH_BOYS_BE_COURAGEOUS, ModelTemplates.MUSIC_DISC);

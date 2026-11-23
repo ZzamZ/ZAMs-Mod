@@ -87,6 +87,17 @@ public class ZAMJukeboxSongs {
     public static final ResourceKey<JukeboxSong> DRAGON_BALL_GT_RECAP = create("dragon_ball_gt_recap");
     public static final ResourceKey<JukeboxSong> DRAGON_BALL_THE_DRINK = create("dragon_ball_the_drink");
 
+    //Holiday
+    public static final ResourceKey<JukeboxSong> HOLIDAY_MARIAH_CAREY = create("holiday_mariah_carey");
+    public static final ResourceKey<JukeboxSong> HOLIDAY_LAST_CHRISTMAS = create("holiday_last_christmas");
+    public static final ResourceKey<JukeboxSong> HOLIDAY_FELIZ_NAVIDAD = create("holiday_feliz_navidad");
+    public static final ResourceKey<JukeboxSong> HOLIDAY_WHITE_CHRISTMAS = create("holiday_white_christmas");
+    public static final ResourceKey<JukeboxSong> HOLIDAY_JINGLE_BELL_ROCK = create("holiday_jingle_bell_rock");
+    public static final ResourceKey<JukeboxSong> HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE = create("holiday_rockin_around_the_christmas_tree");
+    public static final ResourceKey<JukeboxSong> HOLIDAY_THE_CHRISTMAS_SONG = create("holiday_the_christmas_song");
+    public static final ResourceKey<JukeboxSong> HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR = create("holiday_wonderful_time_of_the_year");
+    public static final ResourceKey<JukeboxSong> HOLIDAY_HEAVY_METAL_CHRISTMAS = create("holiday_heavy_metal_christmas");
+
     //Hunter X Hunter
     public static final ResourceKey<JukeboxSong> HXH_HUNTING_FOR_YOUR_DREAM = create("hxh_hunting_for_your_dream");
     public static final ResourceKey<JukeboxSong> HXH_ALL_I_NEED_IS_MONEY = create("hxh_all_i_need_is_money");
@@ -262,6 +273,17 @@ public class ZAMJukeboxSongs {
         register(context, DRAGON_BALL_BROLY_VS_GOGETA, ZAMSounds.DRAGON_BALL_BROLY_VS_GOGETA, 238, 1);
         register(context, DRAGON_BALL_GT_RECAP, ZAMSounds.DRAGON_BALL_GT_RECAP, 91, 1);
         register(context, DRAGON_BALL_THE_DRINK, ZAMSounds.DRAGON_BALL_THE_DRINK, 134, 1);
+
+        //Holiday
+        register(context, HOLIDAY_MARIAH_CAREY, ZAMSounds.HOLIDAY_MARIAH_CAREY, 241, 1);
+        register(context, HOLIDAY_LAST_CHRISTMAS, ZAMSounds.HOLIDAY_LAST_CHRISTMAS, 263, 1);
+        register(context, HOLIDAY_FELIZ_NAVIDAD, ZAMSounds.HOLIDAY_FELIZ_NAVIDAD, 181, 1);
+        register(context, HOLIDAY_WHITE_CHRISTMAS, ZAMSounds.HOLIDAY_WHITE_CHRISTMAS, 203, 1);
+        register(context, HOLIDAY_JINGLE_BELL_ROCK, ZAMSounds.HOLIDAY_JINGLE_BELL_ROCK, 130, 1);
+        register(context, HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE, ZAMSounds.HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE, 128, 1);
+        register(context, HOLIDAY_THE_CHRISTMAS_SONG, ZAMSounds.HOLIDAY_THE_CHRISTMAS_SONG, 195, 1);
+        register(context, HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR, ZAMSounds.HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR, 145, 1);
+        register(context, HOLIDAY_HEAVY_METAL_CHRISTMAS, ZAMSounds.HOLIDAY_HEAVY_METAL_CHRISTMAS, 314, 1);
 
         //Hunter X Hunter
         register(context, HXH_HUNTING_FOR_YOUR_DREAM, ZAMSounds.HXH_HUNTING_FOR_YOUR_DREAM, 81, 2);

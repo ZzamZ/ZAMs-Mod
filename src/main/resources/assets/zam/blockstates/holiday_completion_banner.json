@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "zam:block/holiday_completion_banner" },
+    "facing=east":  { "model": "zam:block/holiday_completion_banner", "y":  90 },
+    "facing=south": { "model": "zam:block/holiday_completion_banner", "y": 180 },
+    "facing=west":  { "model": "zam:block/holiday_completion_banner", "y": 270 }
+  }
+}

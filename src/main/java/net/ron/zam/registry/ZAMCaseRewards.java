@@ -17,6 +17,7 @@ public final class ZAMCaseRewards {
     public static final Identifier COD_ZOMBIES_CASE = ZAMMod.id("cod_zombies_case");
     public static final Identifier COUNTER_STRIKE_CASE = ZAMMod.id("counter_strike_case");
     public static final Identifier DRAGON_BALL_CASE = ZAMMod.id("dragon_ball_case");
+    public static final Identifier HOLIDAY_CASE = ZAMMod.id("holiday_case");
     public static final Identifier HXH_CASE = ZAMMod.id("hxh_case");
     public static final Identifier MINECRAFT_CASE = ZAMMod.id("minecraft_case");
     public static final Identifier SPONGEBOB_CASE = ZAMMod.id("spongebob_case");
@@ -166,6 +167,30 @@ public final class ZAMCaseRewards {
                                 pattern(ZAMCosmetics.DRAGON_BALL_SICKLE_OF_SORROW)), Rarity.LEGENDARY)),
 
                 () -> new ItemStack(ZAMBlocks.DRAGON_BALL_COMPLETION_BANNER));
+
+        CaseRewards.registerDeferred(HOLIDAY_CASE, () -> List.of(
+                        new RarityItem(new ItemStack(ZAMItems.HOLIDAY_LAST_CHRISTMAS), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HOLIDAY_WHITE_CHRISTMAS), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HOLIDAY_JINGLE_BELL_ROCK), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE), Rarity.COMMON),
+
+                        new RarityItem(new ItemStack(ZAMItems.HOLIDAY_MARIAH_CAREY), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HOLIDAY_FELIZ_NAVIDAD), Rarity.UNCOMMON),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.HOLIDAY_THE_CHRISTMAS_SONG),
+                                new ItemStack(ZAMItems.HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR),
+                                new ItemStack(ZAMItems.HOLIDAY_HEAVY_METAL_CHRISTMAS)), Rarity.RARE),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.RED_ICON), List.of(
+                                pattern(ZAMCosmetics.HOLIDAY_SANTA_HAT)), Rarity.EPIC),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.GOLD_ICON), List.of(
+                                pattern(ZAMCosmetics.HOLIDAY_CANDY_CANE),
+                                pattern(ZAMCosmetics.HOLIDAY_CHRISTMAS_TREE),
+                                pattern(ZAMCosmetics.HOLIDAY_HOCKEY_STICK)), Rarity.LEGENDARY)),
+
+                () -> new ItemStack(ZAMBlocks.HOLIDAY_COMPLETION_BANNER));
 
         CaseRewards.registerDeferred(HXH_CASE, () -> List.of(
                         new RarityItem(new ItemStack(ZAMItems.HXH_DEPARTURE), Rarity.COMMON),

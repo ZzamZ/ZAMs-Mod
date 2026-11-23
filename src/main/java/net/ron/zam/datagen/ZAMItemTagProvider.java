@@ -125,6 +125,17 @@ public class ZAMItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ZAMItems.getRK(ZAMItems.HXH_WORLD_OF_ADVENTURES))
                 .add(ZAMItems.getRK(ZAMItems.HXH_DEPARTURE));
 
+        tag(ZAMTags.HOLIDAY_MUSIC_DISCS)
+                .add(ZAMItems.getRK(ZAMItems.HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR))
+                .add(ZAMItems.getRK(ZAMItems.HOLIDAY_THE_CHRISTMAS_SONG))
+                .add(ZAMItems.getRK(ZAMItems.HOLIDAY_FELIZ_NAVIDAD))
+                .add(ZAMItems.getRK(ZAMItems.HOLIDAY_MARIAH_CAREY))
+                .add(ZAMItems.getRK(ZAMItems.HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE))
+                .add(ZAMItems.getRK(ZAMItems.HOLIDAY_JINGLE_BELL_ROCK))
+                .add(ZAMItems.getRK(ZAMItems.HOLIDAY_WHITE_CHRISTMAS))
+                .add(ZAMItems.getRK(ZAMItems.HOLIDAY_HEAVY_METAL_CHRISTMAS))
+                .add(ZAMItems.getRK(ZAMItems.HOLIDAY_LAST_CHRISTMAS));
+
         tag(ZAMTags.MINECRAFT_MUSIC_DISCS)
                 .add(ZAMItems.getRK(ZAMItems.MINECRAFT_MINECRAFT))
                 .add(ZAMItems.getRK(ZAMItems.MINECRAFT_SWEDEN))
@@ -220,6 +231,7 @@ public class ZAMItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_CASE))
                 .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_CASE))
                 .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_CASE))
+                .add(ZAMItems.getRK(ZAMItems.HOLIDAY_CASE))
                 .add(ZAMItems.getRK(ZAMItems.HXH_CASE))
                 .add(ZAMItems.getRK(ZAMItems.MINECRAFT_CASE))
                 .add(ZAMItems.getRK(ZAMItems.SPONGEBOB_CASE))
@@ -237,6 +249,7 @@ public class ZAMItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .addTag(ZAMTags.COD_ZOMBIES_MUSIC_DISCS)
                 .addTag(ZAMTags.COUNTER_STRIKE_MUSIC_DISCS)
                 .addTag(ZAMTags.DRAGON_BALL_MUSIC_DISCS)
+                .addTag(ZAMTags.HOLIDAY_MUSIC_DISCS)
                 .addTag(ZAMTags.HXH_MUSIC_DISCS)
                 .addTag(ZAMTags.MINECRAFT_MUSIC_DISCS)
                 .addTag(ZAMTags.SPONGEBOB_MUSIC_DISCS)

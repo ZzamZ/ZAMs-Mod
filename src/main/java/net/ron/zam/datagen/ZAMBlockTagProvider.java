@@ -52,6 +52,7 @@ public class ZAMBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.COUNTER_STRIKE_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.DRAGON_BALL_COMPLETION_BANNER.properties().blockIdOrThrow())
+                .add(ZAMBlocks.HOLIDAY_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.HXH_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.MINECRAFT_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.SPONGEBOB_COMPLETION_BANNER.properties().blockIdOrThrow())

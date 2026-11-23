@@ -124,6 +124,18 @@ public class ZAMItems {
     public static final Item DRAGON_BALL_GT_RECAP = collectionDisc("dragon_ball_gt_recap", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_GT_RECAP, Rarity.UNCOMMON);
     public static final Item DRAGON_BALL_THE_DRINK = collectionDisc("dragon_ball_the_drink", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_THE_DRINK, Rarity.RARE);
 
+    //Holiday
+    public static final Item HOLIDAY_CASE = collectionCase("holiday_case");
+    public static final Item HOLIDAY_MARIAH_CAREY = collectionDisc("holiday_mariah_carey", "Holiday", ZAMJukeboxSongs.HOLIDAY_MARIAH_CAREY, Rarity.RARE);
+    public static final Item HOLIDAY_LAST_CHRISTMAS = collectionDisc("holiday_last_christmas", "Holiday", ZAMJukeboxSongs.HOLIDAY_LAST_CHRISTMAS, Rarity.UNCOMMON);
+    public static final Item HOLIDAY_FELIZ_NAVIDAD = collectionDisc("holiday_feliz_navidad", "Holiday", ZAMJukeboxSongs.HOLIDAY_FELIZ_NAVIDAD, Rarity.RARE);
+    public static final Item HOLIDAY_WHITE_CHRISTMAS = collectionDisc("holiday_white_christmas", "Holiday", ZAMJukeboxSongs.HOLIDAY_WHITE_CHRISTMAS, Rarity.UNCOMMON);
+    public static final Item HOLIDAY_JINGLE_BELL_ROCK = collectionDisc("holiday_jingle_bell_rock", "Holiday", ZAMJukeboxSongs.HOLIDAY_JINGLE_BELL_ROCK, Rarity.UNCOMMON);
+    public static final Item HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE = collectionDisc("holiday_rockin_around_the_christmas_tree", "Holiday", ZAMJukeboxSongs.HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE, Rarity.UNCOMMON);
+    public static final Item HOLIDAY_THE_CHRISTMAS_SONG = collectionDisc("holiday_the_christmas_song", "Holiday", ZAMJukeboxSongs.HOLIDAY_THE_CHRISTMAS_SONG, Rarity.EPIC);
+    public static final Item HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR = collectionDisc("holiday_wonderful_time_of_the_year", "Holiday", ZAMJukeboxSongs.HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR, Rarity.EPIC);
+    public static final Item HOLIDAY_HEAVY_METAL_CHRISTMAS = collectionDisc("holiday_heavy_metal_christmas", "Holiday", ZAMJukeboxSongs.HOLIDAY_HEAVY_METAL_CHRISTMAS, Rarity.EPIC);
+
     //Hunter X Hunter (9)
     public static final Item HXH_CASE = collectionCase("hxh_case");
     public static final Item HXH_HUNTING_FOR_YOUR_DREAM = collectionDisc("hxh_hunting_for_your_dream", "Hunter X Hunter", ZAMJukeboxSongs.HXH_HUNTING_FOR_YOUR_DREAM, Rarity.RARE);

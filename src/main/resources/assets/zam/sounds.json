@@ -98,6 +98,18 @@
   "dragon_ball.equip": {"subtitle": "Hat equipped", "category": "player", "sounds": [{"name": "zam:dragon_ball/equip", "volume": 1.0, "pitch": 1.0}]},
   "dragon_ball.cosmetic_equip": {"subtitle": "Cosmetic equipped", "category": "player", "sounds": [{"name": "zam:dragon_ball/cosmetic_equip", "volume": 1.0, "pitch": 1.0}]},
 
+  "holiday.mariah_carey": {"sounds": [{"name": "zam:holiday/mariah_carey", "stream": true}]},
+  "holiday.last_christmas": {"sounds": [{"name": "zam:holiday/last_christmas", "stream": true}]},
+  "holiday.feliz_navidad": {"sounds": [{"name": "zam:holiday/feliz_navidad", "stream": true}]},
+  "holiday.white_christmas": {"sounds": [{"name": "zam:holiday/white_christmas", "stream": true}]},
+  "holiday.jingle_bell_rock": {"sounds": [{"name": "zam:holiday/jingle_bell_rock", "stream": true}]},
+  "holiday.rockin_around_the_christmas_tree": {"sounds": [{"name": "zam:holiday/rockin_around_the_christmas_tree", "stream": true}]},
+  "holiday.the_christmas_song": {"sounds": [{"name": "zam:holiday/the_christmas_song", "stream": true}]},
+  "holiday.wonderful_time_of_the_year": {"sounds": [{"name": "zam:holiday/wonderful_time_of_the_year", "stream": true}]},
+  "holiday.heavy_metal_christmas": {"sounds": [{"name": "zam:holiday/heavy_metal_christmas", "stream": true}]},
+  "holiday.cosmetic_equip": {"subtitle": "Cosmetic equipped", "category": "player", "sounds": [{"name": "zam:holiday/cosmetic_equip", "volume": 1.0, "pitch": 1.0}]},
+  "holiday.equip": {"subtitle": "Cosmetic equipped", "category": "player", "sounds": [{"name": "zam:holiday/equip", "volume": 1.0, "pitch": 1.0}]},
+
   "hxh.hunting_for_your_dream": {"sounds": [{"name": "zam:hxh/hunting_for_your_dream", "stream": true}]},
   "hxh.all_i_need_is_money": {"sounds": [{"name": "zam:hxh/all_i_need_is_money", "stream": true}]},
   "hxh.departure": {"sounds": [{"name": "zam:hxh/departure", "stream": true}]},

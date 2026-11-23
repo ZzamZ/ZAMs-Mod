@@ -41,6 +41,11 @@ public final class ZAMCosmetics {
     public static final Item DRAGON_BALL_SICKLE_OF_SORROW = ZAMItems.registerItem("dragon_ball_sickle_of_sorrow", Item::new);
     public static final Item DRAGON_BALL_SUPER_SAIYAN_HAIR = ZAMItems.registerItem("dragon_ball_super_saiyan_hair", Item::new);
 
+    public static final Item HOLIDAY_CANDY_CANE = ZAMItems.registerItem("holiday_candy_cane", Item::new);
+    public static final Item HOLIDAY_CHRISTMAS_TREE = ZAMItems.registerItem("holiday_christmas_tree", Item::new);
+    public static final Item HOLIDAY_HOCKEY_STICK = ZAMItems.registerItem("holiday_hockey_stick", Item::new);
+    public static final Item HOLIDAY_SANTA_HAT = ZAMItems.registerItem("holiday_santa_hat", Item::new);
+
     public static final Item HXH_GONS_FISHING_ROD = ZAMItems.registerItem("hxh_gons_fishing_rod", Item::new);
     public static final Item HXH_CRAZY_SLOTS_SCYTHE = ZAMItems.registerItem("hxh_crazy_slots_scythe", Item::new);
     public static final Item HXH_GONS_HAIR = ZAMItems.registerItem("hxh_gons_hair", Item::new);
@@ -97,6 +102,11 @@ public final class ZAMCosmetics {
         register(DRAGON_BALL_POWER_POLL, "Power Poll", "Dragon Ball", CosmeticTarget.SPEAR, 0xCC2222, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()));
         register(DRAGON_BALL_SICKLE_OF_SORROW, "Sickle of Sorrow", "Dragon Ball", CosmeticTarget.HOE, 0xE040FB, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()));
         register(DRAGON_BALL_SUPER_SAIYAN_HAIR, "Super Saiyan Hair", "Dragon Ball", CosmeticTarget.HELMET, 0xFFD700, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.DRAGON_BALL_EQUIP.location()));
+
+        register(HOLIDAY_CANDY_CANE, "Candy Cane", "Holiday", CosmeticTarget.HOE, 0xC62828, CosmeticSounds.apply(ZAMSounds.HOLIDAY_COSMETIC_EQUIP.location()));
+        register(HOLIDAY_CHRISTMAS_TREE, "Christmas Tree", "Holiday", CosmeticTarget.SPEAR, 0x2E7D32, CosmeticSounds.apply(ZAMSounds.HOLIDAY_COSMETIC_EQUIP.location()));
+        register(HOLIDAY_HOCKEY_STICK, "Hockey Stick", "Holiday", CosmeticTarget.HOE, 0x4B3621, CosmeticSounds.apply(ZAMSounds.HOLIDAY_COSMETIC_EQUIP.location()));
+        register(HOLIDAY_SANTA_HAT, "Santa Hat", "Holiday", CosmeticTarget.HELMET, 0xC62828, CosmeticSounds.apply(ZAMSounds.HOLIDAY_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.HOLIDAY_EQUIP.location()));
 
         register(HXH_GONS_FISHING_ROD, "Gon's Fishing Rod", "Hunter X Hunter", CosmeticTarget.FISHING_ROD, 0x4A9B45, CosmeticSounds.apply(ZAMSounds.HXH_COSMETIC_EQUIP.location()));
         register(HXH_CRAZY_SLOTS_SCYTHE, "Crazy Slots Scythe", "Hunter X Hunter", CosmeticTarget.HOE, 0xC0C0C0, CosmeticSounds.apply(ZAMSounds.HXH_COSMETIC_EQUIP.location()));

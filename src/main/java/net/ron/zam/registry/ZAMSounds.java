@@ -110,9 +110,21 @@ public class ZAMSounds {
     public static final SoundEvent DRAGON_BALL_BROLY_VS_GOGETA = registerSoundEvent("dragon_ball.broly_vs_gogeta");
     public static final SoundEvent DRAGON_BALL_GT_RECAP = registerSoundEvent("dragon_ball.gt_recap");
     public static final SoundEvent DRAGON_BALL_THE_DRINK = registerSoundEvent("dragon_ball.the_drink");
-    public static final SoundEvent DRAGON_BALL_PEACEFUL_DAYS = registerSoundEvent("dragon_ball.peaceful_days");
     public static final SoundEvent DRAGON_BALL_EQUIP = registerSoundEvent("dragon_ball.equip");
     public static final SoundEvent DRAGON_BALL_COSMETIC_EQUIP = registerSoundEvent("dragon_ball.cosmetic_equip");
+
+    //Holiday
+    public static final SoundEvent HOLIDAY_MARIAH_CAREY = registerSoundEvent("holiday.mariah_carey");
+    public static final SoundEvent HOLIDAY_LAST_CHRISTMAS = registerSoundEvent("holiday.last_christmas");
+    public static final SoundEvent HOLIDAY_FELIZ_NAVIDAD = registerSoundEvent("holiday.feliz_navidad");
+    public static final SoundEvent HOLIDAY_WHITE_CHRISTMAS = registerSoundEvent("holiday.white_christmas");
+    public static final SoundEvent HOLIDAY_JINGLE_BELL_ROCK = registerSoundEvent("holiday.jingle_bell_rock");
+    public static final SoundEvent HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE = registerSoundEvent("holiday.rockin_around_the_christmas_tree");
+    public static final SoundEvent HOLIDAY_THE_CHRISTMAS_SONG = registerSoundEvent("holiday.the_christmas_song");
+    public static final SoundEvent HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR = registerSoundEvent("holiday.wonderful_time_of_the_year");
+    public static final SoundEvent HOLIDAY_HEAVY_METAL_CHRISTMAS = registerSoundEvent("holiday.heavy_metal_christmas");
+    public static final SoundEvent HOLIDAY_COSMETIC_EQUIP = registerSoundEvent("holiday.cosmetic_equip");
+    public static final SoundEvent HOLIDAY_EQUIP = registerSoundEvent("holiday.equip");
 
     //Hunter X Hunter
     public static final SoundEvent HXH_HUNTING_FOR_YOUR_DREAM = registerSoundEvent("hxh.hunting_for_your_dream");
