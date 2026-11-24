@@ -118,14 +118,14 @@ public final class ZAMCosmetics {
         register(DRAGON_BALL_SICKLE_OF_SORROW, "Sickle of Sorrow", "Dragon Ball", CosmeticTarget.HOE, 0xE040FB, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()));
         register(DRAGON_BALL_SUPER_SAIYAN_HAIR, "Super Saiyan Hair", "Dragon Ball", CosmeticTarget.HELMET, 0xFFD700, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.DRAGON_BALL_EQUIP.location()));
 
-        register(ENTERTAINMENT_LIGHTSABER, "Lightsaber", "Entertainment", CosmeticTarget.SWORD, 0x2962FF, CosmeticSounds.apply(ZAMSounds.LIGHTSABER_EQUIP.location()));
-        register(ENTERTAINMENT_STORMBREAKER, "Stormbreaker", "Entertainment", CosmeticTarget.AXE, 0x78909C, CosmeticSounds.apply(ZAMSounds.STORMBREAKER_EQUIP.location()));
-        register(ENTERTAINMENT_INVERTED_SPEAR_OF_HEAVEN, "Inverted Spear of Heaven", "Entertainment", CosmeticTarget.KNIFE, CosmeticTarget.SWORD, 0xB0BEC5, CosmeticSounds.apply(ZAMSounds.ISOH_EQUIP.location()));
-        register(ENTERTAINMENT_DIPPER_HAT, "Pine Tree Hat", "Entertainment", CosmeticTarget.HELMET, 0x1E88E5, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()).withEquip(ZAMSounds.DIPPER_EQUIP.location()));
-        register(ENTERTAINMENT_GRUNKLE_STAN_HAT, "Grunkle Stan's Fez", "Entertainment", CosmeticTarget.HELMET, 0x212121, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()).withEquip(ZAMSounds.STAN_EQUIP.location()));
-        register(ENTERTAINMENT_ADAPTION_WHEEL, "Adaption Wheel", "Entertainment", CosmeticTarget.HELMET, 0xD6C13B, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()).withEquip(ZAMSounds.ADAPTION_EQUIP.location()));
-        register(ENTERTAINMENT_DARTH_VADER_MASK, "Darth Vader Mask", "Entertainment", CosmeticTarget.HELMET, 0x1A1A1A, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()).withEquip(ZAMSounds.VADER_EQUIP.location()));
-        register(ENTERTAINMENT_AHOY_HAT, "Scoops Ahoy Hat", "Entertainment", CosmeticTarget.HELMET, 0x1565C0, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()).withEquip(ZAMSounds.AHOY_EQUIP.location()));
+        register(ENTERTAINMENT_LIGHTSABER, "Lightsaber", "Entertainment", CosmeticTarget.SWORD, 0x3084E3, CosmeticSounds.apply(ZAMSounds.LIGHTSABER_EQUIP.location()));
+        register(ENTERTAINMENT_STORMBREAKER, "Stormbreaker", "Entertainment", CosmeticTarget.AXE, 0x7E9EAB, CosmeticSounds.apply(ZAMSounds.STORMBREAKER_EQUIP.location()));
+        register(ENTERTAINMENT_INVERTED_SPEAR_OF_HEAVEN, "Inverted Spear of Heaven", "Entertainment", CosmeticTarget.KNIFE, CosmeticTarget.SWORD, 0x817E7E, CosmeticSounds.apply(ZAMSounds.ISOH_EQUIP.location()));
+        register(ENTERTAINMENT_DIPPER_HAT, "Pine Tree Hat", "Entertainment", CosmeticTarget.HELMET, 0x88A5E0, CosmeticSounds.apply(ZAMSounds.DIPPER_EQUIP.location()).withEquip(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()));
+        register(ENTERTAINMENT_GRUNKLE_STAN_HAT, "Grunkle Stan's Fez", "Entertainment", CosmeticTarget.HELMET, 0x7E3D51, CosmeticSounds.apply(ZAMSounds.STAN_EQUIP.location()).withEquip(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()));
+        register(ENTERTAINMENT_ADAPTION_WHEEL, "Adaption Wheel", "Entertainment", CosmeticTarget.HELMET, 0xA6975F, CosmeticSounds.apply(ZAMSounds.ADAPTION_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.ADAPTION_EQUIP.location()));
+        register(ENTERTAINMENT_DARTH_VADER_MASK, "Darth Vader Mask", "Entertainment", CosmeticTarget.HELMET, 0x292A2A, CosmeticSounds.apply(ZAMSounds.VADER_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.VADER_EQUIP.location()));
+        register(ENTERTAINMENT_AHOY_HAT, "Scoops Ahoy Hat", "Entertainment", CosmeticTarget.HELMET, 0xE9EDFC, CosmeticSounds.apply(ZAMSounds.AHOY_EQUIP.location()).withEquip(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()));
 
         register(HALO_ENERGY_SWORD, "Energy Sword", "Halo", CosmeticTarget.SWORD, 0x7DEBFF, CosmeticSounds.apply(ZAMSounds.HALO_ENERGY_SWORD_EQUIP.location()));
         register(HALO_GRAVITY_HAMMER, "Gravity Hammer", "Halo", CosmeticTarget.MACE, 0x687580, CosmeticSounds.mace(ZAMSounds.HALO_COSMETIC_EQUIP.location(), ZAMSounds.HALO_MACE_HIT.location()));

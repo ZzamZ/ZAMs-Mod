@@ -128,6 +128,8 @@
   "entertainment.lightsaber_equip": {"subtitle": "Cosmetic equipped", "category": "player", "sounds": [{"name": "zam:entertainment/lightsaber_equip", "volume": 1.0, "pitch": 1.0}]},
   "entertainment.stormbreaker_equip": {"subtitle": "Cosmetic equipped", "category": "player", "sounds": [{"name": "zam:entertainment/stormbreaker_equip", "volume": 1.0, "pitch": 1.0}]},
   "entertainment.isoh_equip": {"subtitle": "Cosmetic equipped", "category": "player", "sounds": [{"name": "zam:entertainment/isoh_equip", "volume": 1.0, "pitch": 1.0}]},
+  "entertainment.vader_cosmetic_equip": {"subtitle": "Cosmetic equipped", "category": "player", "sounds": [{"name": "zam:entertainment/vader_cosmetic_equip", "volume": 1.0, "pitch": 1.0}]},
+  "entertainment.adaption_cosmetic_equip": {"subtitle": "Cosmetic equipped", "category": "player", "sounds": [{"name": "zam:entertainment/adaption_cosmetic_equip", "volume": 1.0, "pitch": 1.0}]},
 
   "halo.overture": {"sounds": [{"name": "zam:halo/overture", "stream": true}]},
   "halo.main_theme": {"sounds": [{"name": "zam:halo/main_theme", "stream": true}]},

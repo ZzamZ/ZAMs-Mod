@@ -140,7 +140,9 @@ public class ZAMSounds {
     public static final SoundEvent STAN_EQUIP = registerSoundEvent("entertainment.stan_equip");
     public static final SoundEvent AHOY_EQUIP = registerSoundEvent("entertainment.ahoy_equip");
     public static final SoundEvent VADER_EQUIP = registerSoundEvent("entertainment.vader_equip");
+    public static final SoundEvent VADER_COSMETIC_EQUIP = registerSoundEvent("entertainment.vader_cosmetic_equip");
     public static final SoundEvent ADAPTION_EQUIP = registerSoundEvent("entertainment.adaption_equip");
+    public static final SoundEvent ADAPTION_COSMETIC_EQUIP = registerSoundEvent("entertainment.adaption_cosmetic_equip");
     public static final SoundEvent LIGHTSABER_EQUIP = registerSoundEvent("entertainment.lightsaber_equip");
     public static final SoundEvent STORMBREAKER_EQUIP = registerSoundEvent("entertainment.stormbreaker_equip");
     public static final SoundEvent ISOH_EQUIP = registerSoundEvent("entertainment.isoh_equip");
