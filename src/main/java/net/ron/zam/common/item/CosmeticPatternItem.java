@@ -20,6 +20,7 @@ import net.ron.zam.ZAMMod;
 import net.ron.zam.common.component.AppliedCosmeticComponent;
 import net.ron.zam.common.component.CosmeticPatternComponent;
 import net.ron.zam.registry.ZAMComponents;
+import net.ron.zam.util.cosmetic.CosmeticPatterns;
 import net.ron.zam.util.cosmetic.CosmeticPreview;
 import net.ron.zam.util.cosmetic.CosmeticTarget;
 import net.ron.zam.util.tooltip.CosmeticPatternTooltip;
@@ -71,7 +72,7 @@ public class CosmeticPatternItem extends Item {
         if (action != ClickAction.PRIMARY)
             return false;
 
-        CosmeticPatternComponent definition = pattern.get(ZAMComponents.COSMETIC_PATTERN);
+        CosmeticPatternComponent definition = currentDefinition(pattern);
         List<CosmeticTarget> targets = definition == null ? List.of(target.resolve(fallbackTarget)) : definition.targets();
         Identifier effectiveModel = definition == null ? appliedModel : definition.model();
         int effectiveColor = definition == null ? tooltipColor : definition.tooltipColor();
@@ -129,7 +130,7 @@ public class CosmeticPatternItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay display, Consumer<Component> consumer, TooltipFlag flag) {
         super.appendHoverText(stack, context, display, consumer, flag);
-        CosmeticPatternComponent definition = stack.get(ZAMComponents.COSMETIC_PATTERN);
+        CosmeticPatternComponent definition = currentDefinition(stack);
         if (definition != null)
             return;
 
@@ -144,7 +145,7 @@ public class CosmeticPatternItem extends Item {
 
     @Override
     public Optional<TooltipComponent> getTooltipImage(ItemStack stack) {
-        CosmeticPatternComponent definition = stack.get(ZAMComponents.COSMETIC_PATTERN);
+        CosmeticPatternComponent definition = currentDefinition(stack);
         if (definition == null)
             return Optional.empty();
 
@@ -166,5 +167,12 @@ public class CosmeticPatternItem extends Item {
         }
 
         return names;
+    }
+
+    private static CosmeticPatternComponent currentDefinition(ItemStack stack) {
+        CosmeticPatternComponent saved = stack.get(ZAMComponents.COSMETIC_PATTERN);
+        if (saved == null) return null;
+
+        return CosmeticPatterns.cosmeticDefinition(saved.skinId()).orElse(saved);
     }
 }

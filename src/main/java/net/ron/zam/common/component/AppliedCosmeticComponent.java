@@ -18,6 +18,7 @@ import net.minecraft.world.item.equipment.Equippable;
 import net.ron.zam.registry.ZAMComponents;
 import net.ron.zam.registry.ZAMCosmetics;
 import net.ron.zam.registry.ZAMItems;
+import net.ron.zam.util.cosmetic.CosmeticPatterns;
 
 import java.util.Optional;
 import java.util.function.Consumer;
@@ -42,24 +43,29 @@ public record AppliedCosmeticComponent(Identifier skinId, Identifier originalMod
     @Override
     public void addToTooltip(Item.TooltipContext context, Consumer<Component> consumer, TooltipFlag flag, DataComponentGetter components) {
         Component skinName = displayName();
+        int currentColor = currentPatternDefinition().map(CosmeticPatternComponent::tooltipColor).orElse(tooltipColor);
         consumer.accept(Component.translatable("tooltip.zam.cosmetic.applied").withStyle(ChatFormatting.GRAY));
-        consumer.accept(Component.literal(" ").append(skinName).withColor(tooltipColor));
+        consumer.accept(Component.literal(" ").append(skinName).withColor(currentColor));
     }
 
     public ItemStack createReturnedItem() {
-        if (patternDefinition.isPresent()) {
-            CosmeticPatternComponent definition = patternDefinition.get();
+        CosmeticPatternComponent definition = currentPatternDefinition().orElse(null);
+        if (definition != null) {
             ItemStack token = new ItemStack(ZAMCosmetics.cosmeticTemplate(definition.target()));
             token.set(ZAMComponents.COSMETIC_PATTERN, definition);
             return token;
         }
-        return new ItemStack(
-                BuiltInRegistries.ITEM.getValue(skinId));
+
+        return new ItemStack(BuiltInRegistries.ITEM.getValue(skinId));
     }
 
     public Component displayName() {
-        return patternDefinition.<Component>map(definition -> Component.literal(definition.patternName())).orElseGet(
-                () -> Component.translatable("item." + skinId.getNamespace() + "." + skinId.getPath()));
+        return currentPatternDefinition().<Component>map(definition -> Component.literal(definition.patternName()))
+                .orElseGet(() -> Component.translatable("item." + skinId.getNamespace() + "." + skinId.getPath()));
+    }
+
+    public Optional<CosmeticPatternComponent> currentPatternDefinition() {
+        return CosmeticPatterns.cosmeticDefinition(skinId).or(() -> patternDefinition);
     }
 }
 
