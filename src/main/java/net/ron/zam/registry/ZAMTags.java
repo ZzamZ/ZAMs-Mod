@@ -27,6 +27,8 @@ public class ZAMTags {
     public static final TagKey<Item> COD_ZOMBIES_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "cod_zombies_music_discs"));
     public static final TagKey<Item> COUNTER_STRIKE_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "counter_strike_music_discs"));
     public static final TagKey<Item> DRAGON_BALL_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "dragon_ball_music_discs"));
+    public static final TagKey<Item> ENTERTAINMENT_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "entertainment_music_discs"));
+    public static final TagKey<Item> HALO_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "halo_music_discs"));
     public static final TagKey<Item> HOLIDAY_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "holiday_music_discs"));
     public static final TagKey<Item> HXH_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "hxh_music_discs"));
     public static final TagKey<Item> MINECRAFT_MUSIC_DISCS = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ZAMMod.MOD_ID, "minecraft_music_discs"));

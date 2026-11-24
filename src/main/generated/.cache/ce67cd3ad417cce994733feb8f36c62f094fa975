@@ -1,5 +1,5 @@
 // 26.3	-999999999-01-01T00:00:00	ZAM's Mod/Tags for minecraft:item
-9d6f3453565455d9a65b28e31c4cb98fcb5d6789 data/c/tags/item/music_discs.json
+d521ebea8ddce1a79a1e5e48535f226d5f9e4b3b data/c/tags/item/music_discs.json
 aef20a2830056675e77af914540cd8dcca1b1fb9 data/minecraft/tags/item/sulfur_cube_archetype/fast_flat.json
 aef20a2830056675e77af914540cd8dcca1b1fb9 data/minecraft/tags/item/sulfur_cube_swallowable.json
 f1b55ae1e0dff15cefc78e69a361ef79d038fc3d data/zam/tags/item/cases.json
@@ -19,6 +19,8 @@ b1b1de5dd36c189a00225507c31c1520042f57db data/zam/tags/item/cosmetic_targets/pic
 0920b44962def81502667a666d3ded82d176c3fe data/zam/tags/item/cosmetic_targets/swords.json
 06013f0237ba4a9fe7303d8fdf2d3b26dc26ac15 data/zam/tags/item/counter_strike_music_discs.json
 0816b6c24aed027d44e3a3ea5ffe60893bf5a9f6 data/zam/tags/item/dragon_ball_music_discs.json
+376b3a89232296af229e271c67eac2c7895102e9 data/zam/tags/item/entertainment_music_discs.json
+8b976e0eb430fa136803c2028862407bfece07d0 data/zam/tags/item/halo_music_discs.json
 f1a9964a224fdad405d3b739ee4531018854b2d8 data/zam/tags/item/holiday_music_discs.json
 3e77983ecec69494dd94bee6b73e933ef0661dbe data/zam/tags/item/hxh_music_discs.json
 aaf65bebc62af5954df6777fc11d36abae1dfdb0 data/zam/tags/item/minecraft_music_discs.json

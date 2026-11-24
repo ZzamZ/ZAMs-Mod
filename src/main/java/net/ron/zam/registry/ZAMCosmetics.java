@@ -4,6 +4,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.ron.zam.common.component.CosmeticPatternComponent;
 import net.ron.zam.util.cosmetic.CosmeticPatterns;
 import net.ron.zam.util.cosmetic.CosmeticSounds;
@@ -13,66 +14,80 @@ import java.util.List;
 import java.util.Optional;
 
 public final class ZAMCosmetics {
-    public static final Item CASTLE_CRASHERS_UNICORN_SWORD = ZAMItems.registerItem("castle_crashers_unicorn_sword", Item::new);
-    public static final Item CASTLE_CRASHERS_DEMON_SWORD = ZAMItems.registerItem("castle_crashers_demon_sword", Item::new);
-    public static final Item CASTLE_CRASHERS_CHICKEN_SWORD = ZAMItems.registerItem("castle_crashers_chicken_sword", Item::new);
-    public static final Item CASTLE_CRASHERS_RED_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_red_knight_helmet", Item::new);
-    public static final Item CASTLE_CRASHERS_ORANGE_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_orange_knight_helmet", Item::new);
-    public static final Item CASTLE_CRASHERS_GREEN_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_green_knight_helmet", Item::new);
-    public static final Item CASTLE_CRASHERS_BLUE_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_blue_knight_helmet", Item::new);
-    public static final Item CASTLE_CRASHERS_PURPLE_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_purple_knight_helmet", Item::new);
+    public static final Item CASTLE_CRASHERS_UNICORN_SWORD = ZAMItems.registerItem("castle_crashers_unicorn_sword", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item CASTLE_CRASHERS_DEMON_SWORD = ZAMItems.registerItem("castle_crashers_demon_sword", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item CASTLE_CRASHERS_CHICKEN_SWORD = ZAMItems.registerItem("castle_crashers_chicken_sword", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item CASTLE_CRASHERS_RED_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_red_knight_helmet", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item CASTLE_CRASHERS_ORANGE_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_orange_knight_helmet", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item CASTLE_CRASHERS_GREEN_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_green_knight_helmet", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item CASTLE_CRASHERS_BLUE_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_blue_knight_helmet", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item CASTLE_CRASHERS_PURPLE_KNIGHT_HELMET = ZAMItems.registerItem("castle_crashers_purple_knight_helmet", properties -> new Item(properties.rarity(Rarity.EPIC)));
 
-    public static final Item COD_ZOMBIES_HELLS_RETRIEVER = ZAMItems.registerItem("cod_zombies_hells_retriever", Item::new);
-    public static final Item COD_ZOMBIES_ICE_STAFF = ZAMItems.registerItem("cod_zombies_ice_staff", Item::new);
-    public static final Item COD_ZOMBIES_WOLF_BOW = ZAMItems.registerItem("cod_zombies_wolf_bow", Item::new);
-    public static final Item COD_ZOMBIES_APOTHICAN_SWORD = ZAMItems.registerItem("cod_zombies_apothican_sword", Item::new);
-    public static final Item COD_ZOMBIES_GOLDEN_SPORK = ZAMItems.registerItem("cod_zombies_golden_spork", Item::new);
-    public static final Item COD_ZOMBIES_MARGWA_MASK = ZAMItems.registerItem("cod_zombies_margwa_mask", Item::new);
-    public static final Item COD_ZOMBIES_APOTHICAN_MASK = ZAMItems.registerItem("cod_zombies_apothican_mask", Item::new);
-    public static final Item COD_ZOMBIES_FLAMING_SKULL = ZAMItems.registerItem("cod_zombies_flaming_skull", Item::new);
+    public static final Item COD_ZOMBIES_HELLS_RETRIEVER = ZAMItems.registerItem("cod_zombies_hells_retriever", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COD_ZOMBIES_ICE_STAFF = ZAMItems.registerItem("cod_zombies_ice_staff", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COD_ZOMBIES_WOLF_BOW = ZAMItems.registerItem("cod_zombies_wolf_bow", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COD_ZOMBIES_APOTHICAN_SWORD = ZAMItems.registerItem("cod_zombies_apothican_sword", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COD_ZOMBIES_GOLDEN_SPORK = ZAMItems.registerItem("cod_zombies_golden_spork", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COD_ZOMBIES_MARGWA_MASK = ZAMItems.registerItem("cod_zombies_margwa_mask", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COD_ZOMBIES_APOTHICAN_MASK = ZAMItems.registerItem("cod_zombies_apothican_mask", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COD_ZOMBIES_FLAMING_SKULL = ZAMItems.registerItem("cod_zombies_flaming_skull", properties -> new Item(properties.rarity(Rarity.EPIC)));
 
-    public static final Item COUNTER_STRIKE_NIGHTWISH = ZAMItems.registerItem("counter_strike_nightwish", Item::new);
-    public static final Item COUNTER_STRIKE_DOPPLER_KNIFE = ZAMItems.registerItem("counter_strike_doppler_knife", Item::new);
-    public static final Item COUNTER_STRIKE_GLITCHPOP_DAGGER = ZAMItems.registerItem("counter_strike_glitchpop_dagger", Item::new);
-    public static final Item COUNTER_STRIKE_TACTICAL_HEADGEAR = ZAMItems.registerItem("counter_strike_tactical_headgear", Item::new);
-    public static final Item COUNTER_STRIKE_DUM_NOTE = ZAMItems.registerItem("counter_strike_dum_note", Item::new);
+    public static final Item COUNTER_STRIKE_NIGHTWISH = ZAMItems.registerItem("counter_strike_nightwish", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COUNTER_STRIKE_DOPPLER_KNIFE = ZAMItems.registerItem("counter_strike_doppler_knife", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COUNTER_STRIKE_GLITCHPOP_DAGGER = ZAMItems.registerItem("counter_strike_glitchpop_dagger", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COUNTER_STRIKE_TACTICAL_HEADGEAR = ZAMItems.registerItem("counter_strike_tactical_headgear", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item COUNTER_STRIKE_DUM_NOTE = ZAMItems.registerItem("counter_strike_dum_note", properties -> new Item(properties.rarity(Rarity.EPIC)));
 
-    public static final Item DRAGON_BALL_POWER_POLL = ZAMItems.registerItem("dragon_ball_power_poll", Item::new);
-    public static final Item DRAGON_BALL_SICKLE_OF_SORROW = ZAMItems.registerItem("dragon_ball_sickle_of_sorrow", Item::new);
-    public static final Item DRAGON_BALL_SUPER_SAIYAN_HAIR = ZAMItems.registerItem("dragon_ball_super_saiyan_hair", Item::new);
+    public static final Item DRAGON_BALL_POWER_POLL = ZAMItems.registerItem("dragon_ball_power_poll", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item DRAGON_BALL_SICKLE_OF_SORROW = ZAMItems.registerItem("dragon_ball_sickle_of_sorrow", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item DRAGON_BALL_SUPER_SAIYAN_HAIR = ZAMItems.registerItem("dragon_ball_super_saiyan_hair", properties -> new Item(properties.rarity(Rarity.EPIC)));
 
-    public static final Item HOLIDAY_CANDY_CANE = ZAMItems.registerItem("holiday_candy_cane", Item::new);
-    public static final Item HOLIDAY_CHRISTMAS_TREE = ZAMItems.registerItem("holiday_christmas_tree", Item::new);
-    public static final Item HOLIDAY_HOCKEY_STICK = ZAMItems.registerItem("holiday_hockey_stick", Item::new);
-    public static final Item HOLIDAY_SANTA_HAT = ZAMItems.registerItem("holiday_santa_hat", Item::new);
+    public static final Item ENTERTAINMENT_LIGHTSABER = ZAMItems.registerItem("entertainment_lightsaber", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item ENTERTAINMENT_STORMBREAKER = ZAMItems.registerItem("entertainment_stormbreaker", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item ENTERTAINMENT_INVERTED_SPEAR_OF_HEAVEN = ZAMItems.registerItem("entertainment_inverted_spear_of_heaven", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item ENTERTAINMENT_GRUNKLE_STAN_HAT = ZAMItems.registerItem("entertainment_grunkle_stan_hat", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item ENTERTAINMENT_DIPPER_HAT = ZAMItems.registerItem("entertainment_dipper_hat", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item ENTERTAINMENT_DARTH_VADER_MASK = ZAMItems.registerItem("entertainment_darth_vader_mask", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item ENTERTAINMENT_AHOY_HAT = ZAMItems.registerItem("entertainment_ahoy_hat", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item ENTERTAINMENT_ADAPTION_WHEEL = ZAMItems.registerItem("entertainment_adaption_wheel", properties -> new Item(properties.rarity(Rarity.EPIC)));
 
-    public static final Item HXH_GONS_FISHING_ROD = ZAMItems.registerItem("hxh_gons_fishing_rod", Item::new);
-    public static final Item HXH_CRAZY_SLOTS_SCYTHE = ZAMItems.registerItem("hxh_crazy_slots_scythe", Item::new);
-    public static final Item HXH_GONS_HAIR = ZAMItems.registerItem("hxh_gons_hair", Item::new);
+    public static final Item HALO_ENERGY_SWORD = ZAMItems.registerItem("halo_energy_sword", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item HALO_GRAVITY_HAMMER = ZAMItems.registerItem("halo_gravity_hammer", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item HALO_NEEDLER = ZAMItems.registerItem("halo_needler", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item HALO_MASTER_CHIEF_HELMET = ZAMItems.registerItem("halo_master_chief_helmet", properties -> new Item(properties.rarity(Rarity.EPIC)));
 
-    public static final Item MINECRAFT_PIRATE_CUTLASS = ZAMItems.registerItem("minecraft_pirate_cutlass", Item::new);
-    public static final Item MINECRAFT_ECHO_OF_THE_VALLEY = ZAMItems.registerItem("minecraft_echo_of_the_valley", Item::new);
-    public static final Item MINECRAFT_ANCHOR = ZAMItems.registerItem("minecraft_anchor", Item::new);
-    public static final Item MINECRAFT_BEE_HELMET = ZAMItems.registerItem("minecraft_bee_helmet", Item::new);
-    public static final Item MINECRAFT_WOLF_HELMET = ZAMItems.registerItem("minecraft_wolf_helmet", Item::new);
+    public static final Item HOLIDAY_CANDY_CANE = ZAMItems.registerItem("holiday_candy_cane", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item HOLIDAY_CHRISTMAS_TREE = ZAMItems.registerItem("holiday_christmas_tree", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item HOLIDAY_HOCKEY_STICK = ZAMItems.registerItem("holiday_hockey_stick", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item HOLIDAY_SANTA_HAT = ZAMItems.registerItem("holiday_santa_hat", properties -> new Item(properties.rarity(Rarity.EPIC)));
 
-    public static final Item SPONGEBOB_GOLDEN_SPATULA = ZAMItems.registerItem("spongebob_golden_spatula", Item::new);
-    public static final Item SPONGEBOB_JELLYFISHING_NET = ZAMItems.registerItem("spongebob_jellyfishing_net", Item::new);
-    public static final Item SPONGEBOB_MARLIN_LANCE = ZAMItems.registerItem("spongebob_marlin_lance", Item::new);
-    public static final Item SPONGEBOB_KRUSTY_KRAB_HAT = ZAMItems.registerItem("spongebob_krusty_krab_hat", Item::new);
+    public static final Item HXH_GONS_FISHING_ROD = ZAMItems.registerItem("hxh_gons_fishing_rod", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item HXH_CRAZY_SLOTS_SCYTHE = ZAMItems.registerItem("hxh_crazy_slots_scythe", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item HXH_GONS_HAIR = ZAMItems.registerItem("hxh_gons_hair", properties -> new Item(properties.rarity(Rarity.EPIC)));
 
-    public static final Item STARDEW_VALLEY_DRAGONTOOTH_CUTLASS = ZAMItems.registerItem("stardew_valley_dragontooth_cutlass", Item::new);
-    public static final Item STARDEW_VALLEY_IRIDIUM_HOE = ZAMItems.registerItem("stardew_valley_iridium_hoe", Item::new);
-    public static final Item STARDEW_VALLEY_IRIDIUM_FISHING_ROD = ZAMItems.registerItem("stardew_valley_iridium_fishing_rod", Item::new);
-    public static final Item STARDEW_VALLEY_NEPTUNES_GLAIVE = ZAMItems.registerItem("stardew_valley_neptunes_glaive", Item::new);
-    public static final Item STARDEW_VALLEY_INFINITY_CROWN = ZAMItems.registerItem("stardew_valley_infinity_crown", Item::new);
-    public static final Item STARDEW_VALLEY_STRAW_HAT = ZAMItems.registerItem("stardew_valley_straw_hat", Item::new);
+    public static final Item MINECRAFT_PIRATE_CUTLASS = ZAMItems.registerItem("minecraft_pirate_cutlass", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item MINECRAFT_ECHO_OF_THE_VALLEY = ZAMItems.registerItem("minecraft_echo_of_the_valley", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item MINECRAFT_ANCHOR = ZAMItems.registerItem("minecraft_anchor", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item MINECRAFT_BEE_HELMET = ZAMItems.registerItem("minecraft_bee_helmet", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item MINECRAFT_WOLF_HELMET = ZAMItems.registerItem("minecraft_wolf_helmet", properties -> new Item(properties.rarity(Rarity.EPIC)));
 
-    public static final Item UNDERTALE_REAL_KNIFE = ZAMItems.registerItem("undertale_real_knife", Item::new);
-    public static final Item UNDERTALE_NICE_CREAM_SHOVEL = ZAMItems.registerItem("undertale_nice_cream_shovel", Item::new);
-    public static final Item UNDERTALE_UNDYNES_SPEAR = ZAMItems.registerItem("undertale_undynes_spear", Item::new);
-    public static final Item UNDERTALE_GASTER_BLASTER = ZAMItems.registerItem("undertale_gaster_blaster", Item::new);
-    public static final Item UNDERTALE_LAMP_SHADE = ZAMItems.registerItem("undertale_lamp_shade", Item::new);
+    public static final Item SPONGEBOB_GOLDEN_SPATULA = ZAMItems.registerItem("spongebob_golden_spatula", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item SPONGEBOB_JELLYFISHING_NET = ZAMItems.registerItem("spongebob_jellyfishing_net", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item SPONGEBOB_MARLIN_LANCE = ZAMItems.registerItem("spongebob_marlin_lance", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item SPONGEBOB_KRUSTY_KRAB_HAT = ZAMItems.registerItem("spongebob_krusty_krab_hat", properties -> new Item(properties.rarity(Rarity.EPIC)));
+
+    public static final Item STARDEW_VALLEY_DRAGONTOOTH_CUTLASS = ZAMItems.registerItem("stardew_valley_dragontooth_cutlass", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item STARDEW_VALLEY_IRIDIUM_HOE = ZAMItems.registerItem("stardew_valley_iridium_hoe", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item STARDEW_VALLEY_IRIDIUM_FISHING_ROD = ZAMItems.registerItem("stardew_valley_iridium_fishing_rod", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item STARDEW_VALLEY_NEPTUNES_GLAIVE = ZAMItems.registerItem("stardew_valley_neptunes_glaive", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item STARDEW_VALLEY_INFINITY_CROWN = ZAMItems.registerItem("stardew_valley_infinity_crown", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item STARDEW_VALLEY_STRAW_HAT = ZAMItems.registerItem("stardew_valley_straw_hat", properties -> new Item(properties.rarity(Rarity.EPIC)));
+
+    public static final Item UNDERTALE_REAL_KNIFE = ZAMItems.registerItem("undertale_real_knife", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item UNDERTALE_NICE_CREAM_SHOVEL = ZAMItems.registerItem("undertale_nice_cream_shovel", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item UNDERTALE_UNDYNES_SPEAR = ZAMItems.registerItem("undertale_undynes_spear", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item UNDERTALE_GASTER_BLASTER = ZAMItems.registerItem("undertale_gaster_blaster", properties -> new Item(properties.rarity(Rarity.EPIC)));
+    public static final Item UNDERTALE_LAMP_SHADE = ZAMItems.registerItem("undertale_lamp_shade", properties -> new Item(properties.rarity(Rarity.EPIC)));
 
     public static void registerCosmetics() {
         register(CASTLE_CRASHERS_UNICORN_SWORD, "Unicorn Sword", "Castle Crashers", CosmeticTarget.SWORD, 0xFFB6C1, CosmeticSounds.apply(ZAMSounds.CASTLE_CRASHERS_COSMETIC_EQUIP.location()));
@@ -102,6 +117,20 @@ public final class ZAMCosmetics {
         register(DRAGON_BALL_POWER_POLL, "Power Poll", "Dragon Ball", CosmeticTarget.SPEAR, 0xCC2222, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()));
         register(DRAGON_BALL_SICKLE_OF_SORROW, "Sickle of Sorrow", "Dragon Ball", CosmeticTarget.HOE, 0xE040FB, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()));
         register(DRAGON_BALL_SUPER_SAIYAN_HAIR, "Super Saiyan Hair", "Dragon Ball", CosmeticTarget.HELMET, 0xFFD700, CosmeticSounds.apply(ZAMSounds.DRAGON_BALL_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.DRAGON_BALL_EQUIP.location()));
+
+        register(ENTERTAINMENT_LIGHTSABER, "Lightsaber", "Entertainment", CosmeticTarget.SWORD, 0x2962FF, CosmeticSounds.apply(ZAMSounds.LIGHTSABER_EQUIP.location()));
+        register(ENTERTAINMENT_STORMBREAKER, "Stormbreaker", "Entertainment", CosmeticTarget.AXE, 0x78909C, CosmeticSounds.apply(ZAMSounds.STORMBREAKER_EQUIP.location()));
+        register(ENTERTAINMENT_INVERTED_SPEAR_OF_HEAVEN, "Inverted Spear of Heaven", "Entertainment", CosmeticTarget.KNIFE, CosmeticTarget.SWORD, 0xB0BEC5, CosmeticSounds.apply(ZAMSounds.ISOH_EQUIP.location()));
+        register(ENTERTAINMENT_DIPPER_HAT, "Pine Tree Hat", "Entertainment", CosmeticTarget.HELMET, 0x1E88E5, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()).withEquip(ZAMSounds.DIPPER_EQUIP.location()));
+        register(ENTERTAINMENT_GRUNKLE_STAN_HAT, "Grunkle Stan's Fez", "Entertainment", CosmeticTarget.HELMET, 0x212121, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()).withEquip(ZAMSounds.STAN_EQUIP.location()));
+        register(ENTERTAINMENT_ADAPTION_WHEEL, "Adaption Wheel", "Entertainment", CosmeticTarget.HELMET, 0xD6C13B, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()).withEquip(ZAMSounds.ADAPTION_EQUIP.location()));
+        register(ENTERTAINMENT_DARTH_VADER_MASK, "Darth Vader Mask", "Entertainment", CosmeticTarget.HELMET, 0x1A1A1A, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()).withEquip(ZAMSounds.VADER_EQUIP.location()));
+        register(ENTERTAINMENT_AHOY_HAT, "Scoops Ahoy Hat", "Entertainment", CosmeticTarget.HELMET, 0x1565C0, CosmeticSounds.apply(SoundEvents.ARMOR_EQUIP_LEATHER.value().location()).withEquip(ZAMSounds.AHOY_EQUIP.location()));
+
+        register(HALO_ENERGY_SWORD, "Energy Sword", "Halo", CosmeticTarget.SWORD, 0x7DEBFF, CosmeticSounds.apply(ZAMSounds.HALO_ENERGY_SWORD_EQUIP.location()));
+        register(HALO_GRAVITY_HAMMER, "Gravity Hammer", "Halo", CosmeticTarget.MACE, 0x687580, CosmeticSounds.mace(ZAMSounds.HALO_COSMETIC_EQUIP.location(), ZAMSounds.HALO_MACE_HIT.location()));
+        register(HALO_NEEDLER, "Needler", "Halo", CosmeticTarget.BOW, 0xE75BD9, CosmeticSounds.bow(ZAMSounds.HALO_NEEDLER_EQUIP.location(), ZAMSounds.HALO_BOW_SHOOT.location()));
+        register(HALO_MASTER_CHIEF_HELMET, "Master Chief Helmet", "Halo", CosmeticTarget.HELMET, 0x78864A, CosmeticSounds.apply(ZAMSounds.HALO_COSMETIC_EQUIP.location()).withEquip(ZAMSounds.HALO_EQUIP.location()));
 
         register(HOLIDAY_CANDY_CANE, "Candy Cane", "Holiday", CosmeticTarget.HOE, 0xC62828, CosmeticSounds.apply(ZAMSounds.HOLIDAY_COSMETIC_EQUIP.location()));
         register(HOLIDAY_CHRISTMAS_TREE, "Christmas Tree", "Holiday", CosmeticTarget.SPEAR, 0x2E7D32, CosmeticSounds.apply(ZAMSounds.HOLIDAY_COSMETIC_EQUIP.location()));

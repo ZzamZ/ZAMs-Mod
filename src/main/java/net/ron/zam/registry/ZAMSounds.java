@@ -113,6 +113,54 @@ public class ZAMSounds {
     public static final SoundEvent DRAGON_BALL_EQUIP = registerSoundEvent("dragon_ball.equip");
     public static final SoundEvent DRAGON_BALL_COSMETIC_EQUIP = registerSoundEvent("dragon_ball.cosmetic_equip");
 
+    //Entertainment
+    public static final SoundEvent ENTERTAINMENT_GRAVITY_FALLS = registerSoundEvent("entertainment.gravity_falls");
+    public static final SoundEvent ENTERTAINMENT_CARS = registerSoundEvent("entertainment.cars");
+    public static final SoundEvent ENTERTAINMENT_INCREDIBLES = registerSoundEvent("entertainment.incredibles");
+    public static final SoundEvent ENTERTAINMENT_AVENGERS = registerSoundEvent("entertainment.avengers");
+    public static final SoundEvent ENTERTAINMENT_LOTR = registerSoundEvent("entertainment.lotr");
+    public static final SoundEvent ENTERTAINMENT_POTC = registerSoundEvent("entertainment.potc");
+    public static final SoundEvent ENTERTAINMENT_STRANGER_THINGS = registerSoundEvent("entertainment.stranger_things");
+    public static final SoundEvent ENTERTAINMENT_INDIANA_JONES = registerSoundEvent("entertainment.indiana_jones");
+    public static final SoundEvent ENTERTAINMENT_AOT = registerSoundEvent("entertainment.aot");
+    public static final SoundEvent ENTERTAINMENT_ONE_PIECE = registerSoundEvent("entertainment.one_piece");
+    public static final SoundEvent ENTERTAINMENT_COWBOY_BEBOP = registerSoundEvent("entertainment.cowboy_bebop");
+    public static final SoundEvent ENTERTAINMENT_MINION_MARCH = registerSoundEvent("entertainment.minion_march");
+    public static final SoundEvent ENTERTAINMENT_STAR_WARS_DUEL_OF_THE_FATES = registerSoundEvent("entertainment.star_wars_duel_of_the_fates");
+    public static final SoundEvent ENTERTAINMENT_STAR_WARS_CANTINA_BAND = registerSoundEvent("entertainment.star_wars_cantina_band");
+    public static final SoundEvent ENTERTAINMENT_STAR_WARS_FORCE_MEDLEY = registerSoundEvent("entertainment.star_wars_force_medley");
+    public static final SoundEvent ENTERTAINMENT_JURASSIC_PARK = registerSoundEvent("entertainment.jurassic_park");
+    public static final SoundEvent ENTERTAINMENT_HARRY_POTTER = registerSoundEvent("entertainment.harry_potter");
+    public static final SoundEvent ENTERTAINMENT_HTTYD = registerSoundEvent("entertainment.httyd");
+    public static final SoundEvent ENTERTAINMENT_INTERSTELLAR = registerSoundEvent("entertainment.interstellar");
+    public static final SoundEvent ENTERTAINMENT_JJK = registerSoundEvent("entertainment.jjk");
+    public static final SoundEvent ENTERTAINMENT_DEMON_SLAYER = registerSoundEvent("entertainment.demon_slayer");
+    public static final SoundEvent ENTERTAINMENT_ARCANE = registerSoundEvent("entertainment.arcane");
+    public static final SoundEvent DIPPER_EQUIP = registerSoundEvent("entertainment.dipper_equip");
+    public static final SoundEvent STAN_EQUIP = registerSoundEvent("entertainment.stan_equip");
+    public static final SoundEvent AHOY_EQUIP = registerSoundEvent("entertainment.ahoy_equip");
+    public static final SoundEvent VADER_EQUIP = registerSoundEvent("entertainment.vader_equip");
+    public static final SoundEvent ADAPTION_EQUIP = registerSoundEvent("entertainment.adaption_equip");
+    public static final SoundEvent LIGHTSABER_EQUIP = registerSoundEvent("entertainment.lightsaber_equip");
+    public static final SoundEvent STORMBREAKER_EQUIP = registerSoundEvent("entertainment.stormbreaker_equip");
+    public static final SoundEvent ISOH_EQUIP = registerSoundEvent("entertainment.isoh_equip");
+
+    //Halo
+    public static final SoundEvent HALO_OVERTURE = registerSoundEvent("halo.overture");
+    public static final SoundEvent HALO_MAIN_THEME = registerSoundEvent("halo.main_theme");
+    public static final SoundEvent HALO_ONE_FINAL_EFFORT = registerSoundEvent("halo.one_final_effort");
+    public static final SoundEvent HALO_WARTHOG_RUN = registerSoundEvent("halo.warthog_run");
+    public static final SoundEvent HALO_TO_GALAXY = registerSoundEvent("halo.to_galaxy");
+    public static final SoundEvent HALO_FLOOD_THEME = registerSoundEvent("halo.flood_theme");
+    public static final SoundEvent HALO_COVENANT_DANCE = registerSoundEvent("halo.covenant_dance");
+    public static final SoundEvent HALO_PERIL = registerSoundEvent("halo.peril");
+    public static final SoundEvent HALO_ENERGY_SWORD_EQUIP = registerSoundEvent("halo.energy_sword_equip");
+    public static final SoundEvent HALO_NEEDLER_EQUIP = registerSoundEvent("halo.needler_equip");
+    public static final SoundEvent HALO_COSMETIC_EQUIP = registerSoundEvent("halo.cosmetic_equip");
+    public static final SoundEvent HALO_EQUIP = registerSoundEvent("halo.equip");
+    public static final SoundEvent HALO_BOW_SHOOT = registerSoundEvent("halo.bow_shoot");
+    public static final SoundEvent HALO_MACE_HIT = registerSoundEvent("halo.mace_hit");
+
     //Holiday
     public static final SoundEvent HOLIDAY_MARIAH_CAREY = registerSoundEvent("holiday.mariah_carey");
     public static final SoundEvent HOLIDAY_LAST_CHRISTMAS = registerSoundEvent("holiday.last_christmas");

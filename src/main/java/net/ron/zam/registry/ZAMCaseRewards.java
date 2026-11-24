@@ -17,6 +17,8 @@ public final class ZAMCaseRewards {
     public static final Identifier COD_ZOMBIES_CASE = ZAMMod.id("cod_zombies_case");
     public static final Identifier COUNTER_STRIKE_CASE = ZAMMod.id("counter_strike_case");
     public static final Identifier DRAGON_BALL_CASE = ZAMMod.id("dragon_ball_case");
+    public static final Identifier ENTERTAINMENT_CASE = ZAMMod.id("entertainment_case");
+    public static final Identifier HALO_CASE = ZAMMod.id("halo_case");
     public static final Identifier HOLIDAY_CASE = ZAMMod.id("holiday_case");
     public static final Identifier HXH_CASE = ZAMMod.id("hxh_case");
     public static final Identifier MINECRAFT_CASE = ZAMMod.id("minecraft_case");
@@ -167,6 +169,74 @@ public final class ZAMCaseRewards {
                                 pattern(ZAMCosmetics.DRAGON_BALL_SICKLE_OF_SORROW)), Rarity.LEGENDARY)),
 
                 () -> new ItemStack(ZAMBlocks.DRAGON_BALL_COMPLETION_BANNER));
+
+        CaseRewards.registerDeferred(ENTERTAINMENT_CASE, () -> List.of(
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_GRAVITY_FALLS), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_CARS), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_INCREDIBLES), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_MINION_MARCH), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_HTTYD), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_STRANGER_THINGS), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_INDIANA_JONES), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_HARRY_POTTER), Rarity.COMMON),
+
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_LOTR), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_POTC), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_JURASSIC_PARK), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_INTERSTELLAR), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.ENTERTAINMENT_AVENGERS), Rarity.UNCOMMON),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.ENTERTAINMENT_STAR_WARS_DUEL_OF_THE_FATES),
+                                new ItemStack(ZAMItems.ENTERTAINMENT_STAR_WARS_CANTINA_BAND),
+                                new ItemStack(ZAMItems.ENTERTAINMENT_STAR_WARS_FORCE_MEDLEY)), Rarity.RARE),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.ENTERTAINMENT_AOT),
+                                new ItemStack(ZAMItems.ENTERTAINMENT_ONE_PIECE),
+                                new ItemStack(ZAMItems.ENTERTAINMENT_COWBOY_BEBOP)), Rarity.RARE),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.ENTERTAINMENT_JJK),
+                                new ItemStack(ZAMItems.ENTERTAINMENT_DEMON_SLAYER),
+                                new ItemStack(ZAMItems.ENTERTAINMENT_ARCANE)), Rarity.RARE),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.RED_ICON), List.of(
+                                pattern(ZAMCosmetics.ENTERTAINMENT_DARTH_VADER_MASK),
+                                pattern(ZAMCosmetics.ENTERTAINMENT_AHOY_HAT),
+                                pattern(ZAMCosmetics.ENTERTAINMENT_DIPPER_HAT),
+                                pattern(ZAMCosmetics.ENTERTAINMENT_GRUNKLE_STAN_HAT),
+                                pattern(ZAMCosmetics.ENTERTAINMENT_ADAPTION_WHEEL)), Rarity.EPIC),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.GOLD_ICON), List.of(
+                                pattern(ZAMCosmetics.ENTERTAINMENT_LIGHTSABER),
+                                pattern(ZAMCosmetics.ENTERTAINMENT_STORMBREAKER),
+                                pattern(ZAMCosmetics.ENTERTAINMENT_INVERTED_SPEAR_OF_HEAVEN)), Rarity.LEGENDARY)),
+
+                () -> new ItemStack(ZAMBlocks.ENTERTAINMENT_COMPLETION_BANNER));
+
+        CaseRewards.registerDeferred(HALO_CASE, () -> List.of(
+                        new RarityItem(new ItemStack(ZAMItems.HALO_PERIL), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HALO_FLOOD_THEME), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HALO_COVENANT_DANCE), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HALO_TO_GALAXY), Rarity.COMMON),
+
+                        new RarityItem(new ItemStack(ZAMItems.HALO_MAIN_THEME), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.HALO_ONE_FINAL_EFFORT), Rarity.UNCOMMON),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.HALO_OVERTURE),
+                                new ItemStack(ZAMItems.HALO_WARTHOG_RUN)), Rarity.RARE),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.RED_ICON), List.of(
+                                pattern(ZAMCosmetics.HALO_MASTER_CHIEF_HELMET)), Rarity.EPIC),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.GOLD_ICON), List.of(
+                                pattern(ZAMCosmetics.HALO_ENERGY_SWORD),
+                                pattern(ZAMCosmetics.HALO_GRAVITY_HAMMER),
+                                pattern(ZAMCosmetics.HALO_NEEDLER)), Rarity.LEGENDARY)),
+
+                () -> new ItemStack(ZAMBlocks.HALO_COMPLETION_BANNER));
 
         CaseRewards.registerDeferred(HOLIDAY_CASE, () -> List.of(
                         new RarityItem(new ItemStack(ZAMItems.HOLIDAY_LAST_CHRISTMAS), Rarity.COMMON),

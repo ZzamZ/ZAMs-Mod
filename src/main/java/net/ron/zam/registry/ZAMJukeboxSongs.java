@@ -87,6 +87,40 @@ public class ZAMJukeboxSongs {
     public static final ResourceKey<JukeboxSong> DRAGON_BALL_GT_RECAP = create("dragon_ball_gt_recap");
     public static final ResourceKey<JukeboxSong> DRAGON_BALL_THE_DRINK = create("dragon_ball_the_drink");
 
+    //Entertainment
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_GRAVITY_FALLS = create("entertainment_gravity_falls");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_CARS = create("entertainment_cars");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_INCREDIBLES = create("entertainment_incredibles");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_AVENGERS = create("entertainment_avengers");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_LOTR = create("entertainment_lotr");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_POTC = create("entertainment_potc");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_STRANGER_THINGS = create("entertainment_stranger_things");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_INDIANA_JONES = create("entertainment_indiana_jones");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_AOT = create("entertainment_aot");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_ONE_PIECE = create("entertainment_one_piece");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_COWBOY_BEBOP = create("entertainment_cowboy_bebop");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_MINION_MARCH = create("entertainment_minion_march");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_STAR_WARS_DUEL_OF_THE_FATES = create("entertainment_star_wars_duel_of_the_fates");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_STAR_WARS_CANTINA_BAND = create("entertainment_star_wars_cantina_band");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_STAR_WARS_FORCE_MEDLEY = create("entertainment_star_wars_force_medley");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_JURASSIC_PARK = create("entertainment_jurassic_park");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_HARRY_POTTER = create("entertainment_harry_potter");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_HTTYD = create("entertainment_httyd");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_INTERSTELLAR = create("entertainment_interstellar");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_JJK = create("entertainment_jjk");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_DEMON_SLAYER = create("entertainment_demon_slayer");
+    public static final ResourceKey<JukeboxSong> ENTERTAINMENT_ARCANE = create("entertainment_arcane");
+
+    //Halo
+    public static final ResourceKey<JukeboxSong> HALO_OVERTURE = create("halo_overture");
+    public static final ResourceKey<JukeboxSong> HALO_MAIN_THEME = create("halo_main_theme");
+    public static final ResourceKey<JukeboxSong> HALO_ONE_FINAL_EFFORT = create("halo_one_final_effort");
+    public static final ResourceKey<JukeboxSong> HALO_WARTHOG_RUN = create("halo_warthog_run");
+    public static final ResourceKey<JukeboxSong> HALO_TO_GALAXY = create("halo_to_galaxy");
+    public static final ResourceKey<JukeboxSong> HALO_FLOOD_THEME = create("halo_flood_theme");
+    public static final ResourceKey<JukeboxSong> HALO_COVENANT_DANCE = create("halo_covenant_dance");
+    public static final ResourceKey<JukeboxSong> HALO_PERIL = create("halo_peril");
+
     //Holiday
     public static final ResourceKey<JukeboxSong> HOLIDAY_MARIAH_CAREY = create("holiday_mariah_carey");
     public static final ResourceKey<JukeboxSong> HOLIDAY_LAST_CHRISTMAS = create("holiday_last_christmas");
@@ -265,35 +299,69 @@ public class ZAMJukeboxSongs {
         register(context, COUNTER_STRIKE_CRAB_RAVE, ZAMSounds.COUNTER_STRIKE_CRAB_RAVE, 165, 3);
 
         //Dragon Ball
-        register(context, DRAGON_BALL_GATEBREAKER, ZAMSounds.DRAGON_BALL_GATEBREAKER, 106, 1);
-        register(context, DRAGON_BALL_DAN_DAN, ZAMSounds.DRAGON_BALL_DAN_DAN, 214, 1);
-        register(context, DRAGON_BALL_CHA_LA, ZAMSounds.DRAGON_BALL_CHA_LA, 199, 1);
-        register(context, DRAGON_BALL_ULTRA_INSTINCT, ZAMSounds.DRAGON_BALL_ULTRA_INSTINCT, 167, 1);
-        register(context, DRAGON_BALL_ULTIMATE_BATTLE, ZAMSounds.DRAGON_BALL_ULTIMATE_BATTLE, 240, 1);
-        register(context, DRAGON_BALL_BROLY_VS_GOGETA, ZAMSounds.DRAGON_BALL_BROLY_VS_GOGETA, 238, 1);
-        register(context, DRAGON_BALL_GT_RECAP, ZAMSounds.DRAGON_BALL_GT_RECAP, 91, 1);
-        register(context, DRAGON_BALL_THE_DRINK, ZAMSounds.DRAGON_BALL_THE_DRINK, 134, 1);
+        register(context, DRAGON_BALL_GATEBREAKER, ZAMSounds.DRAGON_BALL_GATEBREAKER, 106, 5);
+        register(context, DRAGON_BALL_DAN_DAN, ZAMSounds.DRAGON_BALL_DAN_DAN, 214, 5);
+        register(context, DRAGON_BALL_CHA_LA, ZAMSounds.DRAGON_BALL_CHA_LA, 199, 5);
+        register(context, DRAGON_BALL_ULTRA_INSTINCT, ZAMSounds.DRAGON_BALL_ULTRA_INSTINCT, 167, 5);
+        register(context, DRAGON_BALL_ULTIMATE_BATTLE, ZAMSounds.DRAGON_BALL_ULTIMATE_BATTLE, 240, 5);
+        register(context, DRAGON_BALL_BROLY_VS_GOGETA, ZAMSounds.DRAGON_BALL_BROLY_VS_GOGETA, 238, 5);
+        register(context, DRAGON_BALL_GT_RECAP, ZAMSounds.DRAGON_BALL_GT_RECAP, 91, 5);
+        register(context, DRAGON_BALL_THE_DRINK, ZAMSounds.DRAGON_BALL_THE_DRINK, 134, 5);
+
+        //Entertainment
+        register(context, ENTERTAINMENT_GRAVITY_FALLS, ZAMSounds.ENTERTAINMENT_GRAVITY_FALLS, 41, 1);
+        register(context, ENTERTAINMENT_CARS, ZAMSounds.ENTERTAINMENT_CARS, 275, 1);
+        register(context, ENTERTAINMENT_INCREDIBLES, ZAMSounds.ENTERTAINMENT_INCREDIBLES, 84, 1);
+        register(context, ENTERTAINMENT_AVENGERS, ZAMSounds.ENTERTAINMENT_AVENGERS, 120, 1);
+        register(context, ENTERTAINMENT_LOTR, ZAMSounds.ENTERTAINMENT_LOTR, 175, 1);
+        register(context, ENTERTAINMENT_POTC, ZAMSounds.ENTERTAINMENT_POTC, 90, 1);
+        register(context, ENTERTAINMENT_STRANGER_THINGS, ZAMSounds.ENTERTAINMENT_STRANGER_THINGS, 53, 1);
+        register(context, ENTERTAINMENT_INDIANA_JONES, ZAMSounds.ENTERTAINMENT_INDIANA_JONES, 305, 1);
+        register(context, ENTERTAINMENT_AOT, ZAMSounds.ENTERTAINMENT_AOT, 90, 1);
+        register(context, ENTERTAINMENT_ONE_PIECE, ZAMSounds.ENTERTAINMENT_ONE_PIECE, 116, 1);
+        register(context, ENTERTAINMENT_COWBOY_BEBOP, ZAMSounds.ENTERTAINMENT_COWBOY_BEBOP, 210, 1);
+        register(context, ENTERTAINMENT_MINION_MARCH, ZAMSounds.ENTERTAINMENT_MINION_MARCH, 81, 1);
+        register(context, ENTERTAINMENT_STAR_WARS_DUEL_OF_THE_FATES, ZAMSounds.ENTERTAINMENT_STAR_WARS_DUEL_OF_THE_FATES, 254, 1);
+        register(context, ENTERTAINMENT_STAR_WARS_CANTINA_BAND, ZAMSounds.ENTERTAINMENT_STAR_WARS_CANTINA_BAND, 164, 1);
+        register(context, ENTERTAINMENT_STAR_WARS_FORCE_MEDLEY, ZAMSounds.ENTERTAINMENT_STAR_WARS_FORCE_MEDLEY, 48, 1);
+        register(context, ENTERTAINMENT_JURASSIC_PARK, ZAMSounds.ENTERTAINMENT_JURASSIC_PARK, 207, 1);
+        register(context, ENTERTAINMENT_HARRY_POTTER, ZAMSounds.ENTERTAINMENT_HARRY_POTTER, 309, 1);
+        register(context, ENTERTAINMENT_HTTYD, ZAMSounds.ENTERTAINMENT_HTTYD, 156, 1);
+        register(context, ENTERTAINMENT_INTERSTELLAR, ZAMSounds.ENTERTAINMENT_INTERSTELLAR, 244, 1);
+        register(context, ENTERTAINMENT_JJK, ZAMSounds.ENTERTAINMENT_JJK, 90, 1);
+        register(context, ENTERTAINMENT_DEMON_SLAYER, ZAMSounds.ENTERTAINMENT_DEMON_SLAYER, 184, 1);
+        register(context, ENTERTAINMENT_ARCANE, ZAMSounds.ENTERTAINMENT_ARCANE, 148, 1);
+
+        //Halo
+        register(context, HALO_OVERTURE, ZAMSounds.HALO_OVERTURE, 287, 8);
+        register(context, HALO_MAIN_THEME, ZAMSounds.HALO_MAIN_THEME, 181, 8);
+        register(context, HALO_ONE_FINAL_EFFORT, ZAMSounds.HALO_ONE_FINAL_EFFORT, 189, 8);
+        register(context, HALO_WARTHOG_RUN, ZAMSounds.HALO_WARTHOG_RUN, 500, 8);
+        register(context, HALO_TO_GALAXY, ZAMSounds.HALO_TO_GALAXY, 297, 8);
+        register(context, HALO_FLOOD_THEME, ZAMSounds.HALO_FLOOD_THEME, 88, 8);
+        register(context, HALO_COVENANT_DANCE, ZAMSounds.HALO_COVENANT_DANCE, 117, 8);
+        register(context, HALO_PERIL, ZAMSounds.HALO_PERIL, 166, 8);
 
         //Holiday
-        register(context, HOLIDAY_MARIAH_CAREY, ZAMSounds.HOLIDAY_MARIAH_CAREY, 241, 1);
-        register(context, HOLIDAY_LAST_CHRISTMAS, ZAMSounds.HOLIDAY_LAST_CHRISTMAS, 263, 1);
-        register(context, HOLIDAY_FELIZ_NAVIDAD, ZAMSounds.HOLIDAY_FELIZ_NAVIDAD, 181, 1);
-        register(context, HOLIDAY_WHITE_CHRISTMAS, ZAMSounds.HOLIDAY_WHITE_CHRISTMAS, 203, 1);
-        register(context, HOLIDAY_JINGLE_BELL_ROCK, ZAMSounds.HOLIDAY_JINGLE_BELL_ROCK, 130, 1);
-        register(context, HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE, ZAMSounds.HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE, 128, 1);
-        register(context, HOLIDAY_THE_CHRISTMAS_SONG, ZAMSounds.HOLIDAY_THE_CHRISTMAS_SONG, 195, 1);
-        register(context, HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR, ZAMSounds.HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR, 145, 1);
-        register(context, HOLIDAY_HEAVY_METAL_CHRISTMAS, ZAMSounds.HOLIDAY_HEAVY_METAL_CHRISTMAS, 314, 1);
+        register(context, HOLIDAY_MARIAH_CAREY, ZAMSounds.HOLIDAY_MARIAH_CAREY, 241, 10);
+        register(context, HOLIDAY_LAST_CHRISTMAS, ZAMSounds.HOLIDAY_LAST_CHRISTMAS, 263, 10);
+        register(context, HOLIDAY_FELIZ_NAVIDAD, ZAMSounds.HOLIDAY_FELIZ_NAVIDAD, 181, 10);
+        register(context, HOLIDAY_WHITE_CHRISTMAS, ZAMSounds.HOLIDAY_WHITE_CHRISTMAS, 203, 10);
+        register(context, HOLIDAY_JINGLE_BELL_ROCK, ZAMSounds.HOLIDAY_JINGLE_BELL_ROCK, 130, 10);
+        register(context, HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE, ZAMSounds.HOLIDAY_ROCKIN_AROUND_THE_CHRISTMAS_TREE, 128, 10);
+        register(context, HOLIDAY_THE_CHRISTMAS_SONG, ZAMSounds.HOLIDAY_THE_CHRISTMAS_SONG, 195, 10);
+        register(context, HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR, ZAMSounds.HOLIDAY_WONDERFUL_TIME_OF_THE_YEAR, 145, 10);
+        register(context, HOLIDAY_HEAVY_METAL_CHRISTMAS, ZAMSounds.HOLIDAY_HEAVY_METAL_CHRISTMAS, 314, 10);
 
         //Hunter X Hunter
-        register(context, HXH_HUNTING_FOR_YOUR_DREAM, ZAMSounds.HXH_HUNTING_FOR_YOUR_DREAM, 81, 2);
-        register(context, HXH_ALL_I_NEED_IS_MONEY, ZAMSounds.HXH_ALL_I_NEED_IS_MONEY, 91, 2);
+        register(context, HXH_HUNTING_FOR_YOUR_DREAM, ZAMSounds.HXH_HUNTING_FOR_YOUR_DREAM, 81, 12);
+        register(context, HXH_ALL_I_NEED_IS_MONEY, ZAMSounds.HXH_ALL_I_NEED_IS_MONEY, 91, 12);
         register(context, HXH_DEPARTURE, ZAMSounds.HXH_DEPARTURE, 84, 2);
         register(context, HXH_HYORI_ITTAI, ZAMSounds.HXH_HYORI_ITTAI, 91, 2);
-        register(context, HXH_FROM_WHALE_ISLAND, ZAMSounds.HXH_FROM_WHALE_ISLAND,121, 2);
+        register(context, HXH_FROM_WHALE_ISLAND, ZAMSounds.HXH_FROM_WHALE_ISLAND,121, 12);
         register(context, HXH_HISOKA_THEME, ZAMSounds.HXH_HISOKA_THEME, 70, 2);
-        register(context, HXH_WORLD_OF_ADVENTURES, ZAMSounds.HXH_WORLD_OF_ADVENTURES, 161, 2);
-        register(context, HXH_BOYS_BE_COURAGEOUS, ZAMSounds.HXH_BOYS_BE_COURAGEOUS, 70, 2);
+        register(context, HXH_WORLD_OF_ADVENTURES, ZAMSounds.HXH_WORLD_OF_ADVENTURES, 161, 12);
+        register(context, HXH_BOYS_BE_COURAGEOUS, ZAMSounds.HXH_BOYS_BE_COURAGEOUS, 70, 12);
 
         //Minecraft
         register(context, MINECRAFT_SUBWOOFER_LULLABY, ZAMSounds.MINECRAFT_SUBWOOFER_LULLABY, 209, 5);

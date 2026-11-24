@@ -52,6 +52,8 @@ public class ZAMBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.COUNTER_STRIKE_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.DRAGON_BALL_COMPLETION_BANNER.properties().blockIdOrThrow())
+                .add(ZAMBlocks.ENTERTAINMENT_COMPLETION_BANNER.properties().blockIdOrThrow())
+                .add(ZAMBlocks.HALO_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.HOLIDAY_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.HXH_COMPLETION_BANNER.properties().blockIdOrThrow())
                 .add(ZAMBlocks.MINECRAFT_COMPLETION_BANNER.properties().blockIdOrThrow())
@@ -61,6 +63,12 @@ public class ZAMBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
 
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ZAMBlocks.MARINERS_FORTUNE.properties().blockIdOrThrow());
+
+        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ZAMBlocks.SAND_PATH.properties().blockIdOrThrow());
+
+        tag(BlockTags.SAND)
+                .add(ZAMBlocks.SAND_PATH.properties().blockIdOrThrow());
 
         tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(ZAMBlocks.SEA_JELLY_BLOCK.properties().blockIdOrThrow());

@@ -124,6 +124,42 @@ public class ZAMItems {
     public static final Item DRAGON_BALL_GT_RECAP = collectionDisc("dragon_ball_gt_recap", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_GT_RECAP, Rarity.UNCOMMON);
     public static final Item DRAGON_BALL_THE_DRINK = collectionDisc("dragon_ball_the_drink", "Dragon Ball", ZAMJukeboxSongs.DRAGON_BALL_THE_DRINK, Rarity.RARE);
 
+    //Entertainment
+    public static final Item ENTERTAINMENT_CASE = collectionCase("entertainment_case");
+    public static final Item ENTERTAINMENT_GRAVITY_FALLS = collectionDisc("entertainment_gravity_falls", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_GRAVITY_FALLS, Rarity.UNCOMMON);
+    public static final Item ENTERTAINMENT_CARS = collectionDisc("entertainment_cars", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_CARS, Rarity.UNCOMMON);
+    public static final Item ENTERTAINMENT_INCREDIBLES = collectionDisc("entertainment_incredibles", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_INCREDIBLES, Rarity.UNCOMMON);
+    public static final Item ENTERTAINMENT_AVENGERS = collectionDisc("entertainment_avengers", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_AVENGERS, Rarity.RARE);
+    public static final Item ENTERTAINMENT_LOTR = collectionDisc("entertainment_lotr", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_LOTR, Rarity.RARE);
+    public static final Item ENTERTAINMENT_POTC = collectionDisc("entertainment_potc", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_POTC, Rarity.RARE);
+    public static final Item ENTERTAINMENT_STRANGER_THINGS = collectionDisc("entertainment_stranger_things", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_STRANGER_THINGS, Rarity.UNCOMMON);
+    public static final Item ENTERTAINMENT_INDIANA_JONES = collectionDisc("entertainment_indiana_jones", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_INDIANA_JONES, Rarity.UNCOMMON);
+    public static final Item ENTERTAINMENT_AOT = collectionDisc("entertainment_aot", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_AOT, Rarity.RARE);
+    public static final Item ENTERTAINMENT_ONE_PIECE = collectionDisc("entertainment_one_piece", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_ONE_PIECE, Rarity.RARE);
+    public static final Item ENTERTAINMENT_COWBOY_BEBOP = collectionDisc("entertainment_cowboy_bebop", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_COWBOY_BEBOP, Rarity.RARE);
+    public static final Item ENTERTAINMENT_MINION_MARCH = collectionDisc("entertainment_minion_march", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_MINION_MARCH, Rarity.RARE);
+    public static final Item ENTERTAINMENT_STAR_WARS_DUEL_OF_THE_FATES = collectionDisc("entertainment_star_wars_duel_of_the_fates", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_STAR_WARS_DUEL_OF_THE_FATES, Rarity.RARE);
+    public static final Item ENTERTAINMENT_STAR_WARS_CANTINA_BAND = collectionDisc("entertainment_star_wars_cantina_band", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_STAR_WARS_CANTINA_BAND, Rarity.RARE);
+    public static final Item ENTERTAINMENT_STAR_WARS_FORCE_MEDLEY = collectionDisc("entertainment_star_wars_force_medley", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_STAR_WARS_FORCE_MEDLEY, Rarity.RARE);
+    public static final Item ENTERTAINMENT_JURASSIC_PARK = collectionDisc("entertainment_jurassic_park", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_JURASSIC_PARK, Rarity.RARE);
+    public static final Item ENTERTAINMENT_HARRY_POTTER = collectionDisc("entertainment_harry_potter", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_HARRY_POTTER, Rarity.UNCOMMON);
+    public static final Item ENTERTAINMENT_HTTYD = collectionDisc("entertainment_httyd", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_HTTYD, Rarity.RARE);
+    public static final Item ENTERTAINMENT_INTERSTELLAR = collectionDisc("entertainment_interstellar", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_INTERSTELLAR, Rarity.RARE);
+    public static final Item ENTERTAINMENT_JJK = collectionDisc("entertainment_jjk", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_JJK, Rarity.RARE);
+    public static final Item ENTERTAINMENT_DEMON_SLAYER = collectionDisc("entertainment_demon_slayer", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_DEMON_SLAYER, Rarity.RARE);
+    public static final Item ENTERTAINMENT_ARCANE = collectionDisc("entertainment_arcane", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_ARCANE, Rarity.RARE);
+
+    //Halo
+    public static final Item HALO_CASE = collectionCase("halo_case");
+    public static final Item HALO_OVERTURE = collectionDisc("halo_overture", "Halo", ZAMJukeboxSongs.HALO_OVERTURE, Rarity.EPIC);
+    public static final Item HALO_MAIN_THEME = collectionDisc("halo_main_theme", "Halo", ZAMJukeboxSongs.HALO_MAIN_THEME, Rarity.RARE);
+    public static final Item HALO_ONE_FINAL_EFFORT = collectionDisc("halo_one_final_effort", "Halo", ZAMJukeboxSongs.HALO_ONE_FINAL_EFFORT, Rarity.RARE);
+    public static final Item HALO_WARTHOG_RUN = collectionDisc("halo_warthog_run", "Halo", ZAMJukeboxSongs.HALO_WARTHOG_RUN, Rarity.EPIC);
+    public static final Item HALO_TO_GALAXY = collectionDisc("halo_to_galaxy", "Halo", ZAMJukeboxSongs.HALO_TO_GALAXY, Rarity.UNCOMMON);
+    public static final Item HALO_FLOOD_THEME = collectionDisc("halo_flood_theme", "Halo", ZAMJukeboxSongs.HALO_FLOOD_THEME, Rarity.UNCOMMON);
+    public static final Item HALO_COVENANT_DANCE = collectionDisc("halo_covenant_dance", "Halo", ZAMJukeboxSongs.HALO_COVENANT_DANCE, Rarity.UNCOMMON);
+    public static final Item HALO_PERIL = collectionDisc("halo_peril", "Halo", ZAMJukeboxSongs.HALO_PERIL, Rarity.UNCOMMON);
+
     //Holiday
     public static final Item HOLIDAY_CASE = collectionCase("holiday_case");
     public static final Item HOLIDAY_MARIAH_CAREY = collectionDisc("holiday_mariah_carey", "Holiday", ZAMJukeboxSongs.HOLIDAY_MARIAH_CAREY, Rarity.RARE);

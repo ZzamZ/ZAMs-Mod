@@ -13,10 +13,12 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ColorCollection;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.ron.zam.ZAMMod;
 import net.ron.zam.common.block.FairyLanternBlock;
+import net.ron.zam.common.block.SandPathBlock;
 import net.ron.zam.common.block.SeaJellyBlock;
 import net.ron.zam.common.block.banner.CompletionBannerBlock;
 import net.ron.zam.common.block.fortune.MarinersFortuneChestBlock;
@@ -35,6 +37,8 @@ public final class ZAMBlocks {
     public static final CompletionBannerBlock COD_ZOMBIES_COMPLETION_BANNER = completionBanner("cod_zombies_completion_banner", "Call of Duty Zombies");
     public static final CompletionBannerBlock COUNTER_STRIKE_COMPLETION_BANNER = completionBanner("counter_strike_completion_banner", "Counter Strike");
     public static final CompletionBannerBlock DRAGON_BALL_COMPLETION_BANNER = completionBanner("dragon_ball_completion_banner", "Dragon Ball");
+    public static final CompletionBannerBlock ENTERTAINMENT_COMPLETION_BANNER = completionBanner("entertainment_completion_banner", "Entertainment");
+    public static final CompletionBannerBlock HALO_COMPLETION_BANNER = completionBanner("halo_completion_banner", "Halo");
     public static final CompletionBannerBlock HOLIDAY_COMPLETION_BANNER = completionBanner("holiday_completion_banner", "Holiday");
     public static final CompletionBannerBlock HXH_COMPLETION_BANNER = completionBanner("hxh_completion_banner", "Hunter X Hunter");
     public static final CompletionBannerBlock MINECRAFT_COMPLETION_BANNER = completionBanner("minecraft_completion_banner", "Minecraft");
@@ -44,6 +48,7 @@ public final class ZAMBlocks {
 
     public static final Block SEA_JELLY_BLOCK = registerBlock("sea_jelly_block", properties -> new SeaJellyBlock(properties.mapColor(MapColor.COLOR_LIGHT_BLUE).strength(0.3F).lightLevel(state -> 15).sound(SoundType.FROGLIGHT)));
     public static final Block MARINERS_FORTUNE = registerBlock("mariners_fortune", properties -> new MarinersFortuneChestBlock(() -> ZAMBlockEntities.MARINERS_FORTUNE_CHEST, properties.mapColor(MapColor.METAL).strength(3.0F, 6.0F).sound(SoundType.METAL)), (block, properties) -> new BlockItem(block, properties.rarity(Rarity.RARE)));
+    public static final Block SAND_PATH = registerBlock("sand_path", properties -> new SandPathBlock(properties.mapColor(MapColor.SAND).strength(0.25F).sound(SoundType.SAND).instrument(NoteBlockInstrument.SNARE).pushReaction(PushReaction.POPPED)));
 
     public static final Block OAK_RECORD_RACK = recordRack("oak_record_rack", Blocks.OAK_FENCE, SoundType.WOOD);
     public static final Block SPRUCE_RECORD_RACK = recordRack("spruce_record_rack", Blocks.SPRUCE_FENCE, SoundType.WOOD);

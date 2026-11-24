@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.functions.CopyComponentsFunction;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.ron.zam.registry.ZAMBlocks;
@@ -34,11 +35,14 @@ public class ZAMLootTableProvider extends FabricBlockLootSubProvider {
 
         dropSelf(ZAMBlocks.MARINERS_FORTUNE);
         dropSelf(ZAMBlocks.SEA_JELLY_BLOCK);
+        dropOther(ZAMBlocks.SAND_PATH, Blocks.SAND);
 
         dropCompletionBanner(ZAMBlocks.CASTLE_CRASHERS_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.COD_ZOMBIES_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.COUNTER_STRIKE_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.DRAGON_BALL_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.ENTERTAINMENT_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.HALO_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.HOLIDAY_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.HXH_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.MINECRAFT_COMPLETION_BANNER);

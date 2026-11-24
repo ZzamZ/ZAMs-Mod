@@ -96,6 +96,7 @@ public final class ZAMCreativeModeTab {
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.NATURAL_BLOCKS).register(output -> {
             output.insertAfter(Blocks.DEAD_HORN_CORAL_FAN, ZAMBlocks.SEA_JELLY_BLOCK);
+            output.insertAfter(Blocks.SAND, ZAMBlocks.SAND_PATH);
         });
 
         ZAMMod.LOGGER.info("Registering Creative Mode Items for {}", ZAMMod.MOD_ID);
