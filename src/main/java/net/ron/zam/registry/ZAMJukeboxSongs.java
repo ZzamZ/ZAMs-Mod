@@ -111,6 +111,31 @@ public class ZAMJukeboxSongs {
     public static final ResourceKey<JukeboxSong> ENTERTAINMENT_DEMON_SLAYER = create("entertainment_demon_slayer");
     public static final ResourceKey<JukeboxSong> ENTERTAINMENT_ARCANE = create("entertainment_arcane");
 
+    //Gaming
+    public static final ResourceKey<JukeboxSong> GAMING_WELCOME_TO_SNAXBURG = create("gaming_welcome_to_snaxburg");
+    public static final ResourceKey<JukeboxSong> GAMING_TETRIS = create("gaming_tetris");
+    public static final ResourceKey<JukeboxSong> GAMING_SKYRIM = create("gaming_skyrim");
+    public static final ResourceKey<JukeboxSong> GAMING_RUNESCAPE = create("gaming_runescape");
+    public static final ResourceKey<JukeboxSong> GAMING_REPO = create("gaming_repo");
+    public static final ResourceKey<JukeboxSong> GAMING_RDR2_TRAIN_HEIST = create("gaming_rdr2_train_heist");
+    public static final ResourceKey<JukeboxSong> GAMING_RDR2_HOUSE_SONG = create("gaming_rdr2_house_song");
+    public static final ResourceKey<JukeboxSong> GAMING_RDR2_A_QUIET_TIME = create("gaming_rdr2_a_quiet_time");
+    public static final ResourceKey<JukeboxSong> GAMING_DEADLOCK = create("gaming_deadlock");
+    public static final ResourceKey<JukeboxSong> GAMING_PVZ = create("gaming_pvz");
+    public static final ResourceKey<JukeboxSong> GAMING_PIZZA_TIME = create("gaming_pizza_time");
+    public static final ResourceKey<JukeboxSong> GAMING_FORTNITE = create("gaming_fortnite");
+    public static final ResourceKey<JukeboxSong> GAMING_DOOM = create("gaming_doom");
+    public static final ResourceKey<JukeboxSong> GAMING_CASTLEVANIA = create("gaming_castlevania");
+    public static final ResourceKey<JukeboxSong> GAMING_CELESTE = create("gaming_celeste");
+    public static final ResourceKey<JukeboxSong> GAMING_BLOONS = create("gaming_bloons");
+    public static final ResourceKey<JukeboxSong> GAMING_BALATRO = create("gaming_balatro");
+    public static final ResourceKey<JukeboxSong> GAMING_JERMA = create("gaming_jerma");
+    public static final ResourceKey<JukeboxSong> GAMING_CLASH = create("gaming_clash");
+    public static final ResourceKey<JukeboxSong> GAMING_FNAF = create("gaming_fnaf");
+    public static final ResourceKey<JukeboxSong> GAMING_JETPACK_JOYRIDE = create("gaming_jetpack_joyride");
+    public static final ResourceKey<JukeboxSong> GAMING_DESTINY = create("gaming_destiny");
+    public static final ResourceKey<JukeboxSong> GAMING_THIS_IS_FNAF = create("gaming_this_is_fnaf");
+
     //Halo
     public static final ResourceKey<JukeboxSong> HALO_OVERTURE = create("halo_overture");
     public static final ResourceKey<JukeboxSong> HALO_MAIN_THEME = create("halo_main_theme");
@@ -331,6 +356,31 @@ public class ZAMJukeboxSongs {
         register(context, ENTERTAINMENT_JJK, ZAMSounds.ENTERTAINMENT_JJK, 90, 1);
         register(context, ENTERTAINMENT_DEMON_SLAYER, ZAMSounds.ENTERTAINMENT_DEMON_SLAYER, 184, 1);
         register(context, ENTERTAINMENT_ARCANE, ZAMSounds.ENTERTAINMENT_ARCANE, 148, 1);
+
+        //Gaming
+        register(context, GAMING_WELCOME_TO_SNAXBURG, ZAMSounds.GAMING_WELCOME_TO_SNAXBURG, 139, 1);
+        register(context, GAMING_TETRIS, ZAMSounds.GAMING_TETRIS, 83, 1);
+        register(context, GAMING_SKYRIM, ZAMSounds.GAMING_SKYRIM, 103, 1);
+        register(context, GAMING_RUNESCAPE, ZAMSounds.GAMING_RUNESCAPE, 127, 1);
+        register(context, GAMING_REPO, ZAMSounds.GAMING_REPO, 41, 1);
+        register(context, GAMING_RDR2_TRAIN_HEIST, ZAMSounds.GAMING_RDR2_TRAIN_HEIST, 173, 1);
+        register(context, GAMING_RDR2_HOUSE_SONG, ZAMSounds.GAMING_RDR2_HOUSE_SONG, 191, 1);
+        register(context, GAMING_RDR2_A_QUIET_TIME, ZAMSounds.GAMING_RDR2_A_QUIET_TIME, 323, 1);
+        register(context, GAMING_DEADLOCK, ZAMSounds.GAMING_DEADLOCK, 224, 1);
+        register(context, GAMING_PVZ, ZAMSounds.GAMING_PVZ, 107, 1);
+        register(context, GAMING_PIZZA_TIME, ZAMSounds.GAMING_PIZZA_TIME, 232, 1);
+        register(context, GAMING_FORTNITE, ZAMSounds.GAMING_FORTNITE, 192, 1);
+        register(context, GAMING_DOOM, ZAMSounds.GAMING_DOOM, 210, 1);
+        register(context, GAMING_CASTLEVANIA, ZAMSounds.GAMING_CASTLEVANIA, 190, 1);
+        register(context, GAMING_CELESTE, ZAMSounds.GAMING_CELESTE, 578, 1);
+        register(context, GAMING_BLOONS, ZAMSounds.GAMING_BLOONS, 244, 1);
+        register(context, GAMING_BALATRO, ZAMSounds.GAMING_BALATRO, 241, 1);
+        register(context, GAMING_JERMA, ZAMSounds.GAMING_JERMA, 128, 1);
+        register(context, GAMING_CLASH, ZAMSounds.GAMING_CLASH, 319, 1);
+        register(context, GAMING_FNAF, ZAMSounds.GAMING_FNAF, 151, 1);
+        register(context, GAMING_JETPACK_JOYRIDE, ZAMSounds.GAMING_JETPACK_JOYRIDE, 137, 1);
+        register(context, GAMING_DESTINY, ZAMSounds.GAMING_DESTINY, 204, 1);
+        register(context, GAMING_THIS_IS_FNAF, ZAMSounds.GAMING_THIS_IS_FNAF, 204, 1);
 
         //Halo
         register(context, HALO_OVERTURE, ZAMSounds.HALO_OVERTURE, 287, 8);

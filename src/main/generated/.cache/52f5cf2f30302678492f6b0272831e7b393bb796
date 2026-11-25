@@ -35,6 +35,7 @@ c29edfa437b7e90d720e7394303a2e43c64659bf data/zam/advancement/recipes/misc/dwell
 10af46b7d671f3877460bed171b25f20c9f5f357 data/zam/advancement/recipes/misc/entertainment_case.json
 b656a7bd0784870e94c0b04f8895e9644525e128 data/zam/advancement/recipes/misc/frosty_armor_trim_smithing_template.json
 14671aabe45551340adc335274e74b7b8ba17d91 data/zam/advancement/recipes/misc/frosty_smithing_trim.json
+24079f94fb43d503b69efdc1e98f13cbbed0fc92 data/zam/advancement/recipes/misc/gaming_case.json
 5a1e9a96f1c987627a2b321836beac2b57265df5 data/zam/advancement/recipes/misc/halo_case.json
 5223ce139aa1221c589f4d81f21640f18d5c8130 data/zam/advancement/recipes/misc/holiday_case.json
 bc4c7c3e040f92cda4e53e20ff0297b72cf1221a data/zam/advancement/recipes/misc/hxh_case.json
@@ -73,6 +74,7 @@ b2cd0effc76c1c82c77455f2c8269389047a1f38 data/zam/recipe/cyan_fairy_lantern.json
 2413032c2cd76d68ec49028012c786d85dbf7e48 data/zam/recipe/entertainment_case.json
 d691b0d2ead0a3c9d36d87364f869d02b949d9ba data/zam/recipe/frosty_armor_trim_smithing_template.json
 8fe8d0dd36f051db956a5873153f4cf7dba3edeb data/zam/recipe/frosty_smithing_trim.json
+51d3bd938c6ca67be09f50909fbad6f259031e28 data/zam/recipe/gaming_case.json
 f23158b9a0103e8cf9c9e96d59cd358c75d699f5 data/zam/recipe/gray_fairy_lantern.json
 77436b110ac441639256b99adc89afbed0b44411 data/zam/recipe/green_fairy_lantern.json
 3bef71a48a276665835b6896c6483a9d308c2c0b data/zam/recipe/halo_case.json

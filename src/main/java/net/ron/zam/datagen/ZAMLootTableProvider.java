@@ -42,6 +42,7 @@ public class ZAMLootTableProvider extends FabricBlockLootSubProvider {
         dropCompletionBanner(ZAMBlocks.COUNTER_STRIKE_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.DRAGON_BALL_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.ENTERTAINMENT_COMPLETION_BANNER);
+        dropCompletionBanner(ZAMBlocks.GAMING_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.HALO_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.HOLIDAY_COMPLETION_BANNER);
         dropCompletionBanner(ZAMBlocks.HXH_COMPLETION_BANNER);

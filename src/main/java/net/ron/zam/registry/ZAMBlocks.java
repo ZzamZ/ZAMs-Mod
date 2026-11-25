@@ -38,6 +38,7 @@ public final class ZAMBlocks {
     public static final CompletionBannerBlock COUNTER_STRIKE_COMPLETION_BANNER = completionBanner("counter_strike_completion_banner", "Counter Strike");
     public static final CompletionBannerBlock DRAGON_BALL_COMPLETION_BANNER = completionBanner("dragon_ball_completion_banner", "Dragon Ball");
     public static final CompletionBannerBlock ENTERTAINMENT_COMPLETION_BANNER = completionBanner("entertainment_completion_banner", "Entertainment");
+    public static final CompletionBannerBlock GAMING_COMPLETION_BANNER = completionBanner("gaming_completion_banner", "Gaming");
     public static final CompletionBannerBlock HALO_COMPLETION_BANNER = completionBanner("halo_completion_banner", "Halo");
     public static final CompletionBannerBlock HOLIDAY_COMPLETION_BANNER = completionBanner("holiday_completion_banner", "Holiday");
     public static final CompletionBannerBlock HXH_COMPLETION_BANNER = completionBanner("hxh_completion_banner", "Hunter X Hunter");

@@ -160,6 +160,35 @@ public class ZAMModelProvider  extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ZAMCosmetics.ENTERTAINMENT_LIGHTSABER, ModelTemplates.FLAT_HANDHELD_ITEM);
         itemModelGenerators.generateFlatItem(ZAMCosmetics.ENTERTAINMENT_STORMBREAKER, ModelTemplates.FLAT_HANDHELD_ITEM);
 
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_CASE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_WELCOME_TO_SNAXBURG, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_TETRIS, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_SKYRIM, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_RUNESCAPE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_REPO, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_RDR2_TRAIN_HEIST, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_RDR2_HOUSE_SONG, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_RDR2_A_QUIET_TIME, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_DEADLOCK, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_PVZ, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_PIZZA_TIME, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_FORTNITE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_DOOM, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_CASTLEVANIA, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_CELESTE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_BLOONS, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_BALATRO, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_JERMA, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_CLASH, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_FNAF, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_JETPACK_JOYRIDE, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_DESTINY, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMItems.GAMING_THIS_IS_FNAF, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.GAMING_BUSTER_SWORD, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.GAMING_GEM_SHOVEL, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.GAMING_TETROMINO_PICKAXE, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMCosmetics.GAMING_GRANNY_CANE, ModelTemplates.FLAT_HANDHELD_ITEM);
+
         itemModelGenerators.generateFlatItem(ZAMItems.HALO_CASE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ZAMItems.HALO_OVERTURE, ModelTemplates.MUSIC_DISC);
         itemModelGenerators.generateFlatItem(ZAMItems.HALO_MAIN_THEME, ModelTemplates.MUSIC_DISC);

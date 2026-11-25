@@ -18,6 +18,7 @@ public final class ZAMCaseRewards {
     public static final Identifier COUNTER_STRIKE_CASE = ZAMMod.id("counter_strike_case");
     public static final Identifier DRAGON_BALL_CASE = ZAMMod.id("dragon_ball_case");
     public static final Identifier ENTERTAINMENT_CASE = ZAMMod.id("entertainment_case");
+    public static final Identifier GAMING_CASE = ZAMMod.id("gaming_case");
     public static final Identifier HALO_CASE = ZAMMod.id("halo_case");
     public static final Identifier HOLIDAY_CASE = ZAMMod.id("holiday_case");
     public static final Identifier HXH_CASE = ZAMMod.id("hxh_case");
@@ -214,6 +215,51 @@ public final class ZAMCaseRewards {
                                 pattern(ZAMCosmetics.ENTERTAINMENT_INVERTED_SPEAR_OF_HEAVEN)), Rarity.LEGENDARY)),
 
                 () -> new ItemStack(ZAMBlocks.ENTERTAINMENT_COMPLETION_BANNER));
+
+        CaseRewards.registerDeferred(GAMING_CASE, () -> List.of(
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_WELCOME_TO_SNAXBURG), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_TETRIS), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_REPO), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_FORTNITE), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_CELESTE), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_BLOONS), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_DEADLOCK), Rarity.COMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_JETPACK_JOYRIDE), Rarity.COMMON),
+
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_BALATRO), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_BLOONS), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_PVZ), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_PIZZA_TIME), Rarity.UNCOMMON),
+                        new RarityItem(new ItemStack(ZAMItems.GAMING_RUNESCAPE), Rarity.UNCOMMON),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.GAMING_RDR2_TRAIN_HEIST),
+                                new ItemStack(ZAMItems.GAMING_RDR2_A_QUIET_TIME),
+                                new ItemStack(ZAMItems.GAMING_RDR2_HOUSE_SONG)), Rarity.RARE),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.GAMING_FNAF),
+                                new ItemStack(ZAMItems.GAMING_THIS_IS_FNAF),
+                                new ItemStack(ZAMItems.GAMING_JERMA)), Rarity.RARE),
+
+                        RarityItem.choice(List.of(
+                                new ItemStack(ZAMItems.GAMING_SKYRIM),
+                                new ItemStack(ZAMItems.GAMING_CASTLEVANIA),
+                                new ItemStack(ZAMItems.GAMING_SKYRIM)), Rarity.RARE),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.RED_ICON), List.of(
+                                pattern(ZAMCosmetics.GAMING_FREDDY_MASK),
+                                pattern(ZAMCosmetics.GAMING_COWBOY_HAT),
+                                pattern(ZAMCosmetics.GAMING_PEKKA_MASK),
+                                pattern(ZAMCosmetics.GAMING_KINGS_CROWN)), Rarity.EPIC),
+
+                        RarityItem.mystery(new ItemStack(ZAMItems.GOLD_ICON), List.of(
+                                pattern(ZAMCosmetics.GAMING_BUSTER_SWORD),
+                                pattern(ZAMCosmetics.GAMING_GEM_SHOVEL),
+                                pattern(ZAMCosmetics.GAMING_TETROMINO_PICKAXE),
+                                pattern(ZAMCosmetics.GAMING_GRANNY_CANE)), Rarity.LEGENDARY)),
+
+                () -> new ItemStack(ZAMBlocks.GAMING_COMPLETION_BANNER));
 
         CaseRewards.registerDeferred(HALO_CASE, () -> List.of(
                         new RarityItem(new ItemStack(ZAMItems.HALO_PERIL), Rarity.COMMON),

@@ -147,6 +147,43 @@ public class ZAMSounds {
     public static final SoundEvent STORMBREAKER_EQUIP = registerSoundEvent("entertainment.stormbreaker_equip");
     public static final SoundEvent ISOH_EQUIP = registerSoundEvent("entertainment.isoh_equip");
 
+    //Gaming
+    public static final SoundEvent GAMING_WELCOME_TO_SNAXBURG = registerSoundEvent("gaming.welcome_to_snaxburg");
+    public static final SoundEvent GAMING_TETRIS = registerSoundEvent("gaming.tetris");
+    public static final SoundEvent GAMING_SKYRIM = registerSoundEvent("gaming.skyrim");
+    public static final SoundEvent GAMING_RUNESCAPE = registerSoundEvent("gaming.runescape");
+    public static final SoundEvent GAMING_REPO = registerSoundEvent("gaming.repo");
+    public static final SoundEvent GAMING_RDR2_TRAIN_HEIST = registerSoundEvent("gaming.rdr2_train_heist");
+    public static final SoundEvent GAMING_RDR2_HOUSE_SONG = registerSoundEvent("gaming.rdr2_house_song");
+    public static final SoundEvent GAMING_RDR2_A_QUIET_TIME = registerSoundEvent("gaming.rdr2_a_quiet_time");
+    public static final SoundEvent GAMING_DEADLOCK = registerSoundEvent("gaming.deadlock");
+    public static final SoundEvent GAMING_PVZ = registerSoundEvent("gaming.pvz");
+    public static final SoundEvent GAMING_PIZZA_TIME = registerSoundEvent("gaming.pizza_time");
+    public static final SoundEvent GAMING_FORTNITE = registerSoundEvent("gaming.fortnite");
+    public static final SoundEvent GAMING_DOOM = registerSoundEvent("gaming.doom");
+    public static final SoundEvent GAMING_CASTLEVANIA = registerSoundEvent("gaming.castlevania");
+    public static final SoundEvent GAMING_CELESTE = registerSoundEvent("gaming.celeste");
+    public static final SoundEvent GAMING_BLOONS = registerSoundEvent("gaming.bloons");
+    public static final SoundEvent GAMING_BALATRO = registerSoundEvent("gaming.balatro");
+    public static final SoundEvent GAMING_JERMA = registerSoundEvent("gaming.jerma");
+    public static final SoundEvent GAMING_CLASH = registerSoundEvent("gaming.clash");
+    public static final SoundEvent GAMING_FNAF = registerSoundEvent("gaming.fnaf");
+    public static final SoundEvent GAMING_JETPACK_JOYRIDE = registerSoundEvent("gaming.jetpack_joyride");
+    public static final SoundEvent GAMING_DESTINY = registerSoundEvent("gaming.destiny");
+    public static final SoundEvent GAMING_THIS_IS_FNAF = registerSoundEvent("gaming.this_is_fnaf");
+    public static final SoundEvent GAMING_FREDDY_EQUIP = registerSoundEvent("gaming.freddy_equip");
+    public static final SoundEvent GAMING_FREDDY_COSMETIC_EQUIP = registerSoundEvent("gaming.freddy_cosmetic_equip");
+    public static final SoundEvent GAMING_PEKKA_EQUIP = registerSoundEvent("gaming.pekka_equip");
+    public static final SoundEvent GAMING_PEKKA_COSMETIC_EQUIP = registerSoundEvent("gaming.pekka_cosmetic_equip");
+    public static final SoundEvent GAMING_COWBOY_EQUIP = registerSoundEvent("gaming.cowboy_equip");
+    public static final SoundEvent GAMING_COWBOY_COSMETIC_EQUIP = registerSoundEvent("gaming.cowboy_cosmetic_equip");
+    public static final SoundEvent GAMING_KING_EQUIP = registerSoundEvent("gaming.king_equip");
+    public static final SoundEvent GAMING_KING_COSMETIC_EQUIP = registerSoundEvent("gaming.king_cosmetic_equip");
+    public static final SoundEvent GAMING_GEM_EQUIP = registerSoundEvent("gaming.gem_equip");
+    public static final SoundEvent GAMING_BUSTER_EQUIP = registerSoundEvent("gaming.buster_equip");
+    public static final SoundEvent GAMING_GRANNY_EQUIP = registerSoundEvent("gaming.granny_equip");
+    public static final SoundEvent GAMING_TETRIS_EQUIP = registerSoundEvent("gaming.tetris_equip");
+
     //Halo
     public static final SoundEvent HALO_OVERTURE = registerSoundEvent("halo.overture");
     public static final SoundEvent HALO_MAIN_THEME = registerSoundEvent("halo.main_theme");
@@ -175,6 +212,8 @@ public class ZAMSounds {
     public static final SoundEvent HOLIDAY_HEAVY_METAL_CHRISTMAS = registerSoundEvent("holiday.heavy_metal_christmas");
     public static final SoundEvent HOLIDAY_COSMETIC_EQUIP = registerSoundEvent("holiday.cosmetic_equip");
     public static final SoundEvent HOLIDAY_EQUIP = registerSoundEvent("holiday.equip");
+    public static final SoundEvent HOLIDAY_HALO_EQUIP = registerSoundEvent("holiday.halo_equip");
+    public static final SoundEvent HOLIDAY_ANGEL_HALO_EQUIP = registerSoundEvent("holiday.angel_halo_equip");
 
     //Hunter X Hunter
     public static final SoundEvent HXH_HUNTING_FOR_YOUR_DREAM = registerSoundEvent("hxh.hunting_for_your_dream");

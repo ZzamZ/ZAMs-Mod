@@ -149,6 +149,32 @@ public class ZAMItems {
     public static final Item ENTERTAINMENT_DEMON_SLAYER = collectionDisc("entertainment_demon_slayer", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_DEMON_SLAYER, Rarity.RARE);
     public static final Item ENTERTAINMENT_ARCANE = collectionDisc("entertainment_arcane", "Entertainment", ZAMJukeboxSongs.ENTERTAINMENT_ARCANE, Rarity.RARE);
 
+    //Gaming
+    public static final Item GAMING_CASE = collectionCase("gaming_case");
+    public static final Item GAMING_WELCOME_TO_SNAXBURG = collectionDisc("gaming_welcome_to_snaxburg", "Gaming", ZAMJukeboxSongs.GAMING_WELCOME_TO_SNAXBURG, Rarity.UNCOMMON);
+    public static final Item GAMING_TETRIS = collectionDisc("gaming_tetris", "Gaming", ZAMJukeboxSongs.GAMING_TETRIS, Rarity.UNCOMMON);
+    public static final Item GAMING_SKYRIM = collectionDisc("gaming_skyrim", "Gaming", ZAMJukeboxSongs.GAMING_SKYRIM, Rarity.UNCOMMON);
+    public static final Item GAMING_RUNESCAPE = collectionDisc("gaming_runescape", "Gaming", ZAMJukeboxSongs.GAMING_RUNESCAPE, Rarity.UNCOMMON);
+    public static final Item GAMING_REPO = collectionDisc("gaming_repo", "Gaming", ZAMJukeboxSongs.GAMING_REPO, Rarity.UNCOMMON);
+    public static final Item GAMING_RDR2_TRAIN_HEIST = collectionDisc("gaming_rdr2_train_heist", "Gaming", ZAMJukeboxSongs.GAMING_RDR2_TRAIN_HEIST, Rarity.UNCOMMON);
+    public static final Item GAMING_RDR2_HOUSE_SONG = collectionDisc("gaming_rdr2_house_song", "Gaming", ZAMJukeboxSongs.GAMING_RDR2_HOUSE_SONG, Rarity.UNCOMMON);
+    public static final Item GAMING_RDR2_A_QUIET_TIME = collectionDisc("gaming_rdr2_a_quiet_time", "Gaming", ZAMJukeboxSongs.GAMING_RDR2_A_QUIET_TIME, Rarity.UNCOMMON);
+    public static final Item GAMING_DEADLOCK = collectionDisc("gaming_deadlock", "Gaming", ZAMJukeboxSongs.GAMING_DEADLOCK, Rarity.UNCOMMON);
+    public static final Item GAMING_PVZ = collectionDisc("gaming_pvz", "Gaming", ZAMJukeboxSongs.GAMING_PVZ, Rarity.UNCOMMON);
+    public static final Item GAMING_PIZZA_TIME = collectionDisc("gaming_pizza_time", "Gaming", ZAMJukeboxSongs.GAMING_PIZZA_TIME, Rarity.UNCOMMON);
+    public static final Item GAMING_FORTNITE = collectionDisc("gaming_fortnite", "Gaming", ZAMJukeboxSongs.GAMING_FORTNITE, Rarity.UNCOMMON);
+    public static final Item GAMING_DOOM = collectionDisc("gaming_doom", "Gaming", ZAMJukeboxSongs.GAMING_DOOM, Rarity.UNCOMMON);
+    public static final Item GAMING_CASTLEVANIA = collectionDisc("gaming_castlevania", "Gaming", ZAMJukeboxSongs.GAMING_CASTLEVANIA, Rarity.UNCOMMON);
+    public static final Item GAMING_CELESTE = collectionDisc("gaming_celeste", "Gaming", ZAMJukeboxSongs.GAMING_CELESTE, Rarity.UNCOMMON);
+    public static final Item GAMING_BLOONS = collectionDisc("gaming_bloons", "Gaming", ZAMJukeboxSongs.GAMING_BLOONS, Rarity.UNCOMMON);
+    public static final Item GAMING_BALATRO = collectionDisc("gaming_balatro", "Gaming", ZAMJukeboxSongs.GAMING_BALATRO, Rarity.UNCOMMON);
+    public static final Item GAMING_JERMA = collectionDisc("gaming_jerma", "Gaming", ZAMJukeboxSongs.GAMING_JERMA, Rarity.UNCOMMON);
+    public static final Item GAMING_CLASH = collectionDisc("gaming_clash", "Gaming", ZAMJukeboxSongs.GAMING_CLASH, Rarity.UNCOMMON);
+    public static final Item GAMING_JETPACK_JOYRIDE = collectionDisc("gaming_jetpack_joyride", "Gaming", ZAMJukeboxSongs.GAMING_JETPACK_JOYRIDE, Rarity.UNCOMMON);
+    public static final Item GAMING_DESTINY = collectionDisc("gaming_destiny", "Gaming", ZAMJukeboxSongs.GAMING_DESTINY, Rarity.UNCOMMON);
+    public static final Item GAMING_FNAF = collectionDisc("gaming_fnaf", "Gaming", ZAMJukeboxSongs.GAMING_FNAF, Rarity.UNCOMMON);
+    public static final Item GAMING_THIS_IS_FNAF = collectionDisc("gaming_this_is_fnaf", "Gaming", ZAMJukeboxSongs.GAMING_THIS_IS_FNAF, Rarity.UNCOMMON);
+
     //Halo
     public static final Item HALO_CASE = collectionCase("halo_case");
     public static final Item HALO_OVERTURE = collectionDisc("halo_overture", "Halo", ZAMJukeboxSongs.HALO_OVERTURE, Rarity.EPIC);

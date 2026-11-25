@@ -226,6 +226,12 @@ public class ZAMRecipeProvider extends FabricRecipeProvider {
                         .define('S', ZAMTags.ENTERTAINMENT_MUSIC_DISCS)
                         .unlockedBy("has_record_for_entertainment_case", has(ZAMTags.ENTERTAINMENT_MUSIC_DISCS)).save(output);
 
+                shaped(RecipeCategory.MISC, ZAMItems.GAMING_CASE)
+                        .pattern("SS ")
+                        .pattern("SS ")
+                        .define('S', ZAMTags.GAMING_MUSIC_DISCS)
+                        .unlockedBy("has_record_for_gaming_case", has(ZAMTags.GAMING_MUSIC_DISCS)).save(output);
+
                 shaped(RecipeCategory.MISC, ZAMItems.HALO_CASE)
                         .pattern("SS ")
                         .pattern("SS ")
