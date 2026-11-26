@@ -51,19 +51,19 @@ public final class ZAMBlocks {
     public static final Block MARINERS_FORTUNE = registerBlock("mariners_fortune", properties -> new MarinersFortuneChestBlock(() -> ZAMBlockEntities.MARINERS_FORTUNE_CHEST, properties.mapColor(MapColor.METAL).strength(3.0F, 6.0F).sound(SoundType.METAL)), (block, properties) -> new BlockItem(block, properties.rarity(Rarity.RARE)));
     public static final Block SAND_PATH = registerBlock("sand_path", properties -> new SandPathBlock(properties.mapColor(MapColor.SAND).strength(0.25F).sound(SoundType.SAND).instrument(NoteBlockInstrument.SNARE).pushReaction(PushReaction.POPPED)));
 
-    public static final Block OAK_RECORD_RACK = recordRack("oak_record_rack", Blocks.OAK_FENCE, SoundType.WOOD);
-    public static final Block SPRUCE_RECORD_RACK = recordRack("spruce_record_rack", Blocks.SPRUCE_FENCE, SoundType.WOOD);
-    public static final Block BIRCH_RECORD_RACK = recordRack("birch_record_rack", Blocks.BIRCH_FENCE, SoundType.WOOD);
-    public static final Block DARK_OAK_RECORD_RACK = recordRack("dark_oak_record_rack", Blocks.DARK_OAK_FENCE, SoundType.WOOD);
-    public static final Block MANGROVE_RECORD_RACK = recordRack("mangrove_record_rack", Blocks.MANGROVE_FENCE, SoundType.WOOD);
-    public static final Block CHERRY_RECORD_RACK = recordRack("cherry_record_rack", Blocks.CHERRY_FENCE, SoundType.CHERRY_WOOD);
-    public static final Block JUNGLE_RECORD_RACK = recordRack("jungle_record_rack", Blocks.JUNGLE_FENCE, SoundType.WOOD);
-    public static final Block ACACIA_RECORD_RACK = recordRack("acacia_record_rack", Blocks.ACACIA_FENCE, SoundType.WOOD);
-    public static final Block CRIMSON_RECORD_RACK = recordRack("crimson_record_rack", Blocks.CRIMSON_FENCE, SoundType.NETHER_WOOD);
-    public static final Block BAMBOO_RECORD_RACK = recordRack("bamboo_record_rack", Blocks.BAMBOO_FENCE, SoundType.BAMBOO_WOOD);
-    public static final Block WARPED_RECORD_RACK = recordRack("warped_record_rack", Blocks.WARPED_FENCE, SoundType.NETHER_WOOD);
-    public static final Block PALE_OAK_RECORD_RACK = recordRack("pale_oak_record_rack", Blocks.PALE_OAK_FENCE, SoundType.WOOD);
-    public static final Block POPLAR_RECORD_RACK = recordRack("poplar_record_rack", Blocks.POPLAR_FENCE, SoundType.WOOD);
+    public static final Block OAK_RECORD_RACK = recordRack("oak_record_rack", SoundType.WOOD);
+    public static final Block SPRUCE_RECORD_RACK = recordRack("spruce_record_rack", SoundType.WOOD);
+    public static final Block BIRCH_RECORD_RACK = recordRack("birch_record_rack", SoundType.WOOD);
+    public static final Block DARK_OAK_RECORD_RACK = recordRack("dark_oak_record_rack", SoundType.WOOD);
+    public static final Block MANGROVE_RECORD_RACK = recordRack("mangrove_record_rack", SoundType.WOOD);
+    public static final Block CHERRY_RECORD_RACK = recordRack("cherry_record_rack", SoundType.CHERRY_WOOD);
+    public static final Block JUNGLE_RECORD_RACK = recordRack("jungle_record_rack", SoundType.WOOD);
+    public static final Block ACACIA_RECORD_RACK = recordRack("acacia_record_rack", SoundType.WOOD);
+    public static final Block CRIMSON_RECORD_RACK = recordRack("crimson_record_rack", SoundType.NETHER_WOOD);
+    public static final Block BAMBOO_RECORD_RACK = recordRack("bamboo_record_rack", SoundType.BAMBOO_WOOD);
+    public static final Block WARPED_RECORD_RACK = recordRack("warped_record_rack", SoundType.NETHER_WOOD);
+    public static final Block PALE_OAK_RECORD_RACK = recordRack("pale_oak_record_rack", SoundType.WOOD);
+    public static final Block POPLAR_RECORD_RACK = recordRack("poplar_record_rack", SoundType.WOOD);
 
     public static final ColorCollection<FairyLanternBlock> FAIRY_LANTERNS = ColorCollection.VALUES.map(color -> fairyLantern(color.getSerializedName() + "_fairy_lantern", color == DyeColor.WHITE ? MapColor.TERRACOTTA_BROWN : color.getMapColor()));
 
@@ -78,9 +78,8 @@ public final class ZAMBlocks {
         return banner;
     }
 
-    private static RecordRackBlock recordRack(String name, Block lootTableSource, SoundType sound) {
-        return registerBlock(name, properties -> new RecordRackBlock(properties.overrideLootTable(lootTableSource.getLootTable())
-                .strength(1.0F).sound(sound)));
+    private static RecordRackBlock recordRack(String name, SoundType sound) {
+        return registerBlock(name, properties -> new RecordRackBlock(properties.strength(1.0F).sound(sound)));
     }
 
     private static FairyLanternBlock fairyLantern(String name, MapColor color) {
