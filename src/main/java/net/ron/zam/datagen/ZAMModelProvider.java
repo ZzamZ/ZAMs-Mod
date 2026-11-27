@@ -23,7 +23,7 @@ public class ZAMModelProvider  extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
-        itemModelGenerators.generateFlatItem(ZAMItems.MUSIC_DISC_DOG, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ZAMItems.MUSIC_DISC_DOG, ModelTemplates.MUSIC_DISC);
 
         itemModelGenerators.generateFlatItem(ZAMItems.CREST_ARMOR_TRIM_SMITHING_TEMPLATE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ZAMItems.DWELLER_ARMOR_TRIM_SMITHING_TEMPLATE, ModelTemplates.FLAT_ITEM);
