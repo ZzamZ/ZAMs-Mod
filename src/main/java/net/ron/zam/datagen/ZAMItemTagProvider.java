@@ -290,7 +290,7 @@ public class ZAMItemTagProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ZAMItems.getRK(ZAMItems.COD_ZOMBIES_CASE))
                 .add(ZAMItems.getRK(ZAMItems.COUNTER_STRIKE_CASE))
                 .add(ZAMItems.getRK(ZAMItems.DRAGON_BALL_CASE))
-                .add(ZAMItems.getRK(ZAMItems.ENTERTAINMENT_COWBOY_BEBOP))
+                .add(ZAMItems.getRK(ZAMItems.ENTERTAINMENT_CASE))
                 .add(ZAMItems.getRK(ZAMItems.GAMING_CASE))
                 .add(ZAMItems.getRK(ZAMItems.HALO_CASE))
                 .add(ZAMItems.getRK(ZAMItems.HOLIDAY_CASE))
