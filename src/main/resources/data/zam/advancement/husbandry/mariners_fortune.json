@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:husbandry/fishy_business",
+  "display": {
+    "icon": {
+      "id": "zam:mariners_fortune"
+    },
+    "title": {
+      "translate": "advancements.zam.husbandry.mariners_fortune.title"
+    },
+    "description": {
+      "translate": "advancements.zam.husbandry.mariners_fortune.description"
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "mariners_fortune": {
+      "conditions": {
+        "item": {
+          "items": "zam:mariners_fortune"
+        }
+      },
+      "trigger": "minecraft:fishing_rod_hooked"
+    }
+  },
+  "requirements": [
+    ["mariners_fortune"]
+  ]
+}
